@@ -78,28 +78,42 @@ async def ws_endpoint(ws: WebSocket):
     await ws.accept()
     print("iPhone connected")
 
-    while True:
-        msg = await ws.receive()
+    try:
+        while True:
+            msg = await ws.receive()
 
-        if "text" in msg:
-            raw = msg["text"]
-        elif "bytes" in msg:
-            raw = msg["bytes"].decode()
-        else:
-            continue
+            # If client disconnected cleanly
+            if msg["type"] == "websocket.disconnect":
+                print("iPhone disconnected normally")
+                break
 
-        data = json.loads(raw)
-        frame_count += 1
+            # Handle text or binary JSON
+            if "text" in msg and msg["text"] is not None:
+                raw = msg["text"]
+            elif "bytes" in msg and msg["bytes"] is not None:
+                raw = msg["bytes"].decode()
+            else:
+                continue
 
-        latest_metadata = {
-            "timestamp": data["timestamp"],
-            "lat": data["lat"],
-            "lon": data["lon"],
-            "frame": data["frame"],
-            "count": frame_count
-        }
+            data = json.loads(raw)
+            frame_count += 1
 
-        print(f"Frame {frame_count} received")
+            latest_metadata = {
+                "timestamp": data["timestamp"],
+                "lat": data["lat"],
+                "lon": data["lon"],
+                "frame": data["frame"],
+                "count": frame_count
+            }
+
+            print(f"Frame {frame_count} received")
+
+    except Exception as e:
+        print("WS ERROR:", e)
+
+    finally:
+        print("WebSocket connection closed, waiting for new connection…")
+
 
 
 
