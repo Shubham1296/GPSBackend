@@ -14,7 +14,6 @@ services:
       - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    restart: always
 
   pgadmin:
     image: dpage/pgadmin4
@@ -31,7 +30,9 @@ services:
     build: ./backend
     container_name: stream_backend
     volumes:
-      - ./backend/storage:/app/storage   # store frames in host machine
+      - ./backend/storage:/app/storage
+    env_file:
+      - ./backend/.env
     environment:
       DB_HOST: postgres
       DB_NAME: stream_db
@@ -41,7 +42,6 @@ services:
       - "8000:8000"
     depends_on:
       - postgres
-    restart: always
 
 volumes:
   pgdata:

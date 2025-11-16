@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS frames (
+    id UUID PRIMARY KEY,
+    timestamp TIMESTAMP NOT NULL,
+    lat DOUBLE PRECISION,
+    lon DOUBLE PRECISION,
+    file_path TEXT NOT NULL
+);
