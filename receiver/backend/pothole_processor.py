@@ -12,7 +12,7 @@ os.makedirs(LOG_DIR, exist_ok=True)
 LOG_FILE = f"{LOG_DIR}/processor.log"
 
 # Your exact API URL
-POTHOLE_API_URL = "http://host.docker.internal:8501/predict"
+POTHOLE_API_URL = "http://host.docker.internal:8001/predict"
 
 async def log(msg: str):
     timestamp = datetime.datetime.utcnow().isoformat()
