@@ -1,5 +1,16 @@
 // Backend API
-const API_URL = "http://localhost:8000/route";
+// Apply map CSS
+const style = document.createElement("style");
+style.innerHTML = `
+    #map {
+        height: 100vh;
+        width: 100%;
+    }
+`;
+document.head.appendChild(style);
+
+
+const API_URL = "http://localhost:8000/route"; 
 
 let polylineLayer = null;
 let potholeMarkers = [];
@@ -56,14 +67,21 @@ async function loadRoute() {
         gpsDots.push(dot);
     });
 
-    // --- Pothole markers ---
+    // --- Pothole red dots ---
     points.forEach(p => {
         if (p.is_pothole === true) {
-            const marker = L.marker([p.lat, p.lon], { icon: potholeIcon });
 
-            marker.on("click", async () => {
+            const dot = L.circleMarker([p.lat, p.lon], {
+                radius: 6,         // size of the red dot
+                color: "red",      // border color
+                weight: 1,         // border thickness
+                fillColor: "red",  // fill color
+                fillOpacity: 1.0,  // fully filled red
+            });
+
+            dot.on("click", async () => {
                 let popup = "<b>Pothole Detected</b><br>";
-                const url = p.file_path;
+                const url = window.location.origin + p.file_path;
 
                 try {
                     const resp = await fetch(url);
@@ -75,13 +93,15 @@ async function loadRoute() {
                 } catch {
                     popup += "No image found";
                 }
-                marker.bindPopup(popup).openPopup();
+
+                dot.bindPopup(popup).openPopup();
             });
 
-            marker.addTo(map);
-            potholeMarkers.push(marker);
+            dot.addTo(map);
+            potholeMarkers.push(dot);
         }
     });
+
 
     map.fitBounds(route);
 

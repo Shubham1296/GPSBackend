@@ -1,3 +1,8 @@
+#map {
+    height: 100vh !important;
+    width: 100% !important;
+}
+
 #controls {
     position: absolute;
     top: 15px;
@@ -57,3 +62,5 @@
     border-radius: 4px;
     display: block;
 }
+
+
