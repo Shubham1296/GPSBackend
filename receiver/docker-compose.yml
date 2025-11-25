@@ -55,8 +55,12 @@ services:
     container_name: stream_frontend
     ports:
       - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html 
+      - ./backend/storage/frames:/usr/share/nginx/html/storage/frames
     depends_on:
       - backend
+
 
 volumes:
   pgdata:

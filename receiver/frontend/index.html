@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="map"></div>
+    
+    <div id="controls">
+    <label><input type="checkbox" id="togglePolyline" checked> Show Polyline</label>
+    <label><input type="checkbox" id="togglePotholes" checked> Show Potholes</label>
+    <label><input type="checkbox" id="toggleOnlyPotholes"> Show Only Potholes</label>
+</div>
+
+<div id="map"></div>
+
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="app.js"></script>

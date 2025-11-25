@@ -1,4 +1,59 @@
-html, body, #map {
-    height: 100%;
-    margin: 0;
+#controls {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(20, 20, 20, 0.85);
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    z-index: 9999;
+    line-height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+}
+
+#controls label {
+    display: block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+#controls input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pothole-icon {
+    transform: none !important;
+    image-rendering: crisp-edges;
+}
+
+/* Force popup to never exceed 220px */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-content {
+    width: 200px !important;
+    max-width: 200px !important;
+    overflow: hidden !important;
+}
+
+/* Prevent popup from stretching vertically */
+.leaflet-popup-content {
+    max-height: 220px !important;
+    overflow-y: auto !important;
+}
+
+/* Popup tail should not move */
+.leaflet-popup-tip {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/* Image must fit inside popup */
+.pothole-popup-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 4px;
+    display: block;
 }

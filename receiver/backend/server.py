@@ -6,6 +6,7 @@ from datetime import datetime
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+from pothole_processor import process_frame
 import asyncio
 import base64
 from fastapi import Depends
@@ -168,13 +169,25 @@ async def ws_endpoint(ws: WebSocket):
                         timestamp=datetime.fromisoformat(ts) if isinstance(ts, str) else datetime.utcnow(),
                         lat=lat,
                         lon=lon,
-                        file_path=filepath
+                        file_path=filepath,
+                        is_pothole=False
                     )
                     await db.execute(stmt)
                     await db.commit()
                     break
+
+                # 🚀 Start BACKGROUND TASK for pothole detection
+                asyncio.create_task(
+                    process_frame(
+                        frame_id=str(frame_id),
+                        file_path=filepath,
+                        db_factory=get_db
+                    )
+                )
+
             except Exception as e:
                 print("❌ DB insert failed:", e)
+
 
     except WebSocketDisconnect:
         print("🔌 iPhone disconnected")
@@ -193,7 +206,8 @@ async def route(db: AsyncSession = Depends(get_db)):
             "lat": f.lat,
             "lon": f.lon,
             "timestamp": f.timestamp.isoformat(),
-            "is_pothole": f.is_pothole
+            "is_pothole": f.is_pothole,
+            "file_path": f"/storage/frames/{os.path.basename(f.file_path)}"
         }
         for f in frames if f.lat and f.lon
     ]
