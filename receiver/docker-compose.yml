@@ -62,9 +62,6 @@ services:
       - ./backend/storage/frames:/usr/share/nginx/html/storage/frames
     depends_on:
       - backend
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-
-
+    
 volumes:
   pgdata:

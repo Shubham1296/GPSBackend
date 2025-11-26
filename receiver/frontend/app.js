@@ -10,7 +10,7 @@ style.innerHTML = `
 document.head.appendChild(style);
 
 
-const API_URL = "http://host.docker.internal:8000/route"; 
+const API_URL = "http://172.174.136.7:8000/route"; 
 
 let polylineLayer = null;
 let potholeMarkers = [];
