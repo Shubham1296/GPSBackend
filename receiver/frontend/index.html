@@ -1,22 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Live Route Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadAI – Road Monitoring Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    
-    <div id="controls">
-    <label><input type="checkbox" id="togglePolyline" checked> Show Polyline</label>
-    <label><input type="checkbox" id="togglePotholes" checked> Show Potholes</label>
-    <label><input type="checkbox" id="toggleOnlyPotholes"> Show Only Potholes</label>
-</div>
 
-<div id="map"></div>
+<script>
+    // Redirect if not logged in
+    if (!localStorage.getItem("jwt")) {
+        window.location.href = "login.html";
+    }
+</script>
 
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h1 class="logo">RoadAI</h1>
+        <p class="tagline">Road Monitoring System</p>
+    </div>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="app.js"></script>
+    <nav class="sidebar-nav">
+        <button class="nav-item active" data-view="dashboard">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Dashboard</span>
+        </button>
+        <button class="nav-item" data-view="analytics">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="20" x2="12" y2="10"></line>
+                <line x1="18" y1="20" x2="18" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+            <span>Analytics</span>
+        </button>
+        <button class="nav-item" data-view="alerts">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span>Alerts</span>
+            <span class="badge" id="alertBadge">0</span>
+        </button>
+    </nav>
+
+    <div class="sidebar-footer">
+        <div class="user-profile">
+            <div class="user-avatar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div class="user-info">
+                <div class="user-name">Admin User</div>
+                <div class="user-email" id="userEmail">—</div>
+            </div>
+        </div>
+        <button id="logoutBtn" class="logout-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+        </button>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<main class="main-content">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button id="sidebarToggle" class="icon-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" placeholder="Search locations, sectors..." id="searchInput">
+            </div>
+        </div>
+
+        <div class="header-right">
+            <select id="timeRange" class="time-select">
+                <option value="today">Today</option>
+                <option value="week" selected>This Week</option>
+                <option value="month">This Month</option>
+                <option value="year">This Year</option>
+            </select>
+
+            <button class="icon-btn notification-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+                <span class="notification-dot"></span>
+            </button>
+
+            <button id="exportBtn" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Export</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Content Area -->
+    <div class="content">
+        <!-- Main Content Grid -->
+        <div class="main-grid">
+            <!-- Map Section -->
+            <div class="map-section">
+                <div class="panel-header">
+                    <h3>Live Route Map</h3>
+                    <div class="map-controls">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="togglePolyline" checked>
+                            <span>Polyline</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="togglePotholes" checked>
+                            <span>Potholes</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="toggleOnlyPotholes">
+                            <span>Only Potholes</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="map" class="map-container"></div>
+            </div>
+
+            <!-- Sidebar Panels -->
+            <div class="side-panels">
+                <!-- Severity Distribution -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Severity Distribution</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="severity-chart" id="severityChart">
+                            <!-- Will be populated by JS -->
+                        </div>
+
+                        <div class="priority-actions">
+                            <div class="priority-title">Priority Actions</div>
+                            <div class="priority-card critical">
+                                <div class="priority-count" id="criticalCount">0</div>
+                                <div class="priority-label">Critical Issues</div>
+                                <div class="priority-desc">Require immediate attention</div>
+                            </div>
+                            <div class="priority-card high">
+                                <div class="priority-count" id="highCount">0</div>
+                                <div class="priority-label">High Priority</div>
+                                <div class="priority-desc">Schedule within 24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Recent Detections</h3>
+                        <button class="text-btn">View All</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="activity-list" id="activityList">
+                            <!-- Will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Detections Table -->
+        <div class="table-panel">
+            <div class="panel-header">
+                <h3>All Detections</h3>
+                <div class="table-actions">
+                    <button class="icon-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Severity</th>
+                            <th>Coordinates</th>
+                            <th>Time</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detectionsTable">
+                        <!-- Will be populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>

@@ -13,9 +13,12 @@ from fastapi import Depends
 from sqlalchemy.future import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-
 from database import get_db, init_db
-from models import Frame, Base
+from models import Frame
+
+# auth router
+from auth import router as auth_router
+from jose import jwt, JWTError
 
 app = FastAPI(title="LiveStreamGPS Receiver")
 
@@ -43,11 +46,20 @@ latest_meta = {
     "id": None
 }
 
+# JWT config (keep same SECRET_KEY as auth.py)
+SECRET_KEY = "1e6f2130f17354bdf1c9ff2b07dfe5f05d8cb9d9840676b7033a665369717639"  # <-- Replace for production (use env var)
+ALGORITHM = "HS256"
+
+# include auth routes (register/login)
+app.include_router(auth_router)
+
+
 # create tables at startup
 @app.on_event("startup")
 async def on_startup():
     await init_db()
     print("✅ DB initialized")
+
 
 # Simple viewer page (single page that polls /frame json)
 @app.get("/", response_class=HTMLResponse)
@@ -95,6 +107,7 @@ update();
 </html>
 """
 
+
 @app.get("/frame")
 def get_frame():
     # Return JSON describing last frame. frame_b64 is included.
@@ -108,8 +121,33 @@ async def ws_endpoint(ws: WebSocket):
       { "timestamp": "...", "lat": 12.34, "lon": 56.78, "image": "<base64 jpeg>" }
     The server will decode base64, write JPEG file, and insert DB record.
     """
+    # Validate token from query params before accepting
+    token = ws.query_params.get("token")
+    if not token:
+        # Close immediately: client did not provide token
+        try:
+            await ws.close(code=1008)  # policy violation
+        except Exception:
+            pass
+        print("🔒 WS connection rejected (no token)")
+        return
+
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        user_email = payload.get("sub")
+        if not user_email:
+            raise JWTError("missing subject")
+    except JWTError as e:
+        print("🔒 WS token invalid:", e)
+        try:
+            await ws.close(code=1008)
+        except Exception:
+            pass
+        return
+
+    # token ok — accept now
     await ws.accept()
-    print("📲 iPhone connected")
+    print(f"📲 Authenticated iPhone connected: {user_email}")
     try:
         while True:
             msg = await ws.receive_text()  # expect text frames only
@@ -195,6 +233,7 @@ async def ws_endpoint(ws: WebSocket):
         print("❌ unexpected ws error:", e)
     finally:
         print("🔌 Connection closed")
+
 
 @app.get("/route")
 async def route(db: AsyncSession = Depends(get_db)):
