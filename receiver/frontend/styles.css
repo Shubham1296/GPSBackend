@@ -1725,8 +1725,12 @@ body, html {
     border-radius: 12px;
     padding: 20px;
     max-width: 350px;
+    max-height: calc(100% - 40px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     animation: slideInUp 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes slideInUp {
@@ -1765,6 +1769,23 @@ body, html {
 
 .popup-content-wrapper {
     color: #e5e7eb;
+    flex: 1;
+    overflow: hidden;
+}
+
+.popup-content-wrapper img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+#popupImageContainer {
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Responsive Map Popup */
@@ -1774,6 +1795,15 @@ body, html {
         right: 10px;
         bottom: 10px;
         max-width: calc(100% - 20px);
+        max-height: calc(100% - 20px);
+    }
+
+    #popupImageContainer {
+        max-height: 200px;
+    }
+
+    .popup-content-wrapper img {
+        max-height: 200px;
     }
 }
 

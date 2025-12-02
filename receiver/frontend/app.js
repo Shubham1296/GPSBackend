@@ -231,7 +231,7 @@ function renderMap(points) {
             fetch(url)
                 .then(resp => {
                     if (resp.ok) {
-                        imageContainer.innerHTML = `<img src="${url}" style="width: 100%; border-radius: 8px;" />`;
+                        imageContainer.innerHTML = `<img src="${url}" style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 8px;" />`;
                     } else {
                         imageContainer.innerHTML = `
                             <div style="text-align: center; padding: 20px; background: rgba(239, 68, 68, 0.1); border: 1px dashed rgba(239, 68, 68, 0.3); border-radius: 8px; color: #ef4444;">
