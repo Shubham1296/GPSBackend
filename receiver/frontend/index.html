@@ -154,6 +154,17 @@
                     </div>
                 </div>
                 <div id="map" class="map-container shubham"></div>
+
+                <!-- Custom Popup Panel at Bottom Left -->
+                <div id="mapPopupPanel" class="map-popup-panel" style="display: none;">
+                    <button class="popup-close-btn" onclick="closeMapPopup()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <div id="popupContent" class="popup-content-wrapper"></div>
+                </div>
             </div>
 
             <!-- Sidebar Panels -->
@@ -166,20 +177,6 @@
                     <div class="panel-body">
                         <div class="severity-chart" id="severityChart">
                             <!-- Will be populated by JS -->
-                        </div>
-
-                        <div class="priority-actions">
-                            <div class="priority-title">Priority Actions</div>
-                            <div class="priority-card critical">
-                                <div class="priority-count" id="criticalCount">0</div>
-                                <div class="priority-label">Critical Issues</div>
-                                <div class="priority-desc">Require immediate attention</div>
-                            </div>
-                            <div class="priority-card high">
-                                <div class="priority-count" id="highCount">0</div>
-                                <div class="priority-label">High Priority</div>
-                                <div class="priority-desc">Schedule within 24 hours</div>
-                            </div>
                         </div>
                     </div>
                 </div>

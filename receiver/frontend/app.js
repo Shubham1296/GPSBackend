@@ -36,19 +36,20 @@ async function getSuburbName(lat, lon) {
     }
     
     try {
-        const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
-        const data = await response.json();
-        console.log(data)
+        // const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+        // const data = await response.json();
+        // console.log(data)
         
-        // Try to get suburb, neighborhood, or locality
-        const suburb = data.address?.suburb || 
-                      data.address?.neighborhood || 
-                      data.address?.locality || 
-                      data.address?.village ||
-                      `Sector ${Math.floor(Math.random() * 90) + 10}`;
+        // // Try to get suburb, neighborhood, or locality
+        // const suburb = data.address?.suburb || 
+        //               data.address?.neighborhood || 
+        //               data.address?.locality || 
+        //               data.address?.village ||
+        //               `Sector ${Math.floor(Math.random() * 90) + 10}`;
         
-        suburbCache[cacheKey] = suburb;
-        return suburb;
+        // suburbCache[cacheKey] = suburb;
+        // return suburb;
+        return `Sector ${Math.floor(Math.random() * 90) + 10}`;
     } catch (error) {
         console.error('Error fetching suburb:', error);
         return `Sector ${Math.floor(Math.random() * 90) + 10}`;
@@ -169,37 +170,30 @@ function renderMap(points) {
             weight: 2
         });
 
-        marker.on("click", async () => {
+        marker.on("click", () => {
             const url = window.location.origin + p.file_path;
+            const panel = document.getElementById('mapPopupPanel');
+            const popupContentDiv = document.getElementById('popupContent');
+
+            // Show popup immediately with initial content
             let popupContent = `
-                <div style="min-width: 200px;">
-                    <div style="font-weight: 600; margin-bottom: 8px; color: #e5e7eb;">
-                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${color}; margin-right: 6px;"></span>
+                <div style="min-width: 280px;">
+                    <div style="font-weight: 600; margin-bottom: 12px; color: #e5e7eb; font-size: 16px;">
+                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${color}; margin-right: 8px;"></span>
                         Pothole Detected
                     </div>
-                    <div style="font-size: 12px; color: #9ca3af; margin-bottom: 4px;">
+                    <div style="font-size: 13px; color: #9ca3af; margin-bottom: 6px;">
                         Severity: <span style="color: ${color}; font-weight: 600;">${p.severity || 'Unknown'}</span>
                     </div>
-                    <div style="font-size: 12px; color: #9ca3af; margin-bottom: 8px;">
+                    <div style="font-size: 13px; color: #9ca3af; margin-bottom: 12px;">
                         ${formatCoords(p.lat, p.lon)}
-                    </div>`;
-
-            try {
-                const resp = await fetch(url);
-                if (resp.ok) {
-                    popupContent += `<img src="${url}" class="pothole-popup-img" />`;
-                } else {
-                    popupContent += '<div style="font-size: 12px; color: #6b7280;">No image available</div>';
-                }
-            } catch {
-                popupContent += '<div style="font-size: 12px; color: #6b7280;">Failed to load image</div>';
-            }
-
-            popupContent += `
+                    </div>
+                    <div id="popupImageContainer" style="margin-bottom: 12px;">
+                        <div style="text-align: center; padding: 20px; color: #6b7280;">Loading image...</div>
+                    </div>
                     <button onclick="deletePothole(${p.lat}, ${p.lon})" style="
                         width: 100%;
-                        margin-top: 12px;
-                        padding: 8px 16px;
+                        padding: 10px 16px;
                         background: #ef4444;
                         color: white;
                         border: none;
@@ -212,9 +206,41 @@ function renderMap(points) {
                         Delete Pothole
                     </button>
                 </div>`;
-            marker.bindPopup(popupContent, {
-                maxWidth: 300
-            }).openPopup();
+
+            popupContentDiv.innerHTML = popupContent;
+            panel.style.display = 'block';
+
+            // Load image asynchronously
+            const imageContainer = document.getElementById('popupImageContainer');
+            fetch(url)
+                .then(resp => {
+                    if (resp.ok) {
+                        imageContainer.innerHTML = `<img src="${url}" style="width: 100%; border-radius: 8px;" />`;
+                    } else {
+                        imageContainer.innerHTML = `
+                            <div style="text-align: center; padding: 20px; background: rgba(239, 68, 68, 0.1); border: 1px dashed rgba(239, 68, 68, 0.3); border-radius: 8px; color: #ef4444;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom: 8px;">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                </svg>
+                                <div style="font-size: 13px;">Image not found</div>
+                            </div>`;
+                    }
+                })
+                .catch(() => {
+                    imageContainer.innerHTML = `
+                        <div style="text-align: center; padding: 20px; background: rgba(239, 68, 68, 0.1); border: 1px dashed rgba(239, 68, 68, 0.3); border-radius: 8px; color: #ef4444;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom: 8px;">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                            </svg>
+                            <div style="font-size: 13px;">Failed to load image</div>
+                        </div>`;
+                });
         });
 
         marker.addTo(map);
@@ -346,8 +372,6 @@ function renderSeverityChart(points) {
     `;
 
     document.getElementById("severityChart").innerHTML = chartHTML;
-    document.getElementById("criticalCount").textContent = severityCounts.critical;
-    document.getElementById("highCount").textContent = severityCounts.high;
 }
 
 // ==================== ACTIVITY LIST ====================
@@ -1500,6 +1524,12 @@ function renderSeverityTrendChart(labels, severityData) {
             }
         }
     });
+}
+
+// ==================== MAP POPUP PANEL ====================
+function closeMapPopup() {
+    const panel = document.getElementById('mapPopupPanel');
+    panel.style.display = 'none';
 }
 
 // ==================== DELETE POTHOLE ====================
