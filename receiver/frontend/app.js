@@ -123,8 +123,24 @@ async function loadRoute() {
         setupTableControls();
         setupUIHandlers();
 
+        // Hide page loader after everything is loaded
+        hidePageLoader();
+
     } catch (error) {
         console.error('Error loading route:', error);
+        // Hide loader even on error
+        hidePageLoader();
+    }
+}
+
+function hidePageLoader() {
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+        loader.classList.add('hidden');
+        // Remove from DOM after animation completes
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 300);
     }
 }
 
