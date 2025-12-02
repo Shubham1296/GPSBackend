@@ -3,7 +3,7 @@ import os
 import uuid
 import json
 from datetime import datetime
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pothole_processor import process_frame
@@ -252,3 +252,26 @@ async def route(db: AsyncSession = Depends(get_db)):
     ]
 
     return {"points": data}
+
+
+@app.patch("/pothole/{lat}/{lon}")
+async def update_pothole(lat: float, lon: float, db: AsyncSession = Depends(get_db)):
+    """
+    Sets is_pothole to False for all frames matching the given coordinates.
+    This effectively "deletes" or marks all potholes at this location as not potholes.
+    """
+    # Find all frames with matching coordinates
+    stmt = select(Frame).where(Frame.lat == lat, Frame.lon == lon, Frame.is_pothole == True)
+    result = await db.execute(stmt)
+    frames = result.scalars().all()
+
+    if not frames:
+        raise HTTPException(status_code=404, detail="Pothole not found")
+
+    # Update is_pothole to False for all matching frames
+    for frame in frames:
+        frame.is_pothole = False
+    
+    await db.commit()
+
+    return {"success": True, "message": f"Marked {len(frames)} pothole(s) as resolved"}
