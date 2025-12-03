@@ -58,10 +58,22 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./frontend:/usr/share/nginx/html 
+      - ./frontend:/usr/share/nginx/html
       - ./backend/storage/frames:/usr/share/nginx/html/storage/frames
     depends_on:
       - backend
-    
+
+  frontend-react:
+    build: ./frontend-react
+    container_name: stream_frontend_react
+    ports:
+      - "3000:80"
+    volumes:
+      - ./backend/storage/frames:/usr/share/nginx/html/storage/frames
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8000
+
 volumes:
   pgdata:

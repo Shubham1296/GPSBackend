@@ -1,0 +1,148 @@
+.sidebar {
+  width: 240px;
+  background: #111827;
+  border-right: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.sidebar-title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e5e7eb;
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-title p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.sidebar-toggle {
+  margin-left: auto;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #9ca3af;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.nav-item:hover {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.nav-item.active {
+  background: #1f2937;
+  color: #3b82f6;
+}
+
+.nav-badge {
+  margin-left: auto;
+  padding: 2px 8px;
+  background: #ef4444;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.sidebar.collapsed .nav-item span:not(.nav-badge) {
+  display: none;
+}
+
+.sidebar.collapsed .nav-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-btn:hover {
+  background: #1f2937;
+}
+
+.sidebar-btn.danger {
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.sidebar-btn.danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.sidebar.collapsed .sidebar-title,
+.sidebar.collapsed .sidebar-btn span {
+  display: none;
+}
