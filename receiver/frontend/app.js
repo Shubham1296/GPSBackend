@@ -912,10 +912,36 @@ function setupUIHandlers() {
         exportReport();
     };
 
-    // Search functionality
-    document.getElementById("searchInput").addEventListener("input", (e) => {
-        // Implement search functionality
-        console.log("Search:", e.target.value);
+    // Search functionality - debounced location search
+    let searchTimeout;
+    const searchInput = document.getElementById("searchInput");
+
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.trim();
+
+        // Clear previous timeout
+        clearTimeout(searchTimeout);
+
+        if (query.length < 3) {
+            return; // Wait for at least 3 characters
+        }
+
+        // Debounce search - wait 500ms after user stops typing
+        searchTimeout = setTimeout(() => {
+            searchLocation(query);
+        }, 500);
+    });
+
+    // Handle Enter key for immediate search
+    searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            clearTimeout(searchTimeout);
+            const query = e.target.value.trim();
+            if (query.length > 0) {
+                searchLocation(query);
+            }
+        }
     });
 
     // Time range selector
@@ -1546,6 +1572,176 @@ function renderSeverityTrendChart(labels, severityData) {
 function closeMapPopup() {
     const panel = document.getElementById('mapPopupPanel');
     panel.style.display = 'none';
+}
+
+// ==================== LOCATION SEARCH ====================
+let searchMarker = null;
+
+function showMapLoader() {
+    const overlay = document.getElementById('mapLoadingOverlay');
+    if (overlay) {
+        overlay.style.display = 'flex';
+    }
+}
+
+function hideMapLoader() {
+    const overlay = document.getElementById('mapLoadingOverlay');
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+}
+
+function filterPotholesByLocation(lat, lon, radiusKm = 5) {
+    // Calculate distance between two points using Haversine formula
+    function getDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; // Earth's radius in km
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
+    // Filter potholes by distance and update markers
+    let nearbyCount = 0;
+    potholeMarkers.forEach(marker => {
+        const markerPos = marker.getLatLng();
+        const distance = getDistance(lat, lon, markerPos.lat, markerPos.lng);
+
+        if (distance <= radiusKm) {
+            // Nearby pothole - make it prominent
+            marker.setStyle({
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+            nearbyCount++;
+        } else {
+            // Far pothole - dim it
+            marker.setStyle({
+                opacity: 0.3,
+                fillOpacity: 0.2
+            });
+        }
+    });
+
+    // Update route line opacity if exists
+    if (polylineLayer) {
+        polylineLayer.setStyle({ opacity: 0.3 });
+    }
+
+    console.log(`Found ${nearbyCount} potholes within ${radiusKm}km of searched location`);
+}
+
+async function searchLocation(query) {
+    const searchInput = document.getElementById("searchInput");
+
+    try {
+        // Show loading state
+        searchInput.style.borderColor = "#3b82f6";
+
+        // Use Nominatim API for geocoding
+        const response = await fetch(
+            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`,
+            {
+                headers: {
+                    'User-Agent': 'RoadSenseApp/1.0' // Required by Nominatim
+                }
+            }
+        );
+
+        const results = await response.json();
+
+        if (results.length > 0) {
+            const location = results[0];
+            const lat = parseFloat(location.lat);
+            const lon = parseFloat(location.lon);
+
+            // Remove previous search marker if exists
+            if (searchMarker) {
+                map.removeLayer(searchMarker);
+            }
+
+            // Create custom icon for search result
+            const searchIcon = L.divIcon({
+                className: 'search-marker',
+                html: `
+                    <div style="
+                        background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+                        border: 3px solid white;
+                    ">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                `,
+                iconSize: [40, 40],
+                iconAnchor: [20, 40]
+            });
+
+            // Add new search marker
+            searchMarker = L.marker([lat, lon], { icon: searchIcon }).addTo(map);
+
+            // Add popup
+            searchMarker.bindPopup(`
+                <div style="padding: 8px; min-width: 200px;">
+                    <div style="font-weight: 600; margin-bottom: 8px; color: #e5e7eb;">
+                        ${location.display_name}
+                    </div>
+                    <div style="font-size: 12px; color: #9ca3af;">
+                        ${formatCoords(lat, lon)}
+                    </div>
+                </div>
+            `).openPopup();
+
+            // Fly to location
+            map.flyTo([lat, lon], 15, {
+                duration: 1.5,
+                easeLinearity: 0.25
+            });
+
+            // Show loading overlay after animation starts
+            setTimeout(() => {
+                showMapLoader();
+
+                // Filter and highlight nearby potholes
+                setTimeout(() => {
+                    filterPotholesByLocation(lat, lon);
+                    hideMapLoader();
+                }, 800);
+            }, 500);
+
+            // Success feedback
+            searchInput.style.borderColor = "#22c55e";
+            setTimeout(() => {
+                searchInput.style.borderColor = "";
+            }, 2000);
+
+        } else {
+            // No results found
+            searchInput.style.borderColor = "#ef4444";
+            setTimeout(() => {
+                searchInput.style.borderColor = "";
+            }, 2000);
+            console.log("No location found for:", query);
+        }
+
+    } catch (error) {
+        console.error("Search error:", error);
+        searchInput.style.borderColor = "#ef4444";
+        setTimeout(() => {
+            searchInput.style.borderColor = "";
+        }, 2000);
+    }
 }
 
 // ==================== DELETE POTHOLE ====================

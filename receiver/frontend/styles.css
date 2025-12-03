@@ -1715,6 +1715,67 @@ body, html {
     display: none;
 }
 
+/* Search Marker Animation */
+.search-marker {
+    animation: markerBounce 0.5s ease-out;
+}
+
+@keyframes markerBounce {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Map Loading Overlay */
+.map-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(4px);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-loader-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.map-loader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #1f2937;
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.map-loader-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e5e7eb;
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Map Popup Panel at Bottom Left */
 .map-popup-panel {
     position: absolute;
