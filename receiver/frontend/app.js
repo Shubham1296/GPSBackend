@@ -760,7 +760,7 @@ async function exportSelectedPotholes() {
             exportBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg><span>Image ${i + 1}/${selectedPotholes.length}</span>`;
 
             try {
-                const imageUrl = SERVER + pothole.file_path;
+                const imageUrl = window.location.origin + pothole.file_path;
                 const response = await fetch(imageUrl, {
                     headers: { "Authorization": "Bearer " + TOKEN }
                 });
@@ -1026,8 +1026,8 @@ async function exportReport() {
             exportBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><span>Image ${i + 1}/${potholes.length}</span>`;
 
             try {
-                // Construct image URL (assuming file_path is relative to server)
-                const imageUrl = SERVER + pothole.file_path;
+                // Construct image URL (images are served from frontend nginx on port 8080)
+                const imageUrl = window.location.origin + pothole.file_path;
 
                 const response = await fetch(imageUrl, {
                     headers: {
@@ -1151,7 +1151,7 @@ function viewPotholeImage(lat, lon) {
 
     // Load image
     if (point.file_path) {
-        const imageUrl = SERVER + point.file_path;
+        const imageUrl = window.location.origin + point.file_path;
 
         // Create new image to preload
         const img = new Image();
@@ -1564,6 +1564,8 @@ async function deletePothole(lat, lon) {
 
         if (response.ok) {
             alert('Pothole deleted successfully');
+            // Close the popup
+            closeMapPopup();
             // Reload the route to refresh the map
             loadRoute();
         } else {
