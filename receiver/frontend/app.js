@@ -1946,6 +1946,7 @@ async function submitCreateUser() {
     const email = document.getElementById('newUserEmail').value;
     const password = document.getElementById('newUserPassword').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
+    const role = document.getElementById('userRole').value;
 
     const errorDiv = document.getElementById('createUserError');
     const successDiv = document.getElementById('createUserSuccess');
@@ -1979,13 +1980,13 @@ async function submitCreateUser() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email, password })
+            body: JSON.stringify({ email, password, role })
         });
 
         const data = await response.json();
 
         if (response.ok) {
-            successDiv.textContent = 'User created successfully!';
+            successDiv.textContent = `User created successfully as ${role}!`;
             successDiv.style.display = 'block';
 
             // Clear form
