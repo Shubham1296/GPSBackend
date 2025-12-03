@@ -527,8 +527,11 @@ body, html {
     background: #111827;
     border: 1px solid #1f2937;
     border-radius: 12px;
-    overflow: hidden;
+    overflow: visible; /* Changed from hidden to visible - critical fix for marker clipping */
     position: relative;
+    height: calc(100vh - 200px); /* Responsive height based on viewport */
+    min-height: 500px;
+    max-height: 800px;
 }
 
 .panel-header {
@@ -568,9 +571,10 @@ body, html {
 }
 
 .map-container {
-    height: 100% !important;
-    min-height: 100% !important;
+    height: calc(100% - 50px) !important; /* Fill parent minus header */
+    min-height: 450px !important;
     background: #0a0a0a;
+    position: relative;
 }
 
 /* Side Panels */
@@ -729,6 +733,8 @@ body, html {
 }
 #map{
     height: 100% !important;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
 }
 .map-container-settings{
     height: 100% !important;
@@ -1026,6 +1032,26 @@ body, html {
 /* Leaflet Customization */
 .leaflet-container {
     background: #0a0a0a;
+    z-index: 0;
+}
+
+/* Critical fix: Ensure map pane renders above tiles */
+.leaflet-map-pane {
+    z-index: 2 !important;
+}
+
+/* Ensure tile pane is below */
+.leaflet-tile-pane {
+    z-index: 1 !important;
+}
+
+/* Ensure marker and popup panes are on top */
+.leaflet-marker-pane {
+    z-index: 600 !important;
+}
+
+.leaflet-popup-pane {
+    z-index: 700 !important;
 }
 
 .leaflet-popup-content-wrapper {
