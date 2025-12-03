@@ -16,13 +16,41 @@ let allPoints = [];
 
 // ==================== MAP INITIALIZATION ====================
 const map = L.map("map", {
-    zoomControl: true
+    zoomControl: true,
+    preferCanvas: true, // Better performance for many markers
+    renderer: L.canvas({ tolerance: 5 })
 }).setView([30.7, 76.7], 14);
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+// Add tile layer with error handling
+const tileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     maxZoom: 19,
-    attribution: '© OpenStreetMap contributors © CARTO'
+    attribution: '© OpenStreetMap contributors © CARTO',
+    crossOrigin: true,
+    errorTileUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==', // Transparent fallback
+    keepBuffer: 2 // Keep tiles loaded when panning
 }).addTo(map);
+
+// Handle tile loading errors
+tileLayer.on('tileerror', function(error) {
+    console.warn('Tile loading error:', error);
+});
+
+// Create panes for better z-index management
+map.createPane('gpsPane');
+map.getPane('gpsPane').style.zIndex = 400;
+
+map.createPane('potholePane');
+map.getPane('potholePane').style.zIndex = 450;
+
+// Fix map size on window resize
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        adjustMapHeight(); // Adjust height on resize
+        map.invalidateSize();
+    }, 250);
+});
 
 // ==================== UTILITY FUNCTIONS ====================
 const suburbCache = {}; // Cache to store suburb names
@@ -126,6 +154,14 @@ async function loadRoute() {
         // Hide page loader after everything is loaded
         hidePageLoader();
 
+        // Dynamically adjust map-section height after load
+        adjustMapHeight();
+
+        // Critical: Force map size recalculation after initial load
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 300);
+
     } catch (error) {
         console.error('Error loading route:', error);
         // Hide loader even on error
@@ -145,10 +181,33 @@ function hidePageLoader() {
 }
 
 function renderMap(points) {
-    // Clear existing layers
-    if (polylineLayer) map.removeLayer(polylineLayer);
-    potholeMarkers.forEach(m => map.removeLayer(m));
-    gpsDots.forEach(d => map.removeLayer(d));
+    // Clear existing layers with proper cleanup
+    if (polylineLayer) {
+        try {
+            map.removeLayer(polylineLayer);
+        } catch (e) {
+            console.warn('Error removing polyline:', e);
+        }
+    }
+
+    // Clean up markers with error handling
+    potholeMarkers.forEach(m => {
+        try {
+            m.off(); // Remove all event listeners
+            map.removeLayer(m);
+        } catch (e) {
+            console.warn('Error removing pothole marker:', e);
+        }
+    });
+
+    gpsDots.forEach(d => {
+        try {
+            map.removeLayer(d);
+        } catch (e) {
+            console.warn('Error removing GPS dot:', e);
+        }
+    });
+
     potholeMarkers = [];
     gpsDots = [];
 
@@ -156,18 +215,19 @@ function renderMap(points) {
         .filter(p => p.lat && p.lon)
         .map(p => [p.lat, p.lon]);
 
-    // Add GPS dots
+    // Add GPS dots with pane
     points.forEach(p => {
         if (!p.lat || !p.lon) return;
-        
+
         const dot = L.circleMarker([p.lat, p.lon], {
             radius: 3,
             color: "white",
             fillColor: "white",
             fillOpacity: 0.8,
-            weight: 1
+            weight: 1,
+            pane: 'gpsPane' // Use dedicated pane
         });
-        
+
         dot.addTo(map);
         gpsDots.push(dot);
     });
@@ -183,7 +243,8 @@ function renderMap(points) {
             color: color,
             fillColor: color,
             fillOpacity: 0.8,
-            weight: 2
+            weight: 2,
+            pane: 'potholePane' // Use dedicated pane for better z-index management
         });
 
         marker.on("click", () => {
@@ -266,6 +327,15 @@ function renderMap(points) {
     if (route.length > 0) {
         map.fitBounds(route);
     }
+
+    // Critical: Force map size recalculation after render with delays
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 100);
+
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 500);
 }
 
 // ==================== UPDATE METRICS ====================
@@ -866,7 +936,10 @@ function setupUIHandlers() {
                 mainGrid.style.display = 'grid';
                 tablePanel.style.display = 'block';
                 analyticsView.style.display = 'none';
-                setTimeout(() => map.invalidateSize(), 100);
+                // Multiple invalidateSize calls to ensure proper rendering
+                setTimeout(() => map.invalidateSize(), 50);
+                setTimeout(() => map.invalidateSize(), 200);
+                setTimeout(() => map.invalidateSize(), 500);
             } else if (view === 'alerts') {
                 // Future: Add alerts view
                 console.log('Alerts view not implemented yet');
@@ -889,10 +962,16 @@ function setupUIHandlers() {
             mainContent.style.marginLeft = "240px";
         }
 
-        // Recalculate map size after sidebar animation
+        // Recalculate map size after sidebar animation - multiple calls for reliability
         setTimeout(() => {
             map.invalidateSize();
-        }, 300);
+        }, 100);
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 350);
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 600);
     };
 
     // Logout
@@ -912,10 +991,42 @@ function setupUIHandlers() {
         exportReport();
     };
 
-    // Search functionality
-    document.getElementById("searchInput").addEventListener("input", (e) => {
-        // Implement search functionality
-        console.log("Search:", e.target.value);
+    // Search functionality - debounced location search
+    let searchTimeout;
+    const searchInput = document.getElementById("searchInput");
+
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.trim();
+
+        // Clear previous timeout
+        clearTimeout(searchTimeout);
+
+        // If search is cleared, reset map to default state
+        if (query.length === 0) {
+            resetMapToDefault();
+            return;
+        }
+
+        if (query.length < 3) {
+            return; // Wait for at least 3 characters
+        }
+
+        // Debounce search - wait 500ms after user stops typing
+        searchTimeout = setTimeout(() => {
+            searchLocation(query);
+        }, 500);
+    });
+
+    // Handle Enter key for immediate search
+    searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            clearTimeout(searchTimeout);
+            const query = e.target.value.trim();
+            if (query.length > 0) {
+                searchLocation(query);
+            }
+        }
     });
 
     // Time range selector
@@ -1548,6 +1659,241 @@ function closeMapPopup() {
     panel.style.display = 'none';
 }
 
+// ==================== MAP HEIGHT ADJUSTMENT ====================
+function adjustMapHeight() {
+    const mapSection = document.querySelector('.map-section');
+    const header = document.querySelector('.header');
+    const mainContent = document.querySelector('.main-content');
+
+    if (mapSection && header && mainContent) {
+        // Calculate available height
+        const headerHeight = header.offsetHeight;
+        const viewportHeight = window.innerHeight;
+        const availableHeight = viewportHeight - headerHeight - 120; // 120px for padding/margins
+
+        // Set responsive height with constraints
+        const finalHeight = Math.max(500, Math.min(800, availableHeight));
+        mapSection.style.height = `${finalHeight}px`;
+
+        // Recalculate map size
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 100);
+
+        console.log(`Map section height adjusted to: ${finalHeight}px`);
+    }
+}
+
+// ==================== LOCATION SEARCH ====================
+let searchMarker = null;
+
+function resetMapToDefault() {
+    // Remove search marker if exists
+    if (searchMarker) {
+        map.removeLayer(searchMarker);
+        searchMarker = null;
+    }
+
+    // Reset all pothole markers to full opacity
+    potholeMarkers.forEach(marker => {
+        marker.setStyle({
+            opacity: 1,
+            fillOpacity: 0.8
+        });
+    });
+
+    // Reset polyline opacity if exists
+    if (polylineLayer) {
+        polylineLayer.setStyle({ opacity: 0.6 });
+    }
+
+    // Fit map to show all points again
+    if (allPoints && allPoints.length > 0) {
+        const route = allPoints
+            .filter(p => p.lat && p.lon)
+            .map(p => [p.lat, p.lon]);
+
+        if (route.length > 0) {
+            map.fitBounds(route);
+        }
+    }
+
+    // Reset search input border color
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput) {
+        searchInput.style.borderColor = "";
+    }
+
+    console.log('Map reset to default state');
+}
+
+function showMapLoader() {
+    const overlay = document.getElementById('mapLoadingOverlay');
+    if (overlay) {
+        overlay.style.display = 'flex';
+    }
+}
+
+function hideMapLoader() {
+    const overlay = document.getElementById('mapLoadingOverlay');
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+}
+
+function filterPotholesByLocation(lat, lon, radiusKm = 5) {
+    // Calculate distance between two points using Haversine formula
+    function getDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; // Earth's radius in km
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
+    // Filter potholes by distance and update markers
+    let nearbyCount = 0;
+    potholeMarkers.forEach(marker => {
+        const markerPos = marker.getLatLng();
+        const distance = getDistance(lat, lon, markerPos.lat, markerPos.lng);
+
+        if (distance <= radiusKm) {
+            // Nearby pothole - make it prominent
+            marker.setStyle({
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+            nearbyCount++;
+        } else {
+            // Far pothole - dim it
+            marker.setStyle({
+                opacity: 0.3,
+                fillOpacity: 0.2
+            });
+        }
+    });
+
+    // Update route line opacity if exists
+    if (polylineLayer) {
+        polylineLayer.setStyle({ opacity: 0.3 });
+    }
+
+    console.log(`Found ${nearbyCount} potholes within ${radiusKm}km of searched location`);
+}
+
+async function searchLocation(query) {
+    const searchInput = document.getElementById("searchInput");
+
+    try {
+        // Show loading state
+        searchInput.style.borderColor = "#3b82f6";
+
+        // Use Nominatim API for geocoding
+        const response = await fetch(
+            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`,
+            {
+                headers: {
+                    'User-Agent': 'RoadSenseApp/1.0' // Required by Nominatim
+                }
+            }
+        );
+
+        const results = await response.json();
+
+        if (results.length > 0) {
+            const location = results[0];
+            const lat = parseFloat(location.lat);
+            const lon = parseFloat(location.lon);
+
+            // Remove previous search marker if exists
+            if (searchMarker) {
+                map.removeLayer(searchMarker);
+            }
+
+            // Create custom icon for search result
+            const searchIcon = L.divIcon({
+                className: 'search-marker',
+                html: `
+                    <div style="
+                        background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+                        border: 3px solid white;
+                    ">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                `,
+                iconSize: [40, 40],
+                iconAnchor: [20, 40]
+            });
+
+            // Add new search marker
+            searchMarker = L.marker([lat, lon], { icon: searchIcon }).addTo(map);
+
+            // Add popup
+            searchMarker.bindPopup(`
+                <div style="padding: 8px; min-width: 200px;">
+                    <div style="font-weight: 600; margin-bottom: 8px; color: #e5e7eb;">
+                        ${location.display_name}
+                    </div>
+                    <div style="font-size: 12px; color: #9ca3af;">
+                        ${formatCoords(lat, lon)}
+                    </div>
+                </div>
+            `).openPopup();
+
+            // Fly to location
+            map.flyTo([lat, lon], 15, {
+                duration: 1.5,
+                easeLinearity: 0.25
+            });
+
+            // Show loading overlay after animation starts
+            setTimeout(() => {
+                showMapLoader();
+
+                // Filter and highlight nearby potholes
+                setTimeout(() => {
+                    filterPotholesByLocation(lat, lon);
+                    hideMapLoader();
+                }, 800);
+            }, 500);
+
+            // Success feedback
+            searchInput.style.borderColor = "#22c55e";
+            setTimeout(() => {
+                searchInput.style.borderColor = "";
+            }, 2000);
+
+        } else {
+            // No results found
+            searchInput.style.borderColor = "#ef4444";
+            setTimeout(() => {
+                searchInput.style.borderColor = "";
+            }, 2000);
+            console.log("No location found for:", query);
+        }
+
+    } catch (error) {
+        console.error("Search error:", error);
+        searchInput.style.borderColor = "#ef4444";
+        setTimeout(() => {
+            searchInput.style.borderColor = "";
+        }, 2000);
+    }
+}
+
 // ==================== DELETE POTHOLE ====================
 async function deletePothole(lat, lon) {
     if (!confirm('Are you sure you want to delete this pothole?')) {
@@ -1662,6 +2008,28 @@ async function submitCreateUser() {
 
 // ==================== INITIALIZE ====================
 loadRoute();
+
+// Critical: Ensure map is properly sized on page load
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 100);
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 500);
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 1000);
+});
+
+// Force invalidateSize on any visibility change
+document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 200);
+    }
+});
 
 // Auto-refresh every 30 seconds
 // setInterval(loadRoute, 30000);
