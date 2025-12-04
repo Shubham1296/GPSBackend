@@ -60,6 +60,14 @@ async def on_startup():
     await init_db()
     print("✅ DB initialized")
 
+    # Run migrations automatically
+    try:
+        from migrate_add_pothole_area import run_migration
+        from database import engine
+        await run_migration(engine)
+    except Exception as e:
+        print(f"⚠️  Migration warning: {e}")
+
 
 # Simple viewer page (single page that polls /frame json)
 @app.get("/", response_class=HTMLResponse)
@@ -246,6 +254,7 @@ async def route(db: AsyncSession = Depends(get_db)):
             "lon": f.lon,
             "timestamp": f.timestamp.isoformat(),
             "is_pothole": f.is_pothole,
+            "porthole_area_percentage": f.porthole_area_percentage if hasattr(f, 'porthole_area_percentage') else 0.0,
             "file_path": f"/storage/frames/{os.path.basename(f.file_path)}"
         }
         for f in frames if f.lat and f.lon

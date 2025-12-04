@@ -113,6 +113,18 @@
                     <path d="m21 21-4.35-4.35"></path>
                 </svg>
                 <input type="text" placeholder="Search locations, sectors..." id="searchInput">
+                <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" style="display: none;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <button id="searchBtn" class="search-btn" title="Search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -152,13 +164,25 @@
                 <div class="panel-header">
                     <h3>Live Route Map</h3>
                     <div class="map-controls">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="togglePotholes" checked>
-                            <span>all</span>
+                        <label class="radio-label">
+                            <input type="radio" name="mapFilter" value="all" checked>
+                            <span>All</span>
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="toggleOnlyPotholes">
-                            <span>Only Potholes</span>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="critical">
+                            <span class="severity-badge critical">Critical</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="high">
+                            <span class="severity-badge high">High</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="medium">
+                            <span class="severity-badge medium">Medium</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="low">
+                            <span class="severity-badge low">Low</span>
                         </label>
                     </div>
                 </div>
@@ -513,6 +537,20 @@
                         placeholder="Confirm password"
                         style="width: 100%; padding: 12px 16px; background: #1f2937; border: 1px solid #374151; border-radius: 8px; color: #e5e7eb; font-size: 14px;"
                     />
+                </div>
+                <div class="form-group">
+                    <label for="userRole" style="display: block; margin-bottom: 8px; font-size: 14px; font-weight: 600; color: #e5e7eb;">User Role</label>
+                    <select
+                        id="userRole"
+                        required
+                        style="width: 100%; padding: 12px 16px; background: #1f2937; border: 1px solid #374151; border-radius: 8px; color: #e5e7eb; font-size: 14px; cursor: pointer;"
+                    >
+                        <option value="ordinary">Ordinary User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <div style="margin-top: 6px; font-size: 12px; color: #9ca3af;">
+                        <strong>Ordinary:</strong> Regular user access | <strong>Admin:</strong> Full system access
+                    </div>
                 </div>
                 <div id="createUserError" style="display: none; padding: 12px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; color: #ef4444; font-size: 13px;"></div>
                 <div id="createUserSuccess" style="display: none; padding: 12px; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px; color: #22c55e; font-size: 13px;"></div>
