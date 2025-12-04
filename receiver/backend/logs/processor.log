@@ -1,0 +1,797 @@
+[2025-12-04T16:02:57.655862] 📥 Frame received for processing: 1359ef77-fc04-43af-ba93-9727ec73ceee
+[2025-12-04T16:02:57.657010] ➡️ Sending to pothole API: 1359ef77-fc04-43af-ba93-9727ec73ceee
+[2025-12-04T16:02:57.728869] ❌ Error calling pothole API for 1359ef77-fc04-43af-ba93-9727ec73ceee: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:02:57.752902] 📥 Frame received for processing: 43115f1b-de70-486c-b588-fbd2c84c69b0
+[2025-12-04T16:02:57.753118] ➡️ Sending to pothole API: 43115f1b-de70-486c-b588-fbd2c84c69b0
+[2025-12-04T16:02:57.754210] ❌ Error calling pothole API for 43115f1b-de70-486c-b588-fbd2c84c69b0: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:02:57.960980] 📥 Frame received for processing: 2be49301-3b1a-4ed8-ab1a-2a0a4072a231
+[2025-12-04T16:02:57.961914] ➡️ Sending to pothole API: 2be49301-3b1a-4ed8-ab1a-2a0a4072a231
+[2025-12-04T16:02:57.966171] ❌ Error calling pothole API for 2be49301-3b1a-4ed8-ab1a-2a0a4072a231: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:00.981278] 📥 Frame received for processing: 355ecf39-1c11-4450-a278-22c51ac1bd1e
+[2025-12-04T16:03:00.981811] ➡️ Sending to pothole API: 355ecf39-1c11-4450-a278-22c51ac1bd1e
+[2025-12-04T16:03:00.988851] ❌ Error calling pothole API for 355ecf39-1c11-4450-a278-22c51ac1bd1e: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:01.038317] 📥 Frame received for processing: f494392e-8a19-4da7-b648-a34257655e16
+[2025-12-04T16:03:01.038584] ➡️ Sending to pothole API: f494392e-8a19-4da7-b648-a34257655e16
+[2025-12-04T16:03:01.040075] ❌ Error calling pothole API for f494392e-8a19-4da7-b648-a34257655e16: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:01.272751] 📥 Frame received for processing: 8055ec38-77ca-48e6-86de-1bfc5ab62100
+[2025-12-04T16:03:01.273484] ➡️ Sending to pothole API: 8055ec38-77ca-48e6-86de-1bfc5ab62100
+[2025-12-04T16:03:01.277385] ❌ Error calling pothole API for 8055ec38-77ca-48e6-86de-1bfc5ab62100: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:01.519810] 📥 Frame received for processing: 89b9a1dc-5d71-41a2-bbe0-be41b4e8f8cb
+[2025-12-04T16:03:01.520488] ➡️ Sending to pothole API: 89b9a1dc-5d71-41a2-bbe0-be41b4e8f8cb
+[2025-12-04T16:03:01.523317] ❌ Error calling pothole API for 89b9a1dc-5d71-41a2-bbe0-be41b4e8f8cb: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:02.271968] 📥 Frame received for processing: bc61cf13-8c59-49e0-9584-61bf70ae6982
+[2025-12-04T16:03:02.272488] ➡️ Sending to pothole API: bc61cf13-8c59-49e0-9584-61bf70ae6982
+[2025-12-04T16:03:02.276791] 📥 Frame received for processing: c5eeb38c-3175-4644-bfab-73de448769c2
+[2025-12-04T16:03:02.277231] ➡️ Sending to pothole API: c5eeb38c-3175-4644-bfab-73de448769c2
+[2025-12-04T16:03:02.279056] ❌ Error calling pothole API for bc61cf13-8c59-49e0-9584-61bf70ae6982: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:02.280345] 📥 Frame received for processing: 082ee0d8-32d2-473b-ad8a-3788ef10b2b2
+[2025-12-04T16:03:02.280595] ➡️ Sending to pothole API: 082ee0d8-32d2-473b-ad8a-3788ef10b2b2
+[2025-12-04T16:03:02.281392] ❌ Error calling pothole API for c5eeb38c-3175-4644-bfab-73de448769c2: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:02.282266] ❌ Error calling pothole API for 082ee0d8-32d2-473b-ad8a-3788ef10b2b2: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:02.654553] 📥 Frame received for processing: 8241c22f-27f1-4add-84a8-04ff5009894b
+[2025-12-04T16:03:02.655147] ➡️ Sending to pothole API: 8241c22f-27f1-4add-84a8-04ff5009894b
+[2025-12-04T16:03:02.657290] ❌ Error calling pothole API for 8241c22f-27f1-4add-84a8-04ff5009894b: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.011432] 📥 Frame received for processing: 8e3127d1-d513-488b-ae77-2d6ffd886cc6
+[2025-12-04T16:03:03.011798] ➡️ Sending to pothole API: 8e3127d1-d513-488b-ae77-2d6ffd886cc6
+[2025-12-04T16:03:03.013122] ❌ Error calling pothole API for 8e3127d1-d513-488b-ae77-2d6ffd886cc6: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.252147] 📥 Frame received for processing: e66a30d6-6c82-4f0e-8ac1-4a128303db85
+[2025-12-04T16:03:03.252699] ➡️ Sending to pothole API: e66a30d6-6c82-4f0e-8ac1-4a128303db85
+[2025-12-04T16:03:03.257159] 📥 Frame received for processing: c1ef198f-2520-464a-84e9-29035e52cb76
+[2025-12-04T16:03:03.257582] ➡️ Sending to pothole API: c1ef198f-2520-464a-84e9-29035e52cb76
+[2025-12-04T16:03:03.258629] ❌ Error calling pothole API for e66a30d6-6c82-4f0e-8ac1-4a128303db85: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.259738] 📥 Frame received for processing: b2fca5c3-4b5a-46a6-b192-9d42df04d942
+[2025-12-04T16:03:03.260074] ➡️ Sending to pothole API: b2fca5c3-4b5a-46a6-b192-9d42df04d942
+[2025-12-04T16:03:03.261394] ❌ Error calling pothole API for c1ef198f-2520-464a-84e9-29035e52cb76: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.262102] ❌ Error calling pothole API for b2fca5c3-4b5a-46a6-b192-9d42df04d942: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.318020] 📥 Frame received for processing: 1b6838e0-1995-45cb-bebb-fd0e512bf64f
+[2025-12-04T16:03:03.318453] ➡️ Sending to pothole API: 1b6838e0-1995-45cb-bebb-fd0e512bf64f
+[2025-12-04T16:03:03.320975] ❌ Error calling pothole API for 1b6838e0-1995-45cb-bebb-fd0e512bf64f: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.463410] 📥 Frame received for processing: b4ea9d52-7069-4b6b-b13c-f7c283e5b789
+[2025-12-04T16:03:03.464130] ➡️ Sending to pothole API: b4ea9d52-7069-4b6b-b13c-f7c283e5b789
+[2025-12-04T16:03:03.467054] ❌ Error calling pothole API for b4ea9d52-7069-4b6b-b13c-f7c283e5b789: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.610583] 📥 Frame received for processing: e6853716-4212-47ce-ab7a-d6b627a1f613
+[2025-12-04T16:03:03.611089] ➡️ Sending to pothole API: e6853716-4212-47ce-ab7a-d6b627a1f613
+[2025-12-04T16:03:03.614716] 📥 Frame received for processing: b58b4be1-79a4-4760-9ffa-bd947f5b7582
+[2025-12-04T16:03:03.615010] ➡️ Sending to pothole API: b58b4be1-79a4-4760-9ffa-bd947f5b7582
+[2025-12-04T16:03:03.615982] ❌ Error calling pothole API for e6853716-4212-47ce-ab7a-d6b627a1f613: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.617402] 📥 Frame received for processing: 1d9c3259-dea0-4a94-9fa8-374699ca673b
+[2025-12-04T16:03:03.618061] ➡️ Sending to pothole API: 1d9c3259-dea0-4a94-9fa8-374699ca673b
+[2025-12-04T16:03:03.621381] ❌ Error calling pothole API for b58b4be1-79a4-4760-9ffa-bd947f5b7582: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.623123] ❌ Error calling pothole API for 1d9c3259-dea0-4a94-9fa8-374699ca673b: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.745711] 📥 Frame received for processing: 8449cbdd-06fb-475e-b84c-a8f9f98929f6
+[2025-12-04T16:03:03.747465] ➡️ Sending to pothole API: 8449cbdd-06fb-475e-b84c-a8f9f98929f6
+[2025-12-04T16:03:03.754371] ❌ Error calling pothole API for 8449cbdd-06fb-475e-b84c-a8f9f98929f6: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.821897] 📥 Frame received for processing: 886040df-02f7-4b1b-942a-261e4938dd0f
+[2025-12-04T16:03:03.822417] ➡️ Sending to pothole API: 886040df-02f7-4b1b-942a-261e4938dd0f
+[2025-12-04T16:03:03.825189] 📥 Frame received for processing: 5fc13e17-ab64-4348-9260-fa49f8a08689
+[2025-12-04T16:03:03.825932] ➡️ Sending to pothole API: 5fc13e17-ab64-4348-9260-fa49f8a08689
+[2025-12-04T16:03:03.828390] ❌ Error calling pothole API for 886040df-02f7-4b1b-942a-261e4938dd0f: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:03:03.829684] ❌ Error calling pothole API for 5fc13e17-ab64-4348-9260-fa49f8a08689: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:11.000611] 📥 Frame received for processing: 49c18c93-5918-4e0c-a874-a2aac42a55d7
+[2025-12-04T16:08:11.002150] ➡️ Sending to pothole API: 49c18c93-5918-4e0c-a874-a2aac42a55d7
+[2025-12-04T16:08:11.075340] ❌ Error calling pothole API for 49c18c93-5918-4e0c-a874-a2aac42a55d7: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:11.184718] 📥 Frame received for processing: c041b225-ed4e-4c5c-b820-aad8a8118ecd
+[2025-12-04T16:08:11.185132] ➡️ Sending to pothole API: c041b225-ed4e-4c5c-b820-aad8a8118ecd
+[2025-12-04T16:08:11.187210] ❌ Error calling pothole API for c041b225-ed4e-4c5c-b820-aad8a8118ecd: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:11.325272] 📥 Frame received for processing: 44ee450c-1283-4369-9dd2-07f1f235876f
+[2025-12-04T16:08:11.325584] ➡️ Sending to pothole API: 44ee450c-1283-4369-9dd2-07f1f235876f
+[2025-12-04T16:08:11.327535] ❌ Error calling pothole API for 44ee450c-1283-4369-9dd2-07f1f235876f: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:11.612443] 📥 Frame received for processing: 728b58bc-995d-4c99-83bf-68bffdae1d36
+[2025-12-04T16:08:11.613533] ➡️ Sending to pothole API: 728b58bc-995d-4c99-83bf-68bffdae1d36
+[2025-12-04T16:08:11.617691] ❌ Error calling pothole API for 728b58bc-995d-4c99-83bf-68bffdae1d36: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:11.888358] 📥 Frame received for processing: 9a5f1e1c-4adf-4da1-bdf0-54f10996bd9d
+[2025-12-04T16:08:11.889322] ➡️ Sending to pothole API: 9a5f1e1c-4adf-4da1-bdf0-54f10996bd9d
+[2025-12-04T16:08:11.893333] ❌ Error calling pothole API for 9a5f1e1c-4adf-4da1-bdf0-54f10996bd9d: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:12.015045] 📥 Frame received for processing: 6b57f2ea-94b2-4c0a-ab67-9442cb21b238
+[2025-12-04T16:08:12.016185] ➡️ Sending to pothole API: 6b57f2ea-94b2-4c0a-ab67-9442cb21b238
+[2025-12-04T16:08:12.020088] ❌ Error calling pothole API for 6b57f2ea-94b2-4c0a-ab67-9442cb21b238: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:12.241803] 📥 Frame received for processing: 92fb3105-4bf9-4b49-a976-5590adaba495
+[2025-12-04T16:08:12.242274] ➡️ Sending to pothole API: 92fb3105-4bf9-4b49-a976-5590adaba495
+[2025-12-04T16:08:12.246440] ❌ Error calling pothole API for 92fb3105-4bf9-4b49-a976-5590adaba495: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:12.607100] 📥 Frame received for processing: d47d254a-2bf9-4d04-8810-163f5e38e24f
+[2025-12-04T16:08:12.611658] ➡️ Sending to pothole API: d47d254a-2bf9-4d04-8810-163f5e38e24f
+[2025-12-04T16:08:12.616096] ❌ Error calling pothole API for d47d254a-2bf9-4d04-8810-163f5e38e24f: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:12.822015] 📥 Frame received for processing: 0d055da1-da0e-4839-aaea-2c025cb4d2cf
+[2025-12-04T16:08:12.822548] ➡️ Sending to pothole API: 0d055da1-da0e-4839-aaea-2c025cb4d2cf
+[2025-12-04T16:08:12.825536] ❌ Error calling pothole API for 0d055da1-da0e-4839-aaea-2c025cb4d2cf: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:12.995404] 📥 Frame received for processing: 223f2a7d-f280-46c1-9a4e-0261e96482d3
+[2025-12-04T16:08:12.995905] ➡️ Sending to pothole API: 223f2a7d-f280-46c1-9a4e-0261e96482d3
+[2025-12-04T16:08:12.998674] ❌ Error calling pothole API for 223f2a7d-f280-46c1-9a4e-0261e96482d3: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:13.165076] 📥 Frame received for processing: 45340741-0c78-48f5-a6ed-9105b719ffee
+[2025-12-04T16:08:13.165673] ➡️ Sending to pothole API: 45340741-0c78-48f5-a6ed-9105b719ffee
+[2025-12-04T16:08:13.168485] ❌ Error calling pothole API for 45340741-0c78-48f5-a6ed-9105b719ffee: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:13.357287] 📥 Frame received for processing: 486b7a8c-77dd-4a01-bb42-90c6cc944304
+[2025-12-04T16:08:13.357638] ➡️ Sending to pothole API: 486b7a8c-77dd-4a01-bb42-90c6cc944304
+[2025-12-04T16:08:13.362039] ❌ Error calling pothole API for 486b7a8c-77dd-4a01-bb42-90c6cc944304: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:13.525451] 📥 Frame received for processing: 332d9a1d-d8c3-4b98-a0db-1885a4502a9f
+[2025-12-04T16:08:13.525825] ➡️ Sending to pothole API: 332d9a1d-d8c3-4b98-a0db-1885a4502a9f
+[2025-12-04T16:08:13.527888] ❌ Error calling pothole API for 332d9a1d-d8c3-4b98-a0db-1885a4502a9f: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:13.832922] 📥 Frame received for processing: aff9667c-1937-464c-a9ab-36bb16d39070
+[2025-12-04T16:08:13.833868] ➡️ Sending to pothole API: aff9667c-1937-464c-a9ab-36bb16d39070
+[2025-12-04T16:08:13.837920] ❌ Error calling pothole API for aff9667c-1937-464c-a9ab-36bb16d39070: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:14.024874] 📥 Frame received for processing: 3c0af3eb-663a-4637-8271-3ca58e3a0921
+[2025-12-04T16:08:14.025560] ➡️ Sending to pothole API: 3c0af3eb-663a-4637-8271-3ca58e3a0921
+[2025-12-04T16:08:14.028664] ❌ Error calling pothole API for 3c0af3eb-663a-4637-8271-3ca58e3a0921: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:14.262204] 📥 Frame received for processing: 0e8e103e-3f82-4458-af72-b9a9f7ea307c
+[2025-12-04T16:08:14.263188] ➡️ Sending to pothole API: 0e8e103e-3f82-4458-af72-b9a9f7ea307c
+[2025-12-04T16:08:14.268091] ❌ Error calling pothole API for 0e8e103e-3f82-4458-af72-b9a9f7ea307c: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:14.505511] 📥 Frame received for processing: f86b516c-3e6c-497e-b0ba-2f3f6631a815
+[2025-12-04T16:08:14.506054] ➡️ Sending to pothole API: f86b516c-3e6c-497e-b0ba-2f3f6631a815
+[2025-12-04T16:08:14.508489] ❌ Error calling pothole API for f86b516c-3e6c-497e-b0ba-2f3f6631a815: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:14.691777] 📥 Frame received for processing: 8a033d09-ba6d-418f-a4f3-8cd78e54d0c6
+[2025-12-04T16:08:14.692878] ➡️ Sending to pothole API: 8a033d09-ba6d-418f-a4f3-8cd78e54d0c6
+[2025-12-04T16:08:14.697786] ❌ Error calling pothole API for 8a033d09-ba6d-418f-a4f3-8cd78e54d0c6: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:14.883641] 📥 Frame received for processing: 6c7391b9-083f-4bf5-a287-1742ce512f0e
+[2025-12-04T16:08:14.884226] ➡️ Sending to pothole API: 6c7391b9-083f-4bf5-a287-1742ce512f0e
+[2025-12-04T16:08:14.888695] ❌ Error calling pothole API for 6c7391b9-083f-4bf5-a287-1742ce512f0e: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:15.165074] 📥 Frame received for processing: be7cecbe-f77c-4a2b-8ccd-575880de2880
+[2025-12-04T16:08:15.167797] ➡️ Sending to pothole API: be7cecbe-f77c-4a2b-8ccd-575880de2880
+[2025-12-04T16:08:15.202788] ❌ Error calling pothole API for be7cecbe-f77c-4a2b-8ccd-575880de2880: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:15.358847] 📥 Frame received for processing: c26efc41-b919-42bd-9c81-e42adc3185bc
+[2025-12-04T16:08:15.359207] ➡️ Sending to pothole API: c26efc41-b919-42bd-9c81-e42adc3185bc
+[2025-12-04T16:08:15.361599] ❌ Error calling pothole API for c26efc41-b919-42bd-9c81-e42adc3185bc: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:15.550980] 📥 Frame received for processing: 40fef931-a83c-4515-9555-a70cf7d4f0ed
+[2025-12-04T16:08:15.551317] ➡️ Sending to pothole API: 40fef931-a83c-4515-9555-a70cf7d4f0ed
+[2025-12-04T16:08:15.553401] ❌ Error calling pothole API for 40fef931-a83c-4515-9555-a70cf7d4f0ed: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:15.811249] 📥 Frame received for processing: c602a03d-0dae-4bac-948f-7f2ef239359b
+[2025-12-04T16:08:15.811916] ➡️ Sending to pothole API: c602a03d-0dae-4bac-948f-7f2ef239359b
+[2025-12-04T16:08:15.815832] ❌ Error calling pothole API for c602a03d-0dae-4bac-948f-7f2ef239359b: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:16.006475] 📥 Frame received for processing: 7dbb6703-d84d-4719-a123-c5b776d352f5
+[2025-12-04T16:08:16.007091] ➡️ Sending to pothole API: 7dbb6703-d84d-4719-a123-c5b776d352f5
+[2025-12-04T16:08:16.010753] ❌ Error calling pothole API for 7dbb6703-d84d-4719-a123-c5b776d352f5: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:08:16.477576] 📥 Frame received for processing: 32fba112-6068-40c2-8e12-ea03254c5cd4
+[2025-12-04T16:08:16.479621] ➡️ Sending to pothole API: 32fba112-6068-40c2-8e12-ea03254c5cd4
+[2025-12-04T16:08:16.487944] ❌ Error calling pothole API for 32fba112-6068-40c2-8e12-ea03254c5cd4: Cannot connect to host host.docker.internal:8001 ssl:default [Connect call failed ('192.168.65.254', 8001)]
+[2025-12-04T16:09:44.183457] 📥 Frame received for processing: 53d627b8-3604-41d5-85cd-575a5de2b8a9
+[2025-12-04T16:09:44.184053] ➡️ Sending to pothole API: 53d627b8-3604-41d5-85cd-575a5de2b8a9
+[2025-12-04T16:09:44.979668] 📥 Frame received for processing: a7dfc03f-b74b-4319-868a-8fda21171a7a
+[2025-12-04T16:09:44.980691] ➡️ Sending to pothole API: a7dfc03f-b74b-4319-868a-8fda21171a7a
+[2025-12-04T16:09:45.219080] 📥 Frame received for processing: 6f861b24-63b3-4a6f-b724-ab2716111ad7
+[2025-12-04T16:09:45.219627] ➡️ Sending to pothole API: 6f861b24-63b3-4a6f-b724-ab2716111ad7
+[2025-12-04T16:09:45.396918] 📥 Frame received for processing: 213b73de-8ba6-4abd-8a68-25f49d4ed9b4
+[2025-12-04T16:09:45.397665] ➡️ Sending to pothole API: 213b73de-8ba6-4abd-8a68-25f49d4ed9b4
+[2025-12-04T16:09:45.454467] 📥 Frame received for processing: c19521f6-8d81-4fb7-8df9-5714c5b0ac52
+[2025-12-04T16:09:45.455533] ➡️ Sending to pothole API: c19521f6-8d81-4fb7-8df9-5714c5b0ac52
+[2025-12-04T16:09:45.591359] 📥 Frame received for processing: 82b78ca2-ebfb-43e3-8202-5f3e990cc26a
+[2025-12-04T16:09:45.592077] ➡️ Sending to pothole API: 82b78ca2-ebfb-43e3-8202-5f3e990cc26a
+[2025-12-04T16:09:45.692115] 📥 Frame received for processing: 8b0396c8-43b2-4f27-b648-6ffd8be52022
+[2025-12-04T16:09:45.692642] ➡️ Sending to pothole API: 8b0396c8-43b2-4f27-b648-6ffd8be52022
+[2025-12-04T16:09:45.852172] 📥 Frame received for processing: a8e82540-99ba-410b-bbfc-a7dae53ab299
+[2025-12-04T16:09:45.852778] ➡️ Sending to pothole API: a8e82540-99ba-410b-bbfc-a7dae53ab299
+[2025-12-04T16:09:45.860153] ❌ Error calling pothole API for 53d627b8-3604-41d5-85cd-575a5de2b8a9: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:46.002337] 📥 Frame received for processing: 3224e9cc-9524-476d-90bd-73ccc7d029f5
+[2025-12-04T16:09:46.003628] ➡️ Sending to pothole API: 3224e9cc-9524-476d-90bd-73ccc7d029f5
+[2025-12-04T16:09:46.331657] 📥 Frame received for processing: 5027b006-b0b3-4100-b37c-65063496819a
+[2025-12-04T16:09:46.331998] ➡️ Sending to pothole API: 5027b006-b0b3-4100-b37c-65063496819a
+[2025-12-04T16:09:46.543889] 📥 Frame received for processing: a03690dd-9793-4c71-bf36-3a522e8893fd
+[2025-12-04T16:09:46.544575] ➡️ Sending to pothole API: a03690dd-9793-4c71-bf36-3a522e8893fd
+[2025-12-04T16:09:46.751712] ❌ Error calling pothole API for a7dfc03f-b74b-4319-868a-8fda21171a7a: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.014991] ❌ Error calling pothole API for 6f861b24-63b3-4a6f-b724-ab2716111ad7: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.286728] ❌ Error calling pothole API for 213b73de-8ba6-4abd-8a68-25f49d4ed9b4: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.465629] ❌ Error calling pothole API for c19521f6-8d81-4fb7-8df9-5714c5b0ac52: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.587181] ❌ Error calling pothole API for 82b78ca2-ebfb-43e3-8202-5f3e990cc26a: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.709407] ❌ Error calling pothole API for a8e82540-99ba-410b-bbfc-a7dae53ab299: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:47.846931] ❌ Error calling pothole API for 8b0396c8-43b2-4f27-b648-6ffd8be52022: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:48.117732] ❌ Error calling pothole API for 3224e9cc-9524-476d-90bd-73ccc7d029f5: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:48.752624] ❌ Error calling pothole API for 5027b006-b0b3-4100-b37c-65063496819a: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:48.928875] ❌ Error calling pothole API for a03690dd-9793-4c71-bf36-3a522e8893fd: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:09:54.215084] 📥 Frame received for processing: 89f76e9b-d896-4352-b86c-b3df3f64a87f
+[2025-12-04T16:09:54.216190] ➡️ Sending to pothole API: 89f76e9b-d896-4352-b86c-b3df3f64a87f
+[2025-12-04T16:09:54.446352] 📥 Frame received for processing: 63bc1c40-b125-49c7-b303-822be01151dd
+[2025-12-04T16:09:54.447124] ➡️ Sending to pothole API: 63bc1c40-b125-49c7-b303-822be01151dd
+[2025-12-04T16:10:00.136662] ❌ Error calling pothole API for 89f76e9b-d896-4352-b86c-b3df3f64a87f: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:00.138014] ❌ Error calling pothole API for 63bc1c40-b125-49c7-b303-822be01151dd: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:00.804413] 📥 Frame received for processing: 351400ff-8def-4172-a166-0aa338a231ba
+[2025-12-04T16:10:00.805498] ➡️ Sending to pothole API: 351400ff-8def-4172-a166-0aa338a231ba
+[2025-12-04T16:10:01.224747] 📥 Frame received for processing: 579fa07e-5164-4c27-a9c6-a822ff597fbb
+[2025-12-04T16:10:01.225744] ➡️ Sending to pothole API: 579fa07e-5164-4c27-a9c6-a822ff597fbb
+[2025-12-04T16:10:01.731469] 📥 Frame received for processing: a8ae42b6-9fa9-4895-b0ac-3c3f2a30b723
+[2025-12-04T16:10:01.732275] ➡️ Sending to pothole API: a8ae42b6-9fa9-4895-b0ac-3c3f2a30b723
+[2025-12-04T16:10:01.917151] 📥 Frame received for processing: f476c08d-ff4d-40c9-a0bc-edd3e6893255
+[2025-12-04T16:10:01.917834] ➡️ Sending to pothole API: f476c08d-ff4d-40c9-a0bc-edd3e6893255
+[2025-12-04T16:10:02.006831] 📥 Frame received for processing: 796d4949-db45-40b4-b524-fb8fc0d31375
+[2025-12-04T16:10:02.007409] ➡️ Sending to pothole API: 796d4949-db45-40b4-b524-fb8fc0d31375
+[2025-12-04T16:10:02.269772] 📥 Frame received for processing: 3ae3163f-a2c5-4dc8-94e3-5b538c45257b
+[2025-12-04T16:10:02.270476] ➡️ Sending to pothole API: 3ae3163f-a2c5-4dc8-94e3-5b538c45257b
+[2025-12-04T16:10:03.521802] 📥 Frame received for processing: 284a4b97-e8a1-4251-9dc4-a18860794d58
+[2025-12-04T16:10:03.522615] ➡️ Sending to pothole API: 284a4b97-e8a1-4251-9dc4-a18860794d58
+[2025-12-04T16:10:03.571365] ❌ Error calling pothole API for 579fa07e-5164-4c27-a9c6-a822ff597fbb: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:03.920331] ❌ Error calling pothole API for a8ae42b6-9fa9-4895-b0ac-3c3f2a30b723: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:04.062095] ❌ Error calling pothole API for 351400ff-8def-4172-a166-0aa338a231ba: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:04.173383] ❌ Error calling pothole API for f476c08d-ff4d-40c9-a0bc-edd3e6893255: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:04.621359] ❌ Error calling pothole API for 796d4949-db45-40b4-b524-fb8fc0d31375: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:04.830406] ❌ Error calling pothole API for 3ae3163f-a2c5-4dc8-94e3-5b538c45257b: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:05.506507] 📥 Frame received for processing: 81e8aa8b-1983-43a4-9422-6395bb098ef9
+[2025-12-04T16:10:05.507612] ➡️ Sending to pothole API: 81e8aa8b-1983-43a4-9422-6395bb098ef9
+[2025-12-04T16:10:06.705553] 📥 Frame received for processing: c243ecce-ce71-4bf4-9756-fb3cfef01fab
+[2025-12-04T16:10:06.706637] ➡️ Sending to pothole API: c243ecce-ce71-4bf4-9756-fb3cfef01fab
+[2025-12-04T16:10:06.950476] ❌ Error calling pothole API for 284a4b97-e8a1-4251-9dc4-a18860794d58: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:07.856663] 📥 Frame received for processing: 698434b8-b39d-4f80-8f7a-b77f847bbde6
+[2025-12-04T16:10:07.857338] ➡️ Sending to pothole API: 698434b8-b39d-4f80-8f7a-b77f847bbde6
+[2025-12-04T16:10:08.640764] ❌ Error calling pothole API for 81e8aa8b-1983-43a4-9422-6395bb098ef9: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:08.732483] 📥 Frame received for processing: 9c2ce32b-1bad-4430-9d15-0a275623ba36
+[2025-12-04T16:10:08.733299] ➡️ Sending to pothole API: 9c2ce32b-1bad-4430-9d15-0a275623ba36
+[2025-12-04T16:10:08.911206] ❌ Error calling pothole API for c243ecce-ce71-4bf4-9756-fb3cfef01fab: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:09.686462] 📥 Frame received for processing: 0d6fbac4-7959-403e-abf5-b99e2aeb1b77
+[2025-12-04T16:10:09.687506] ➡️ Sending to pothole API: 0d6fbac4-7959-403e-abf5-b99e2aeb1b77
+[2025-12-04T16:10:10.179963] 📥 Frame received for processing: 5fdf047a-3a57-44db-82b6-f797ae779c02
+[2025-12-04T16:10:10.181226] ➡️ Sending to pothole API: 5fdf047a-3a57-44db-82b6-f797ae779c02
+[2025-12-04T16:10:10.661599] ❌ Error calling pothole API for 698434b8-b39d-4f80-8f7a-b77f847bbde6: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:10.663504] 📥 Frame received for processing: e020c73f-78ce-41c4-9c75-3e12adea5c2d
+[2025-12-04T16:10:10.663932] ➡️ Sending to pothole API: e020c73f-78ce-41c4-9c75-3e12adea5c2d
+[2025-12-04T16:10:10.912108] ❌ Error calling pothole API for 9c2ce32b-1bad-4430-9d15-0a275623ba36: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:11.093981] 📥 Frame received for processing: 6ea5be83-2de1-475c-89f6-e4d7cae8e463
+[2025-12-04T16:10:11.094524] ➡️ Sending to pothole API: 6ea5be83-2de1-475c-89f6-e4d7cae8e463
+[2025-12-04T16:10:11.611599] 📥 Frame received for processing: 4606fe8a-521f-4438-95c8-7258fc44aa35
+[2025-12-04T16:10:11.612464] ➡️ Sending to pothole API: 4606fe8a-521f-4438-95c8-7258fc44aa35
+[2025-12-04T16:10:11.805361] ❌ Error calling pothole API for 0d6fbac4-7959-403e-abf5-b99e2aeb1b77: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:11.964773] 📥 Frame received for processing: ea9030cc-bd8b-446a-92d1-17fe6e7fe1b2
+[2025-12-04T16:10:11.965440] ➡️ Sending to pothole API: ea9030cc-bd8b-446a-92d1-17fe6e7fe1b2
+[2025-12-04T16:10:12.210285] ❌ Error calling pothole API for 5fdf047a-3a57-44db-82b6-f797ae779c02: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:12.372207] 📥 Frame received for processing: 3a09cfc7-caab-4452-9a3e-f74a7eef9fc8
+[2025-12-04T16:10:12.372750] ➡️ Sending to pothole API: 3a09cfc7-caab-4452-9a3e-f74a7eef9fc8
+[2025-12-04T16:10:12.690525] 📥 Frame received for processing: a313b4da-2540-4bd6-99f6-49f733e88918
+[2025-12-04T16:10:12.690941] ➡️ Sending to pothole API: a313b4da-2540-4bd6-99f6-49f733e88918
+[2025-12-04T16:10:12.941046] 📥 Frame received for processing: 331b5557-470a-4a3a-8d01-c435d30b9463
+[2025-12-04T16:10:12.941817] ➡️ Sending to pothole API: 331b5557-470a-4a3a-8d01-c435d30b9463
+[2025-12-04T16:10:13.040736] ❌ Error calling pothole API for 6ea5be83-2de1-475c-89f6-e4d7cae8e463: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:13.252192] 📥 Frame received for processing: fd6463b8-ef99-4903-a8c3-15a9981d16a1
+[2025-12-04T16:10:13.252733] ➡️ Sending to pothole API: fd6463b8-ef99-4903-a8c3-15a9981d16a1
+[2025-12-04T16:10:13.928106] ❌ Error calling pothole API for ea9030cc-bd8b-446a-92d1-17fe6e7fe1b2: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:14.508716] ❌ Error calling pothole API for 3a09cfc7-caab-4452-9a3e-f74a7eef9fc8: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:14.826666] ❌ Error calling pothole API for a313b4da-2540-4bd6-99f6-49f733e88918: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:14.944451] ❌ Error calling pothole API for 331b5557-470a-4a3a-8d01-c435d30b9463: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:15.438667] ❌ Error calling pothole API for fd6463b8-ef99-4903-a8c3-15a9981d16a1: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://172.174.136.7:8001/predict_severity'
+[2025-12-04T16:10:41.025405] ❌ Error calling pothole API for e020c73f-78ce-41c4-9c75-3e12adea5c2d: Connection timeout to host http://172.174.136.7:8001/predict_severity
+[2025-12-04T16:10:42.018203] ❌ Error calling pothole API for 4606fe8a-521f-4438-95c8-7258fc44aa35: Connection timeout to host http://172.174.136.7:8001/predict_severity
+[2025-12-04T16:15:38.959163] 📥 Frame received for processing: 212f13c1-7dc4-498d-9b14-3b98c657a990
+[2025-12-04T16:15:38.959942] ➡️ Sending to pothole API: 212f13c1-7dc4-498d-9b14-3b98c657a990
+[2025-12-04T16:15:39.632331] 📥 Frame received for processing: 1e771e4f-c595-4e26-b646-29a0bc9e41b2
+[2025-12-04T16:15:39.632620] ➡️ Sending to pothole API: 1e771e4f-c595-4e26-b646-29a0bc9e41b2
+[2025-12-04T16:15:39.966886] 📥 Frame received for processing: 3e259bee-fe27-4376-bfa7-7220dd34e833
+[2025-12-04T16:15:39.967460] ➡️ Sending to pothole API: 3e259bee-fe27-4376-bfa7-7220dd34e833
+[2025-12-04T16:15:40.381140] 📥 Frame received for processing: 8eee9208-8128-4de7-8696-080205c6c554
+[2025-12-04T16:15:40.384727] ➡️ Sending to pothole API: 8eee9208-8128-4de7-8696-080205c6c554
+[2025-12-04T16:15:45.486790] ❌ API error 500 for 212f13c1-7dc4-498d-9b14-3b98c657a990: Internal Server Error
+[2025-12-04T16:15:45.538971] 📥 Frame received for processing: 5788348c-c6d6-48cc-9c83-6542d1ca357a
+[2025-12-04T16:15:45.539309] ➡️ Sending to pothole API: 5788348c-c6d6-48cc-9c83-6542d1ca357a
+[2025-12-04T16:15:45.899005] 📥 Frame received for processing: 39cd13e0-a95f-4569-93c5-6eb3b130e30c
+[2025-12-04T16:15:45.899884] ➡️ Sending to pothole API: 39cd13e0-a95f-4569-93c5-6eb3b130e30c
+[2025-12-04T16:15:46.265742] 📥 Frame received for processing: 64f50698-2bfd-4b06-93bf-30af91ab970e
+[2025-12-04T16:15:46.266540] ➡️ Sending to pothole API: 64f50698-2bfd-4b06-93bf-30af91ab970e
+[2025-12-04T16:15:46.420293] 📥 Frame received for processing: 0a3f0e47-768f-48a7-b704-8c00f713979f
+[2025-12-04T16:15:46.421705] ➡️ Sending to pothole API: 0a3f0e47-768f-48a7-b704-8c00f713979f
+[2025-12-04T16:15:46.460051] ❌ API error 500 for 1e771e4f-c595-4e26-b646-29a0bc9e41b2: Internal Server Error
+[2025-12-04T16:15:46.569463] ❌ API error 500 for 3e259bee-fe27-4376-bfa7-7220dd34e833: Internal Server Error
+[2025-12-04T16:15:47.355453] ❌ API error 500 for 8eee9208-8128-4de7-8696-080205c6c554: Internal Server Error
+[2025-12-04T16:15:47.527096] ⬅️ API response for 5788348c-c6d6-48cc-9c83-6542d1ca357a: [{'bbox': [462.2325439453125, 1257.225341796875, 1080.0, 1332.46630859375], 'confidence': 0.2938723564147949, 'class_id': 0, 'porthole_area_percentage': 2.235243055555556}]
+[2025-12-04T16:15:47.527926] 📊 Pothole area percentage: 2.235243055555556%
+[2025-12-04T16:15:47.555084] 🚨 Pothole detected! Area: 2.235243055555556% - DB updated for 5788348c-c6d6-48cc-9c83-6542d1ca357a
+[2025-12-04T16:15:48.227987] ❌ API error 500 for 39cd13e0-a95f-4569-93c5-6eb3b130e30c: Internal Server Error
+[2025-12-04T16:15:48.389189] ❌ API error 500 for 0a3f0e47-768f-48a7-b704-8c00f713979f: Internal Server Error
+[2025-12-04T16:15:49.203475] ❌ API error 500 for 64f50698-2bfd-4b06-93bf-30af91ab970e: Internal Server Error
+[2025-12-04T17:02:52.786432] 📥 Frame received for processing: 23a889ac-16ea-4fe2-ae5e-6ba3a71e1e95
+[2025-12-04T17:02:52.788514] ➡️ Sending to pothole API: 23a889ac-16ea-4fe2-ae5e-6ba3a71e1e95
+[2025-12-04T17:02:52.836104] 📥 Frame received for processing: da6c5839-5ea4-4988-8548-ab53e8a3b647
+[2025-12-04T17:02:52.836402] ➡️ Sending to pothole API: da6c5839-5ea4-4988-8548-ab53e8a3b647
+[2025-12-04T17:02:53.034445] 📥 Frame received for processing: 3bc9fbec-5341-432e-8fb0-6ac9a9d27f1d
+[2025-12-04T17:02:53.034847] ➡️ Sending to pothole API: 3bc9fbec-5341-432e-8fb0-6ac9a9d27f1d
+[2025-12-04T17:02:53.285691] 📥 Frame received for processing: 59d03d51-f745-4b15-a109-6d4d291219f8
+[2025-12-04T17:02:53.286517] ➡️ Sending to pothole API: 59d03d51-f745-4b15-a109-6d4d291219f8
+[2025-12-04T17:02:53.567108] 📥 Frame received for processing: 7802bafd-72d0-48ad-a19d-7e12b94ab9ea
+[2025-12-04T17:02:53.567608] ➡️ Sending to pothole API: 7802bafd-72d0-48ad-a19d-7e12b94ab9ea
+[2025-12-04T17:02:53.773132] 📥 Frame received for processing: 0b6be8b8-0a11-4ed4-8797-d610b8a251d4
+[2025-12-04T17:02:53.773832] ➡️ Sending to pothole API: 0b6be8b8-0a11-4ed4-8797-d610b8a251d4
+[2025-12-04T17:02:54.003920] 📥 Frame received for processing: 6f91543d-bc59-4059-a2e9-0ae1f5b21c9c
+[2025-12-04T17:02:54.004789] ➡️ Sending to pothole API: 6f91543d-bc59-4059-a2e9-0ae1f5b21c9c
+[2025-12-04T17:02:54.098962] ❌ API error 500 for 23a889ac-16ea-4fe2-ae5e-6ba3a71e1e95: Internal Server Error
+[2025-12-04T17:02:54.189758] 📥 Frame received for processing: d621b531-fd97-42b7-bbf5-ed5f42b00b5d
+[2025-12-04T17:02:54.190488] ➡️ Sending to pothole API: d621b531-fd97-42b7-bbf5-ed5f42b00b5d
+[2025-12-04T17:02:54.400872] 📥 Frame received for processing: 2529f68f-717a-4fe5-a7e0-b61acc3eb463
+[2025-12-04T17:02:54.401748] ➡️ Sending to pothole API: 2529f68f-717a-4fe5-a7e0-b61acc3eb463
+[2025-12-04T17:02:54.475099] ❌ API error 500 for da6c5839-5ea4-4988-8548-ab53e8a3b647: Internal Server Error
+[2025-12-04T17:02:54.610868] 📥 Frame received for processing: b777c34e-a28c-4280-b8e1-e3f11e1dffe5
+[2025-12-04T17:02:54.611672] ➡️ Sending to pothole API: b777c34e-a28c-4280-b8e1-e3f11e1dffe5
+[2025-12-04T17:02:54.708488] ❌ API error 500 for 3bc9fbec-5341-432e-8fb0-6ac9a9d27f1d: Internal Server Error
+[2025-12-04T17:02:54.870058] 📥 Frame received for processing: 7c3582cb-bb66-4636-a653-10e2fa57cfb3
+[2025-12-04T17:02:54.870730] ➡️ Sending to pothole API: 7c3582cb-bb66-4636-a653-10e2fa57cfb3
+[2025-12-04T17:02:54.982075] ❌ API error 500 for 59d03d51-f745-4b15-a109-6d4d291219f8: Internal Server Error
+[2025-12-04T17:02:55.071989] 📥 Frame received for processing: 385e997d-27ae-4c58-aa74-c865aabe5b91
+[2025-12-04T17:02:55.072442] ➡️ Sending to pothole API: 385e997d-27ae-4c58-aa74-c865aabe5b91
+[2025-12-04T17:02:55.274007] 📥 Frame received for processing: ab0487b8-22e5-4302-8ada-cfb14ea9e5aa
+[2025-12-04T17:02:55.274703] ➡️ Sending to pothole API: ab0487b8-22e5-4302-8ada-cfb14ea9e5aa
+[2025-12-04T17:02:55.542859] 📥 Frame received for processing: 9a96cb41-53f8-4bec-b92c-3a411046b56b
+[2025-12-04T17:02:55.543691] ➡️ Sending to pothole API: 9a96cb41-53f8-4bec-b92c-3a411046b56b
+[2025-12-04T17:02:55.663746] ⬅️ API response for 7802bafd-72d0-48ad-a19d-7e12b94ab9ea: [{'bbox': [612.8983764648438, 1023.9508666992188, 750.45068359375, 1369.6173095703125], 'confidence': 0.4541807770729065, 'class_id': 0, 'porthole_area_percentage': 2.302662037037037}]
+[2025-12-04T17:02:55.665725] 📊 Pothole area percentage: 2.302662037037037%
+[2025-12-04T17:02:55.696255] 🚨 Pothole detected! Area: 2.302662037037037% - DB updated for 7802bafd-72d0-48ad-a19d-7e12b94ab9ea
+[2025-12-04T17:02:55.710969] 📥 Frame received for processing: f9a0acc6-348b-45ea-b3b7-bc470521004f
+[2025-12-04T17:02:55.711337] ➡️ Sending to pothole API: f9a0acc6-348b-45ea-b3b7-bc470521004f
+[2025-12-04T17:02:55.818293] ⬅️ API response for 0b6be8b8-0a11-4ed4-8797-d610b8a251d4: [{'bbox': [662.381103515625, 992.5951538085938, 802.271484375, 1344.4205322265625], 'confidence': 0.7855218052864075, 'class_id': 0, 'porthole_area_percentage': 2.376543209876543}]
+[2025-12-04T17:02:55.819237] 📊 Pothole area percentage: 2.376543209876543%
+[2025-12-04T17:02:55.822708] 🚨 Pothole detected! Area: 2.376543209876543% - DB updated for 0b6be8b8-0a11-4ed4-8797-d610b8a251d4
+[2025-12-04T17:02:55.957220] ⬅️ API response for 6f91543d-bc59-4059-a2e9-0ae1f5b21c9c: [{'bbox': [724.6666259765625, 927.5108642578125, 910.5794677734375, 1296.3531494140625], 'confidence': 0.6686289310455322, 'class_id': 0, 'porthole_area_percentage': 3.309895833333333}]
+[2025-12-04T17:02:55.960603] 📊 Pothole area percentage: 3.309895833333333%
+[2025-12-04T17:02:55.988577] 🚨 Pothole detected! Area: 3.309895833333333% - DB updated for 6f91543d-bc59-4059-a2e9-0ae1f5b21c9c
+[2025-12-04T17:02:56.023342] 📥 Frame received for processing: d2b0936e-738e-41db-9854-122ea7a71ff1
+[2025-12-04T17:02:56.023747] ➡️ Sending to pothole API: d2b0936e-738e-41db-9854-122ea7a71ff1
+[2025-12-04T17:02:56.236293] 📥 Frame received for processing: 6f1e25d3-b7ad-48dc-b113-5521e9e969e7
+[2025-12-04T17:02:56.236942] ➡️ Sending to pothole API: 6f1e25d3-b7ad-48dc-b113-5521e9e969e7
+[2025-12-04T17:02:56.374407] 📥 Frame received for processing: cac85ae6-8d9b-45f0-b882-ce0052c54544
+[2025-12-04T17:02:56.375065] ➡️ Sending to pothole API: cac85ae6-8d9b-45f0-b882-ce0052c54544
+[2025-12-04T17:02:56.542260] ⬅️ API response for d621b531-fd97-42b7-bbf5-ed5f42b00b5d: [{'bbox': [759.747802734375, 914.111572265625, 952.3331909179688, 1306.9013671875], 'confidence': 0.6109627485275269, 'class_id': 0, 'porthole_area_percentage': 5.130883487654321}, {'bbox': [745.9673461914062, 899.6209716796875, 947.3057250976562, 1416.9407958984375], 'confidence': 0.3225352466106415, 'class_id': 0, 'porthole_area_percentage': 5.130883487654321}]
+[2025-12-04T17:02:56.544023] 📊 Pothole area percentage: 5.130883487654321%
+[2025-12-04T17:02:56.550696] 🚨 Pothole detected! Area: 5.130883487654321% - DB updated for d621b531-fd97-42b7-bbf5-ed5f42b00b5d
+[2025-12-04T17:02:56.654722] 📥 Frame received for processing: 1f80aab3-6b83-4847-a582-858f67524091
+[2025-12-04T17:02:56.656539] ➡️ Sending to pothole API: 1f80aab3-6b83-4847-a582-858f67524091
+[2025-12-04T17:02:56.702033] ⬅️ API response for 2529f68f-717a-4fe5-a7e0-b61acc3eb463: [{'bbox': [697.7901611328125, 876.7703247070312, 875.2216186523438, 1280.968994140625], 'confidence': 0.7080214619636536, 'class_id': 0, 'porthole_area_percentage': 3.4679783950617287}]
+[2025-12-04T17:02:56.703432] 📊 Pothole area percentage: 3.4679783950617287%
+[2025-12-04T17:02:56.707022] 🚨 Pothole detected! Area: 3.4679783950617287% - DB updated for 2529f68f-717a-4fe5-a7e0-b61acc3eb463
+[2025-12-04T17:02:56.808084] 📥 Frame received for processing: e51608a3-418d-4d0a-8b3b-0e4c42358f3d
+[2025-12-04T17:02:56.808676] ➡️ Sending to pothole API: e51608a3-418d-4d0a-8b3b-0e4c42358f3d
+[2025-12-04T17:02:56.840911] ⬅️ API response for 7c3582cb-bb66-4636-a653-10e2fa57cfb3: [{'bbox': [762.129638671875, 750.1468505859375, 944.3682861328125, 1200.1922607421875], 'confidence': 0.3840661942958832, 'class_id': 0, 'porthole_area_percentage': 3.9496527777777777}]
+[2025-12-04T17:02:56.841395] 📊 Pothole area percentage: 3.9496527777777777%
+[2025-12-04T17:02:56.843657] 🚨 Pothole detected! Area: 3.9496527777777777% - DB updated for 7c3582cb-bb66-4636-a653-10e2fa57cfb3
+[2025-12-04T17:02:57.016584] 📥 Frame received for processing: 2b5e4e1a-5931-4c4f-b065-e5b252b66570
+[2025-12-04T17:02:57.017058] ➡️ Sending to pothole API: 2b5e4e1a-5931-4c4f-b065-e5b252b66570
+[2025-12-04T17:02:57.019989] ⬅️ API response for b777c34e-a28c-4280-b8e1-e3f11e1dffe5: [{'bbox': [686.7804565429688, 783.5050048828125, 885.1043701171875, 1199.971923828125], 'confidence': 0.690611720085144, 'class_id': 0, 'porthole_area_percentage': 4.192949459876543}, {'bbox': [479.6531982421875, 431.892333984375, 536.3876953125, 504.26513671875], 'confidence': 0.31074443459510803, 'class_id': 0, 'porthole_area_percentage': 4.192949459876543}]
+[2025-12-04T17:02:57.020321] 📊 Pothole area percentage: 4.192949459876543%
+[2025-12-04T17:02:57.021693] 🚨 Pothole detected! Area: 4.192949459876543% - DB updated for b777c34e-a28c-4280-b8e1-e3f11e1dffe5
+[2025-12-04T17:02:57.259357] 📥 Frame received for processing: 379eb5d0-278d-4d03-993b-1cf44683dc8c
+[2025-12-04T17:02:57.260362] ➡️ Sending to pothole API: 379eb5d0-278d-4d03-993b-1cf44683dc8c
+[2025-12-04T17:02:57.410807] ⬅️ API response for 385e997d-27ae-4c58-aa74-c865aabe5b91: [{'bbox': [778.147705078125, 736.9378662109375, 971.9653930664062, 1165.210693359375], 'confidence': 0.795752227306366, 'class_id': 0, 'porthole_area_percentage': 3.9929108796296298}]
+[2025-12-04T17:02:57.413359] 📊 Pothole area percentage: 3.9929108796296298%
+[2025-12-04T17:02:57.418789] 🚨 Pothole detected! Area: 3.9929108796296298% - DB updated for 385e997d-27ae-4c58-aa74-c865aabe5b91
+[2025-12-04T17:02:57.564739] 📥 Frame received for processing: f144c885-12c4-44ee-93db-82b3e9d3c9c7
+[2025-12-04T17:02:57.565461] ➡️ Sending to pothole API: f144c885-12c4-44ee-93db-82b3e9d3c9c7
+[2025-12-04T17:02:57.567961] ⬅️ API response for ab0487b8-22e5-4302-8ada-cfb14ea9e5aa: [{'bbox': [749.5719604492188, 697.2819213867188, 949.1995849609375, 1135.9932861328125], 'confidence': 0.7642930150032043, 'class_id': 0, 'porthole_area_percentage': 4.224537037037037}]
+[2025-12-04T17:02:57.568300] 📊 Pothole area percentage: 4.224537037037037%
+[2025-12-04T17:02:57.570372] 🚨 Pothole detected! Area: 4.224537037037037% - DB updated for ab0487b8-22e5-4302-8ada-cfb14ea9e5aa
+[2025-12-04T17:02:57.815491] 📥 Frame received for processing: 55f0615a-d900-40a0-ae6e-2ee6a0201698
+[2025-12-04T17:02:57.816256] ➡️ Sending to pothole API: 55f0615a-d900-40a0-ae6e-2ee6a0201698
+[2025-12-04T17:02:57.892414] ⬅️ API response for 9a96cb41-53f8-4bec-b92c-3a411046b56b: [{'bbox': [776.0333862304688, 641.8668212890625, 952.8788452148438, 1093.675537109375], 'confidence': 0.7109414935112, 'class_id': 0, 'porthole_area_percentage': 3.8364197530864197}]
+[2025-12-04T17:02:57.893425] 📊 Pothole area percentage: 3.8364197530864197%
+[2025-12-04T17:02:57.898720] 🚨 Pothole detected! Area: 3.8364197530864197% - DB updated for 9a96cb41-53f8-4bec-b92c-3a411046b56b
+[2025-12-04T17:02:58.037506] ⬅️ API response for f9a0acc6-348b-45ea-b3b7-bc470521004f: [{'bbox': [738.9006958007812, 606.1565551757812, 919.9026489257812, 1061.739013671875], 'confidence': 0.7952781319618225, 'class_id': 0, 'porthole_area_percentage': 4.148389274691358}, {'bbox': [499.6853332519531, 228.63217163085938, 546.8930053710938, 306.6587219238281], 'confidence': 0.2749188542366028, 'class_id': 0, 'porthole_area_percentage': 4.148389274691358}]
+[2025-12-04T17:02:58.038866] 📊 Pothole area percentage: 4.148389274691358%
+[2025-12-04T17:02:58.050233] 🚨 Pothole detected! Area: 4.148389274691358% - DB updated for f9a0acc6-348b-45ea-b3b7-bc470521004f
+[2025-12-04T17:02:58.295469] 📥 Frame received for processing: a91de9c3-2cc2-4515-988f-cb979a9a4021
+[2025-12-04T17:02:58.296272] ➡️ Sending to pothole API: a91de9c3-2cc2-4515-988f-cb979a9a4021
+[2025-12-04T17:02:58.395230] 📥 Frame received for processing: 0ffac7e3-dbb1-43e7-943a-d36978844c2c
+[2025-12-04T17:02:58.395866] ➡️ Sending to pothole API: 0ffac7e3-dbb1-43e7-943a-d36978844c2c
+[2025-12-04T17:02:58.400389] ⬅️ API response for 6f1e25d3-b7ad-48dc-b113-5521e9e969e7: [{'bbox': [643.0402221679688, 547.64599609375, 817.8226928710938, 978.3696899414062], 'confidence': 0.4344277083873749, 'class_id': 0, 'porthole_area_percentage': 3.8553240740740744}, {'bbox': [386.07269287109375, 150.56932067871094, 441.3857421875, 240.2750701904297], 'confidence': 0.260109007358551, 'class_id': 0, 'porthole_area_percentage': 3.8553240740740744}]
+[2025-12-04T17:02:58.400921] 📊 Pothole area percentage: 3.8553240740740744%
+[2025-12-04T17:02:58.404655] 🚨 Pothole detected! Area: 3.8553240740740744% - DB updated for 6f1e25d3-b7ad-48dc-b113-5521e9e969e7
+[2025-12-04T17:02:58.654964] ⬅️ API response for d2b0936e-738e-41db-9854-122ea7a71ff1: [{'bbox': [674.7373046875, 548.3271484375, 876.1220092773438, 1002.9328002929688], 'confidence': 0.8058704733848572, 'class_id': 0, 'porthole_area_percentage': 4.422646604938272}]
+[2025-12-04T17:02:58.656181] 📊 Pothole area percentage: 4.422646604938272%
+[2025-12-04T17:02:58.660399] 🚨 Pothole detected! Area: 4.422646604938272% - DB updated for d2b0936e-738e-41db-9854-122ea7a71ff1
+[2025-12-04T17:02:58.773177] ⬅️ API response for cac85ae6-8d9b-45f0-b882-ce0052c54544: [{'bbox': [606.0368041992188, 589.3320922851562, 771.5409545898438, 1006.8923950195312], 'confidence': 0.7530611157417297, 'class_id': 0, 'porthole_area_percentage': 3.3181423611111107}]
+[2025-12-04T17:02:58.774168] 📊 Pothole area percentage: 3.3181423611111107%
+[2025-12-04T17:02:58.778583] 🚨 Pothole detected! Area: 3.3181423611111107% - DB updated for cac85ae6-8d9b-45f0-b882-ce0052c54544
+[2025-12-04T17:02:59.011868] 📥 Frame received for processing: e62cba89-2dd2-47c5-bd34-ae5fdc20a1e7
+[2025-12-04T17:02:59.012762] ➡️ Sending to pothole API: e62cba89-2dd2-47c5-bd34-ae5fdc20a1e7
+[2025-12-04T17:02:59.344904] ⬅️ API response for 1f80aab3-6b83-4847-a582-858f67524091: [{'bbox': [533.1990966796875, 638.6511840820312, 705.4762573242188, 1019.62353515625], 'confidence': 0.5642662644386292, 'class_id': 0, 'porthole_area_percentage': 3.322096836419753}, {'bbox': [938.0733032226562, 822.2900390625, 993.0401000976562, 883.6159057617188], 'confidence': 0.5053026080131531, 'class_id': 0, 'porthole_area_percentage': 3.322096836419753}]
+[2025-12-04T17:02:59.345944] 📊 Pothole area percentage: 3.322096836419753%
+[2025-12-04T17:02:59.349725] 🚨 Pothole detected! Area: 3.322096836419753% - DB updated for 1f80aab3-6b83-4847-a582-858f67524091
+[2025-12-04T17:02:59.510041] ⬅️ API response for e51608a3-418d-4d0a-8b3b-0e4c42358f3d: [{'bbox': [500.5594482421875, 691.8967895507812, 645.8245239257812, 1057.492431640625], 'confidence': 0.5528662800788879, 'class_id': 0, 'porthole_area_percentage': 2.5593171296296298}]
+[2025-12-04T17:02:59.510504] 📊 Pothole area percentage: 2.5593171296296298%
+[2025-12-04T17:02:59.512803] 📥 Frame received for processing: 7a8b16a2-53e0-4af3-97c3-6d22f1833663
+[2025-12-04T17:02:59.513139] ➡️ Sending to pothole API: 7a8b16a2-53e0-4af3-97c3-6d22f1833663
+[2025-12-04T17:02:59.514074] 🚨 Pothole detected! Area: 2.5593171296296298% - DB updated for e51608a3-418d-4d0a-8b3b-0e4c42358f3d
+[2025-12-04T17:02:59.784864] 📥 Frame received for processing: 15fe498c-422c-4c4a-bb38-b599dba9c70e
+[2025-12-04T17:02:59.785606] ➡️ Sending to pothole API: 15fe498c-422c-4c4a-bb38-b599dba9c70e
+[2025-12-04T17:02:59.882237] ⬅️ API response for 2b5e4e1a-5931-4c4f-b065-e5b252b66570: [{'bbox': [493.66876220703125, 727.857421875, 628.638427734375, 1081.6871337890625], 'confidence': 0.26833444833755493, 'class_id': 0, 'porthole_area_percentage': 2.3046875}]
+[2025-12-04T17:02:59.882718] 📊 Pothole area percentage: 2.3046875%
+[2025-12-04T17:02:59.885576] 🚨 Pothole detected! Area: 2.3046875% - DB updated for 2b5e4e1a-5931-4c4f-b065-e5b252b66570
+[2025-12-04T17:03:00.080592] 📥 Frame received for processing: 9baec666-6c46-493f-aa9f-c80140b6f283
+[2025-12-04T17:03:00.081240] ➡️ Sending to pothole API: 9baec666-6c46-493f-aa9f-c80140b6f283
+[2025-12-04T17:03:00.500734] ⬅️ API response for 379eb5d0-278d-4d03-993b-1cf44683dc8c: [{'bbox': [496.82830810546875, 740.248046875, 629.54443359375, 1079.10302734375], 'confidence': 0.3032039701938629, 'class_id': 0, 'porthole_area_percentage': 2.297212577160494}, {'bbox': [835.6703491210938, 912.8596801757812, 884.0118408203125, 964.5701293945312], 'confidence': 0.30230554938316345, 'class_id': 0, 'porthole_area_percentage': 2.297212577160494}]
+[2025-12-04T17:03:00.501898] 📊 Pothole area percentage: 2.297212577160494%
+[2025-12-04T17:03:00.506908] 🚨 Pothole detected! Area: 2.297212577160494% - DB updated for 379eb5d0-278d-4d03-993b-1cf44683dc8c
+[2025-12-04T17:03:01.096391] ⬅️ API response for f144c885-12c4-44ee-93db-82b3e9d3c9c7: [{'bbox': [492.6116638183594, 753.1689453125, 623.2161865234375, 1094.16259765625], 'confidence': 0.49142345786094666, 'class_id': 0, 'porthole_area_percentage': 2.299382716049383}, {'bbox': [824.7207641601562, 919.8132934570312, 875.47998046875, 978.8615112304688], 'confidence': 0.3163985013961792, 'class_id': 0, 'porthole_area_percentage': 2.299382716049383}]
+[2025-12-04T17:03:01.105580] 📊 Pothole area percentage: 2.299382716049383%
+[2025-12-04T17:03:01.118658] 🚨 Pothole detected! Area: 2.299382716049383% - DB updated for f144c885-12c4-44ee-93db-82b3e9d3c9c7
+[2025-12-04T17:03:01.510201] ⬅️ API response for 55f0615a-d900-40a0-ae6e-2ee6a0201698: [{'bbox': [498.6907653808594, 753.708984375, 630.8212890625, 1091.9959716796875], 'confidence': 0.421234130859375, 'class_id': 0, 'porthole_area_percentage': 2.1516203703703702}]
+[2025-12-04T17:03:01.511322] 📊 Pothole area percentage: 2.1516203703703702%
+[2025-12-04T17:03:01.518191] 🚨 Pothole detected! Area: 2.1516203703703702% - DB updated for 55f0615a-d900-40a0-ae6e-2ee6a0201698
+[2025-12-04T17:03:02.120750] ⬅️ API response for a91de9c3-2cc2-4515-988f-cb979a9a4021: [{'bbox': [499.66424560546875, 757.124755859375, 641.3221435546875, 1104.8739013671875], 'confidence': 0.7869565486907959, 'class_id': 0, 'porthole_area_percentage': 2.5161072530864197}, {'bbox': [846.4871215820312, 921.4780883789062, 896.1766357421875, 979.8001098632812], 'confidence': 0.3214896023273468, 'class_id': 0, 'porthole_area_percentage': 2.5161072530864197}]
+[2025-12-04T17:03:02.121852] 📊 Pothole area percentage: 2.5161072530864197%
+[2025-12-04T17:03:02.128187] 🚨 Pothole detected! Area: 2.5161072530864197% - DB updated for a91de9c3-2cc2-4515-988f-cb979a9a4021
+[2025-12-04T17:03:02.268571] ⬅️ API response for 0ffac7e3-dbb1-43e7-943a-d36978844c2c: [{'bbox': [490.7222900390625, 761.1051635742188, 639.999755859375, 1107.9412841796875], 'confidence': 0.7512317895889282, 'class_id': 0, 'porthole_area_percentage': 3.1632908950617282}, {'bbox': [525.2734375, 153.7330322265625, 645.3404541015625, 270.8572692871094], 'confidence': 0.32686230540275574, 'class_id': 0, 'porthole_area_percentage': 3.1632908950617282}]
+[2025-12-04T17:03:02.269279] 📊 Pothole area percentage: 3.1632908950617282%
+[2025-12-04T17:03:02.272212] 🚨 Pothole detected! Area: 3.1632908950617282% - DB updated for 0ffac7e3-dbb1-43e7-943a-d36978844c2c
+[2025-12-04T17:03:03.096829] ⬅️ API response for e62cba89-2dd2-47c5-bd34-ae5fdc20a1e7: [{'bbox': [492.22540283203125, 745.3976440429688, 622.6506958007812, 1090.2108154296875], 'confidence': 0.2767668664455414, 'class_id': 0, 'porthole_area_percentage': 2.1629050925925926}]
+[2025-12-04T17:03:03.098354] 📊 Pothole area percentage: 2.1629050925925926%
+[2025-12-04T17:03:03.108082] 🚨 Pothole detected! Area: 2.1629050925925926% - DB updated for e62cba89-2dd2-47c5-bd34-ae5fdc20a1e7
+[2025-12-04T17:03:03.196260] ❌ API error 500 for 15fe498c-422c-4c4a-bb38-b599dba9c70e: Internal Server Error
+[2025-12-04T17:03:03.318718] ⬅️ API response for 7a8b16a2-53e0-4af3-97c3-6d22f1833663: [{'bbox': [490.606201171875, 740.8383178710938, 636.2279663085938, 1092.207275390625], 'confidence': 0.6242281794548035, 'class_id': 0, 'porthole_area_percentage': 2.6010802469135803}, {'bbox': [839.798095703125, 907.2936401367188, 887.5078735351562, 960.7736206054688], 'confidence': 0.5623629093170166, 'class_id': 0, 'porthole_area_percentage': 2.6010802469135803}]
+[2025-12-04T17:03:03.319181] 📊 Pothole area percentage: 2.6010802469135803%
+[2025-12-04T17:03:03.321040] 🚨 Pothole detected! Area: 2.6010802469135803% - DB updated for 7a8b16a2-53e0-4af3-97c3-6d22f1833663
+[2025-12-04T17:03:04.165753] ❌ API error 500 for 9baec666-6c46-493f-aa9f-c80140b6f283: Internal Server Error
+[2025-12-04T17:03:15.141144] 📥 Frame received for processing: 28736b16-d09f-4da7-9e66-b32a0dc73bc5
+[2025-12-04T17:03:15.142054] ➡️ Sending to pothole API: 28736b16-d09f-4da7-9e66-b32a0dc73bc5
+[2025-12-04T17:03:15.592085] 📥 Frame received for processing: cea006fd-eab6-46d4-b4a8-b7332dc048ec
+[2025-12-04T17:03:15.592889] ➡️ Sending to pothole API: cea006fd-eab6-46d4-b4a8-b7332dc048ec
+[2025-12-04T17:03:15.907834] 📥 Frame received for processing: 819c273e-9ce5-49db-a126-ac31c20a4d9b
+[2025-12-04T17:03:15.908324] ➡️ Sending to pothole API: 819c273e-9ce5-49db-a126-ac31c20a4d9b
+[2025-12-04T17:03:16.088269] 📥 Frame received for processing: 92c0b479-860e-4403-98c3-efb001b3855e
+[2025-12-04T17:03:16.088973] ➡️ Sending to pothole API: 92c0b479-860e-4403-98c3-efb001b3855e
+[2025-12-04T17:03:16.391679] 📥 Frame received for processing: 5b6f361a-db1f-4fec-8fd5-c86eee765873
+[2025-12-04T17:03:16.392787] ➡️ Sending to pothole API: 5b6f361a-db1f-4fec-8fd5-c86eee765873
+[2025-12-04T17:03:16.552431] 📥 Frame received for processing: 869b6e10-28ab-4642-b77f-753843c9bbc0
+[2025-12-04T17:03:16.553226] ➡️ Sending to pothole API: 869b6e10-28ab-4642-b77f-753843c9bbc0
+[2025-12-04T17:03:16.664001] ❌ API error 500 for 28736b16-d09f-4da7-9e66-b32a0dc73bc5: Internal Server Error
+[2025-12-04T17:03:16.786519] 📥 Frame received for processing: 2ae557c4-97c9-446a-8d0a-76790a45b0e5
+[2025-12-04T17:03:16.786825] ➡️ Sending to pothole API: 2ae557c4-97c9-446a-8d0a-76790a45b0e5
+[2025-12-04T17:03:17.455127] 📥 Frame received for processing: 4097b3b3-60fb-48f3-9fac-02446983b2ec
+[2025-12-04T17:03:17.456026] ➡️ Sending to pothole API: 4097b3b3-60fb-48f3-9fac-02446983b2ec
+[2025-12-04T17:03:17.509667] ⬅️ API response for cea006fd-eab6-46d4-b4a8-b7332dc048ec: [{'bbox': [0.0, 0.0, 1080.0, 296.0380554199219], 'confidence': 0.36652272939682007, 'class_id': 0, 'porthole_area_percentage': 15.416666666666668}]
+[2025-12-04T17:03:17.511700] 📊 Pothole area percentage: 15.416666666666668%
+[2025-12-04T17:03:17.525664] 🚨 Pothole detected! Area: 15.416666666666668% - DB updated for cea006fd-eab6-46d4-b4a8-b7332dc048ec
+[2025-12-04T17:03:17.906952] ⬅️ API response for 819c273e-9ce5-49db-a126-ac31c20a4d9b: [{'bbox': [0.0, 0.17012786865234375, 1080.0, 273.8401184082031], 'confidence': 0.5853527188301086, 'class_id': 0, 'porthole_area_percentage': 14.21875}]
+[2025-12-04T17:03:17.909072] 📊 Pothole area percentage: 14.21875%
+[2025-12-04T17:03:17.916396] 🚨 Pothole detected! Area: 14.21875% - DB updated for 819c273e-9ce5-49db-a126-ac31c20a4d9b
+[2025-12-04T17:03:18.041968] ⬅️ API response for 92c0b479-860e-4403-98c3-efb001b3855e: [{'bbox': [0.0, 4.687065124511719, 1076.476318359375, 236.59771728515625], 'confidence': 0.7916663289070129, 'class_id': 0, 'porthole_area_percentage': 13.484760802469136}, {'bbox': [279.64508056640625, 1074.985107421875, 405.9176330566406, 1312.5208740234375], 'confidence': 0.5976420640945435, 'class_id': 0, 'porthole_area_percentage': 13.484760802469136}]
+[2025-12-04T17:03:18.042438] 📊 Pothole area percentage: 13.484760802469136%
+[2025-12-04T17:03:18.043934] 🚨 Pothole detected! Area: 13.484760802469136% - DB updated for 92c0b479-860e-4403-98c3-efb001b3855e
+[2025-12-04T17:03:18.439905] 📥 Frame received for processing: e2620d2d-186b-4dc4-be97-5c1b1e16e35d
+[2025-12-04T17:03:18.440595] ➡️ Sending to pothole API: e2620d2d-186b-4dc4-be97-5c1b1e16e35d
+[2025-12-04T17:03:19.169149] 📥 Frame received for processing: 6de0e176-cbbe-47f7-8dc5-933c00e3d170
+[2025-12-04T17:03:19.170100] ➡️ Sending to pothole API: 6de0e176-cbbe-47f7-8dc5-933c00e3d170
+[2025-12-04T17:03:19.446561] ⬅️ API response for 869b6e10-28ab-4642-b77f-753843c9bbc0: [{'bbox': [0.0, 4.4238739013671875, 1077.85400390625, 216.12583923339844], 'confidence': 0.7346150279045105, 'class_id': 0, 'porthole_area_percentage': 12.56954089506173}, {'bbox': [366.2596435546875, 954.73828125, 479.4584655761719, 1240.3253173828125], 'confidence': 0.463651180267334, 'class_id': 0, 'porthole_area_percentage': 12.56954089506173}]
+[2025-12-04T17:03:19.448030] 📊 Pothole area percentage: 12.56954089506173%
+[2025-12-04T17:03:19.454960] 🚨 Pothole detected! Area: 12.56954089506173% - DB updated for 869b6e10-28ab-4642-b77f-753843c9bbc0
+[2025-12-04T17:03:19.746837] 📥 Frame received for processing: 2b69d089-d105-4667-9083-a12019513b5c
+[2025-12-04T17:03:19.747912] ➡️ Sending to pothole API: 2b69d089-d105-4667-9083-a12019513b5c
+[2025-12-04T17:03:19.828185] ⬅️ API response for 2ae557c4-97c9-446a-8d0a-76790a45b0e5: [{'bbox': [0.0, 3.835052490234375, 1080.0, 197.69894409179688], 'confidence': 0.5850015878677368, 'class_id': 0, 'porthole_area_percentage': 10.560956790123457}, {'bbox': [652.1854858398438, 982.2762451171875, 716.3445434570312, 1130.3345947265625], 'confidence': 0.27551186084747314, 'class_id': 0, 'porthole_area_percentage': 10.560956790123457}]
+[2025-12-04T17:03:19.828735] 📊 Pothole area percentage: 10.560956790123457%
+[2025-12-04T17:03:19.830673] 🚨 Pothole detected! Area: 10.560956790123457% - DB updated for 2ae557c4-97c9-446a-8d0a-76790a45b0e5
+[2025-12-04T17:03:20.292289] ⬅️ API response for 5b6f361a-db1f-4fec-8fd5-c86eee765873: [{'bbox': [0.0, 4.894798278808594, 1070.4017333984375, 239.3908233642578], 'confidence': 0.6493189334869385, 'class_id': 0, 'porthole_area_percentage': 12.126253858024691}]
+[2025-12-04T17:03:20.293302] 📊 Pothole area percentage: 12.126253858024691%
+[2025-12-04T17:03:20.299308] 🚨 Pothole detected! Area: 12.126253858024691% - DB updated for 5b6f361a-db1f-4fec-8fd5-c86eee765873
+[2025-12-04T17:03:20.485006] ⬅️ API response for 4097b3b3-60fb-48f3-9fac-02446983b2ec: [{'bbox': [2.079620361328125, 3.435150146484375, 1070.25, 171.49676513671875], 'confidence': 0.4367908239364624, 'class_id': 0, 'porthole_area_percentage': 12.038676697530864}, {'bbox': [404.84637451171875, 866.5142211914062, 522.5963745117188, 1461.7625732421875], 'confidence': 0.4249417781829834, 'class_id': 0, 'porthole_area_percentage': 12.038676697530864}]
+[2025-12-04T17:03:20.486006] 📊 Pothole area percentage: 12.038676697530864%
+[2025-12-04T17:03:20.489533] 🚨 Pothole detected! Area: 12.038676697530864% - DB updated for 4097b3b3-60fb-48f3-9fac-02446983b2ec
+[2025-12-04T17:03:20.761800] ⬅️ API response for e2620d2d-186b-4dc4-be97-5c1b1e16e35d: [{'bbox': [0.0, 1.2181549072265625, 861.965576171875, 120.1347885131836], 'confidence': 0.2531895339488983, 'class_id': 0, 'porthole_area_percentage': 4.941116898148149}]
+[2025-12-04T17:03:20.762774] 📊 Pothole area percentage: 4.941116898148149%
+[2025-12-04T17:03:20.767157] 📥 Frame received for processing: 44aca3ba-7253-45b8-afe3-b9161acd7f3f
+[2025-12-04T17:03:20.767469] ➡️ Sending to pothole API: 44aca3ba-7253-45b8-afe3-b9161acd7f3f
+[2025-12-04T17:03:20.769393] 🚨 Pothole detected! Area: 4.941116898148149% - DB updated for e2620d2d-186b-4dc4-be97-5c1b1e16e35d
+[2025-12-04T17:03:21.691788] 📥 Frame received for processing: 80643f07-8fa6-4095-88bf-23e7e984a081
+[2025-12-04T17:03:21.692515] ➡️ Sending to pothole API: 80643f07-8fa6-4095-88bf-23e7e984a081
+[2025-12-04T17:03:21.952585] 📥 Frame received for processing: 3400fab2-c4b2-4356-a354-83e71f30d2c1
+[2025-12-04T17:03:21.952964] ➡️ Sending to pothole API: 3400fab2-c4b2-4356-a354-83e71f30d2c1
+[2025-12-04T17:03:22.293362] ⬅️ API response for 6de0e176-cbbe-47f7-8dc5-933c00e3d170: [{'bbox': [627.6522216796875, 856.2108764648438, 696.87939453125, 1003.261962890625], 'confidence': 0.626239538192749, 'class_id': 0, 'porthole_area_percentage': 1.5549286265432098}, {'bbox': [396.7421569824219, 849.310546875, 496.9123840332031, 1070.87109375], 'confidence': 0.39813223481178284, 'class_id': 0, 'porthole_area_percentage': 1.5549286265432098}]
+[2025-12-04T17:03:22.293808] 📊 Pothole area percentage: 1.5549286265432098%
+[2025-12-04T17:03:22.296802] 🚨 Pothole detected! Area: 1.5549286265432098% - DB updated for 6de0e176-cbbe-47f7-8dc5-933c00e3d170
+[2025-12-04T17:03:22.947927] 📥 Frame received for processing: 86226762-b731-4284-a38d-f4064708b676
+[2025-12-04T17:03:22.948478] ➡️ Sending to pothole API: 86226762-b731-4284-a38d-f4064708b676
+[2025-12-04T17:03:23.055894] ⬅️ API response for 2b69d089-d105-4667-9083-a12019513b5c: [{'bbox': [385.0236511230469, 855.7706909179688, 486.8608703613281, 1063.9527587890625], 'confidence': 0.5256101489067078, 'class_id': 0, 'porthole_area_percentage': 1.0131172839506173}]
+[2025-12-04T17:03:23.056858] 📊 Pothole area percentage: 1.0131172839506173%
+[2025-12-04T17:03:23.061066] 🚨 Pothole detected! Area: 1.0131172839506173% - DB updated for 2b69d089-d105-4667-9083-a12019513b5c
+[2025-12-04T17:03:23.545692] 📥 Frame received for processing: 876fcf1f-a05d-4f14-b11c-bcf45f10270a
+[2025-12-04T17:03:23.546728] ➡️ Sending to pothole API: 876fcf1f-a05d-4f14-b11c-bcf45f10270a
+[2025-12-04T17:03:23.706299] ⬅️ API response for 44aca3ba-7253-45b8-afe3-b9161acd7f3f: [{'bbox': [345.48846435546875, 781.2855834960938, 479.5665283203125, 1362.7926025390625], 'confidence': 0.47629594802856445, 'class_id': 0, 'porthole_area_percentage': 3.7545331790123453}, {'bbox': [356.6620788574219, 837.5716552734375, 463.8597106933594, 1048.4652099609375], 'confidence': 0.4069047272205353, 'class_id': 0, 'porthole_area_percentage': 3.7545331790123453}]
+[2025-12-04T17:03:23.707510] 📊 Pothole area percentage: 3.7545331790123453%
+[2025-12-04T17:03:23.718735] 🚨 Pothole detected! Area: 3.7545331790123453% - DB updated for 44aca3ba-7253-45b8-afe3-b9161acd7f3f
+[2025-12-04T17:03:23.720393] 📥 Frame received for processing: 1e15a3c9-e7aa-483c-9ce8-562f9b84e1e7
+[2025-12-04T17:03:23.721037] ➡️ Sending to pothole API: 1e15a3c9-e7aa-483c-9ce8-562f9b84e1e7
+[2025-12-04T17:03:24.210082] ⬅️ API response for 3400fab2-c4b2-4356-a354-83e71f30d2c1: [{'bbox': [333.7884521484375, 777.5930786132812, 449.2576904296875, 1366.972900390625], 'confidence': 0.5179020762443542, 'class_id': 0, 'porthole_area_percentage': 3.3482349537037033}, {'bbox': [338.96185302734375, 771.8032836914062, 450.5246276855469, 1210.832275390625], 'confidence': 0.40646225214004517, 'class_id': 0, 'porthole_area_percentage': 3.3482349537037033}]
+[2025-12-04T17:03:24.222718] 📊 Pothole area percentage: 3.3482349537037033%
+[2025-12-04T17:03:24.229579] 🚨 Pothole detected! Area: 3.3482349537037033% - DB updated for 3400fab2-c4b2-4356-a354-83e71f30d2c1
+[2025-12-04T17:03:24.364413] ⬅️ API response for 80643f07-8fa6-4095-88bf-23e7e984a081: [{'bbox': [341.2587890625, 774.6845092773438, 459.0129089355469, 1279.95947265625], 'confidence': 0.601259171962738, 'class_id': 0, 'porthole_area_percentage': 2.984278549382716}, {'bbox': [347.3561706542969, 814.44580078125, 465.32080078125, 1196.8492431640625], 'confidence': 0.45158204436302185, 'class_id': 0, 'porthole_area_percentage': 2.984278549382716}]
+[2025-12-04T17:03:24.365217] 📊 Pothole area percentage: 2.984278549382716%
+[2025-12-04T17:03:24.370584] 🚨 Pothole detected! Area: 2.984278549382716% - DB updated for 80643f07-8fa6-4095-88bf-23e7e984a081
+[2025-12-04T17:03:24.846661] ⬅️ API response for 86226762-b731-4284-a38d-f4064708b676: [{'bbox': [320.0625915527344, 767.1658935546875, 440.5260314941406, 1382.86279296875], 'confidence': 0.28021544218063354, 'class_id': 0, 'porthole_area_percentage': 3.5590277777777777}]
+[2025-12-04T17:03:24.847848] 📊 Pothole area percentage: 3.5590277777777777%
+[2025-12-04T17:03:24.852983] 🚨 Pothole detected! Area: 3.5590277777777777% - DB updated for 86226762-b731-4284-a38d-f4064708b676
+[2025-12-04T17:03:25.349590] ❌ API error 500 for 1e15a3c9-e7aa-483c-9ce8-562f9b84e1e7: Internal Server Error
+[2025-12-04T17:03:25.753667] ⬅️ API response for 876fcf1f-a05d-4f14-b11c-bcf45f10270a: [{'bbox': [324.17071533203125, 772.3172607421875, 436.5092468261719, 1382.4283447265625], 'confidence': 0.5261750817298889, 'class_id': 0, 'porthole_area_percentage': 3.2998167438271606}, {'bbox': [325.8549499511719, 771.217529296875, 430.8380126953125, 1180.6611328125], 'confidence': 0.25302737951278687, 'class_id': 0, 'porthole_area_percentage': 3.2998167438271606}]
+[2025-12-04T17:03:25.754667] 📊 Pothole area percentage: 3.2998167438271606%
+[2025-12-04T17:03:25.782079] 🚨 Pothole detected! Area: 3.2998167438271606% - DB updated for 876fcf1f-a05d-4f14-b11c-bcf45f10270a
+[2025-12-04T17:04:19.020203] 📥 Frame received for processing: 20d9f1d2-163f-48a3-84ba-0eab10b046cd
+[2025-12-04T17:04:19.021451] ➡️ Sending to pothole API: 20d9f1d2-163f-48a3-84ba-0eab10b046cd
+[2025-12-04T17:04:19.156222] 📥 Frame received for processing: 7458cde4-fa52-4ba1-a87a-62665f961cc1
+[2025-12-04T17:04:19.158453] ➡️ Sending to pothole API: 7458cde4-fa52-4ba1-a87a-62665f961cc1
+[2025-12-04T17:04:19.311371] 📥 Frame received for processing: 9eba1c84-f0a4-45b7-aebc-d65375e6d99c
+[2025-12-04T17:04:19.311962] ➡️ Sending to pothole API: 9eba1c84-f0a4-45b7-aebc-d65375e6d99c
+[2025-12-04T17:04:19.658493] 📥 Frame received for processing: d7d98bb4-f797-4358-a925-b44348ead273
+[2025-12-04T17:04:19.658843] ➡️ Sending to pothole API: d7d98bb4-f797-4358-a925-b44348ead273
+[2025-12-04T17:04:19.867369] 📥 Frame received for processing: 8ca3626d-170f-4fae-8c6a-76b75cd91a54
+[2025-12-04T17:04:19.867667] ➡️ Sending to pothole API: 8ca3626d-170f-4fae-8c6a-76b75cd91a54
+[2025-12-04T17:04:20.061971] 📥 Frame received for processing: 198932b4-fba2-4000-8dc8-90061dc5075d
+[2025-12-04T17:04:20.062535] ➡️ Sending to pothole API: 198932b4-fba2-4000-8dc8-90061dc5075d
+[2025-12-04T17:04:20.214641] ❌ API error 500 for 20d9f1d2-163f-48a3-84ba-0eab10b046cd: Internal Server Error
+[2025-12-04T17:04:20.297156] 📥 Frame received for processing: 9833d758-bd8f-4359-a9ed-9230981b0bb9
+[2025-12-04T17:04:20.298438] ➡️ Sending to pothole API: 9833d758-bd8f-4359-a9ed-9230981b0bb9
+[2025-12-04T17:04:20.467006] 📥 Frame received for processing: 5d35c281-309b-4a22-8248-57cf394e4729
+[2025-12-04T17:04:20.467838] ➡️ Sending to pothole API: 5d35c281-309b-4a22-8248-57cf394e4729
+[2025-12-04T17:04:20.704664] ❌ API error 500 for 7458cde4-fa52-4ba1-a87a-62665f961cc1: Internal Server Error
+[2025-12-04T17:04:20.819366] 📥 Frame received for processing: c82c14dd-a0e1-42fe-af33-893e4b1de5dc
+[2025-12-04T17:04:20.821024] ➡️ Sending to pothole API: c82c14dd-a0e1-42fe-af33-893e4b1de5dc
+[2025-12-04T17:04:20.827771] ⬅️ API response for 9eba1c84-f0a4-45b7-aebc-d65375e6d99c: [{'bbox': [8.4920654296875, 0.0, 1009.0647583007812, 324.7118225097656], 'confidence': 0.46016448736190796, 'class_id': 0, 'porthole_area_percentage': 15.640625}]
+[2025-12-04T17:04:20.829011] 📊 Pothole area percentage: 15.640625%
+[2025-12-04T17:04:20.833818] 🚨 Pothole detected! Area: 15.640625% - DB updated for 9eba1c84-f0a4-45b7-aebc-d65375e6d99c
+[2025-12-04T17:04:21.062304] 📥 Frame received for processing: ca68698b-321c-4e87-8a52-ee0f178a79e2
+[2025-12-04T17:04:21.063054] ➡️ Sending to pothole API: ca68698b-321c-4e87-8a52-ee0f178a79e2
+[2025-12-04T17:04:21.223288] 📥 Frame received for processing: 0cba8b78-1937-4fe8-9e96-1f451af0d1a6
+[2025-12-04T17:04:21.223674] ➡️ Sending to pothole API: 0cba8b78-1937-4fe8-9e96-1f451af0d1a6
+[2025-12-04T17:04:21.494120] 📥 Frame received for processing: 97ea16ee-af04-4752-bd3c-98008713c80a
+[2025-12-04T17:04:21.495519] ➡️ Sending to pothole API: 97ea16ee-af04-4752-bd3c-98008713c80a
+[2025-12-04T17:04:21.509754] ⬅️ API response for 8ca3626d-170f-4fae-8c6a-76b75cd91a54: [{'bbox': [0.0, 2.1900787353515625, 1080.0, 262.92059326171875], 'confidence': 0.4973275065422058, 'class_id': 0, 'porthole_area_percentage': 13.541666666666666}]
+[2025-12-04T17:04:21.510446] 📊 Pothole area percentage: 13.541666666666666%
+[2025-12-04T17:04:21.513246] 🚨 Pothole detected! Area: 13.541666666666666% - DB updated for 8ca3626d-170f-4fae-8c6a-76b75cd91a54
+[2025-12-04T17:04:21.636177] ⬅️ API response for d7d98bb4-f797-4358-a925-b44348ead273: [{'bbox': [0.0, 0.1969757080078125, 1080.0, 303.5646667480469], 'confidence': 0.6395592093467712, 'class_id': 0, 'porthole_area_percentage': 15.78125}]
+[2025-12-04T17:04:21.636758] 📊 Pothole area percentage: 15.78125%
+[2025-12-04T17:04:21.639651] 🚨 Pothole detected! Area: 15.78125% - DB updated for d7d98bb4-f797-4358-a925-b44348ead273
+[2025-12-04T17:04:21.837199] ⬅️ API response for 198932b4-fba2-4000-8dc8-90061dc5075d: [{'bbox': [0.0, 4.080207824707031, 1038.256591796875, 225.24771118164062], 'confidence': 0.6226389408111572, 'class_id': 0, 'porthole_area_percentage': 11.062789351851853}]
+[2025-12-04T17:04:21.838720] 📊 Pothole area percentage: 11.062789351851853%
+[2025-12-04T17:04:21.844116] 🚨 Pothole detected! Area: 11.062789351851853% - DB updated for 198932b4-fba2-4000-8dc8-90061dc5075d
+[2025-12-04T17:04:21.978375] 📥 Frame received for processing: be2a5851-2943-4fa5-b7e7-f137611121fa
+[2025-12-04T17:04:21.979238] ➡️ Sending to pothole API: be2a5851-2943-4fa5-b7e7-f137611121fa
+[2025-12-04T17:04:22.103851] 📥 Frame received for processing: 4a470efc-f9c7-49ad-8e7d-15a48a28da4e
+[2025-12-04T17:04:22.104544] ➡️ Sending to pothole API: 4a470efc-f9c7-49ad-8e7d-15a48a28da4e
+[2025-12-04T17:04:22.191967] ⬅️ API response for 9833d758-bd8f-4359-a9ed-9230981b0bb9: [{'bbox': [0.0, 3.863250732421875, 1070.704833984375, 211.978271484375], 'confidence': 0.6730960607528687, 'class_id': 0, 'porthole_area_percentage': 10.733024691358024}]
+[2025-12-04T17:04:22.193578] 📊 Pothole area percentage: 10.733024691358024%
+[2025-12-04T17:04:22.198323] 🚨 Pothole detected! Area: 10.733024691358024% - DB updated for 9833d758-bd8f-4359-a9ed-9230981b0bb9
+[2025-12-04T17:04:22.328202] 📥 Frame received for processing: c1eb28b6-e693-4645-8390-6ef87ef91100
+[2025-12-04T17:04:22.329633] ➡️ Sending to pothole API: c1eb28b6-e693-4645-8390-6ef87ef91100
+[2025-12-04T17:04:22.407417] ❌ API error 500 for 5d35c281-309b-4a22-8248-57cf394e4729: Internal Server Error
+[2025-12-04T17:04:22.752351] 📥 Frame received for processing: e52fa9f5-000d-4bd8-a69d-a386697bc352
+[2025-12-04T17:04:22.753131] ➡️ Sending to pothole API: e52fa9f5-000d-4bd8-a69d-a386697bc352
+[2025-12-04T17:04:23.173973] ❌ API error 500 for c82c14dd-a0e1-42fe-af33-893e4b1de5dc: Internal Server Error
+[2025-12-04T17:04:23.230252] 📥 Frame received for processing: 2124e599-215e-4f39-808c-e7722b660773
+[2025-12-04T17:04:23.230654] ➡️ Sending to pothole API: 2124e599-215e-4f39-808c-e7722b660773
+[2025-12-04T17:04:23.288091] ❌ API error 500 for ca68698b-321c-4e87-8a52-ee0f178a79e2: Internal Server Error
+[2025-12-04T17:04:23.480399] 📥 Frame received for processing: 6d28b2ad-af2c-4630-91c9-f48a04e083f3
+[2025-12-04T17:04:23.481576] ➡️ Sending to pothole API: 6d28b2ad-af2c-4630-91c9-f48a04e083f3
+[2025-12-04T17:04:23.683858] ⬅️ API response for 97ea16ee-af04-4752-bd3c-98008713c80a: [{'bbox': [490.1872863769531, 1828.2440185546875, 1080.0, 1919.8341064453125], 'confidence': 0.3524753749370575, 'class_id': 0, 'porthole_area_percentage': 7.450520833333334}, {'bbox': [94.34170532226562, 0.50390625, 963.9360961914062, 116.61300659179688], 'confidence': 0.3119937479496002, 'class_id': 0, 'porthole_area_percentage': 7.450520833333334}]
+[2025-12-04T17:04:23.685176] 📊 Pothole area percentage: 7.450520833333334%
+[2025-12-04T17:04:23.694866] 🚨 Pothole detected! Area: 7.450520833333334% - DB updated for 97ea16ee-af04-4752-bd3c-98008713c80a
+[2025-12-04T17:04:23.851206] ❌ API error 500 for 0cba8b78-1937-4fe8-9e96-1f451af0d1a6: Internal Server Error
+[2025-12-04T17:04:23.933073] 📥 Frame received for processing: 5820fcc9-5c2d-4c67-b270-2bda492fc702
+[2025-12-04T17:04:23.933893] ➡️ Sending to pothole API: 5820fcc9-5c2d-4c67-b270-2bda492fc702
+[2025-12-04T17:04:24.101172] 📥 Frame received for processing: 9006d9eb-9743-46a1-a1f9-ac2437fcc5cd
+[2025-12-04T17:04:24.101847] ➡️ Sending to pothole API: 9006d9eb-9743-46a1-a1f9-ac2437fcc5cd
+[2025-12-04T17:04:24.194810] ⬅️ API response for be2a5851-2943-4fa5-b7e7-f137611121fa: [{'bbox': [465.73297119140625, 1830.1864013671875, 1080.0, 1919.9923095703125], 'confidence': 0.48737698793411255, 'class_id': 0, 'porthole_area_percentage': 9.499421296296298}, {'bbox': [2.63690185546875, 0.0, 983.9741821289062, 145.3240966796875], 'confidence': 0.3259716033935547, 'class_id': 0, 'porthole_area_percentage': 9.499421296296298}]
+[2025-12-04T17:04:24.195427] 📊 Pothole area percentage: 9.499421296296298%
+[2025-12-04T17:04:24.198526] 🚨 Pothole detected! Area: 9.499421296296298% - DB updated for be2a5851-2943-4fa5-b7e7-f137611121fa
+[2025-12-04T17:04:24.396592] 📥 Frame received for processing: 2472b05b-16f1-4b76-8c7d-48ae78994f99
+[2025-12-04T17:04:24.397085] ➡️ Sending to pothole API: 2472b05b-16f1-4b76-8c7d-48ae78994f99
+[2025-12-04T17:04:24.417084] ⬅️ API response for 4a470efc-f9c7-49ad-8e7d-15a48a28da4e: [{'bbox': [436.2198791503906, 1822.6953125, 1080.0, 1917.946044921875], 'confidence': 0.480311781167984, 'class_id': 0, 'porthole_area_percentage': 3.593942901234568}, {'bbox': [298.8746337890625, 1831.940185546875, 1036.29052734375, 1919.73779296875], 'confidence': 0.3088263273239136, 'class_id': 0, 'porthole_area_percentage': 3.593942901234568}]
+[2025-12-04T17:04:24.418068] 📊 Pothole area percentage: 3.593942901234568%
+[2025-12-04T17:04:24.421890] 🚨 Pothole detected! Area: 3.593942901234568% - DB updated for 4a470efc-f9c7-49ad-8e7d-15a48a28da4e
+[2025-12-04T17:04:24.644564] ❌ API error 500 for c1eb28b6-e693-4645-8390-6ef87ef91100: Internal Server Error
+[2025-12-04T17:04:24.689467] 📥 Frame received for processing: 9d719c30-5409-4a40-bd9c-484cef0c44ea
+[2025-12-04T17:04:24.690330] ➡️ Sending to pothole API: 9d719c30-5409-4a40-bd9c-484cef0c44ea
+[2025-12-04T17:04:24.863926] ⬅️ API response for e52fa9f5-000d-4bd8-a69d-a386697bc352: [{'bbox': [0.0, 0.0, 1045.21923828125, 132.3999481201172], 'confidence': 0.29990795254707336, 'class_id': 0, 'porthole_area_percentage': 6.6521990740740735}]
+[2025-12-04T17:04:24.865118] 📊 Pothole area percentage: 6.6521990740740735%
+[2025-12-04T17:04:24.870345] 🚨 Pothole detected! Area: 6.6521990740740735% - DB updated for e52fa9f5-000d-4bd8-a69d-a386697bc352
+[2025-12-04T17:04:25.011940] 📥 Frame received for processing: 512b6dcf-bf7d-4def-a622-d4a6bb2ae333
+[2025-12-04T17:04:25.012897] ➡️ Sending to pothole API: 512b6dcf-bf7d-4def-a622-d4a6bb2ae333
+[2025-12-04T17:04:25.347239] 📥 Frame received for processing: e3b3ec04-4802-4dc0-abd1-b00d023a7f0f
+[2025-12-04T17:04:25.348744] ➡️ Sending to pothole API: e3b3ec04-4802-4dc0-abd1-b00d023a7f0f
+[2025-12-04T17:04:25.452822] ⬅️ API response for 2124e599-215e-4f39-808c-e7722b660773: [{'bbox': [0.0, 0.0, 1048.5955810546875, 157.29611206054688], 'confidence': 0.5040034055709839, 'class_id': 0, 'porthole_area_percentage': 7.93479938271605}]
+[2025-12-04T17:04:25.453251] 📊 Pothole area percentage: 7.93479938271605%
+[2025-12-04T17:04:25.455380] 🚨 Pothole detected! Area: 7.93479938271605% - DB updated for 2124e599-215e-4f39-808c-e7722b660773
+[2025-12-04T17:04:25.688159] 📥 Frame received for processing: a59f28a1-a759-411b-b25e-8aee786e56a2
+[2025-12-04T17:04:25.688846] ➡️ Sending to pothole API: a59f28a1-a759-411b-b25e-8aee786e56a2
+[2025-12-04T17:04:25.750163] ⬅️ API response for 6d28b2ad-af2c-4630-91c9-f48a04e083f3: [{'bbox': [2.193603515625, 2.0050735473632812, 997.1277465820312, 169.5638427734375], 'confidence': 0.6302644610404968, 'class_id': 0, 'porthole_area_percentage': 8.013358410493828}]
+[2025-12-04T17:04:25.750838] 📊 Pothole area percentage: 8.013358410493828%
+[2025-12-04T17:04:25.753992] 🚨 Pothole detected! Area: 8.013358410493828% - DB updated for 6d28b2ad-af2c-4630-91c9-f48a04e083f3
+[2025-12-04T17:04:26.713257] ⬅️ API response for 5820fcc9-5c2d-4c67-b270-2bda492fc702: [{'bbox': [0.0, 3.9858856201171875, 1080.0, 234.7836456298828], 'confidence': 0.7352719902992249, 'class_id': 0, 'porthole_area_percentage': 14.691261574074074}, {'bbox': [446.6412353515625, 1832.2310791015625, 1080.0, 1919.89501953125], 'confidence': 0.3293764293193817, 'class_id': 0, 'porthole_area_percentage': 14.691261574074074}]
+[2025-12-04T17:04:26.714685] 📊 Pothole area percentage: 14.691261574074074%
+[2025-12-04T17:04:26.720666] 🚨 Pothole detected! Area: 14.691261574074074% - DB updated for 5820fcc9-5c2d-4c67-b270-2bda492fc702
+[2025-12-04T17:04:26.757658] 📥 Frame received for processing: 971315a7-d990-4107-987f-39240af77946
+[2025-12-04T17:04:26.758311] ➡️ Sending to pothole API: 971315a7-d990-4107-987f-39240af77946
+[2025-12-04T17:04:26.964631] ⬅️ API response for 9006d9eb-9743-46a1-a1f9-ac2437fcc5cd: [{'bbox': [0.0, 2.8154754638671875, 1080.0, 250.3289794921875], 'confidence': 0.7255335450172424, 'class_id': 0, 'porthole_area_percentage': 16.887297453703702}, {'bbox': [229.68658447265625, 1831.455078125, 1023.2462768554688, 1919.7998046875], 'confidence': 0.3564729392528534, 'class_id': 0, 'porthole_area_percentage': 16.887297453703702}, {'bbox': [403.10760498046875, 1821.3438720703125, 1080.0, 1920.0], 'confidence': 0.3399457633495331, 'class_id': 0, 'porthole_area_percentage': 16.887297453703702}]
+[2025-12-04T17:04:26.965972] 📊 Pothole area percentage: 16.887297453703702%
+[2025-12-04T17:04:26.977140] 🚨 Pothole detected! Area: 16.887297453703702% - DB updated for 9006d9eb-9743-46a1-a1f9-ac2437fcc5cd
+[2025-12-04T17:04:27.187355] ⬅️ API response for 2472b05b-16f1-4b76-8c7d-48ae78994f99: [{'bbox': [0.0, 2.67132568359375, 1052.17578125, 255.3836669921875], 'confidence': 0.5942921042442322, 'class_id': 0, 'porthole_area_percentage': 17.27295524691358}, {'bbox': [198.439453125, 1812.6419677734375, 1050.8843994140625, 1920.0], 'confidence': 0.2884056270122528, 'class_id': 0, 'porthole_area_percentage': 17.27295524691358}]
+[2025-12-04T17:04:27.188529] 📊 Pothole area percentage: 17.27295524691358%
+[2025-12-04T17:04:27.210871] 🚨 Pothole detected! Area: 17.27295524691358% - DB updated for 2472b05b-16f1-4b76-8c7d-48ae78994f99
+[2025-12-04T17:04:27.385176] ⬅️ API response for 9d719c30-5409-4a40-bd9c-484cef0c44ea: [{'bbox': [0.0, 3.1635589599609375, 1080.0, 248.06204223632812], 'confidence': 0.6229919791221619, 'class_id': 0, 'porthole_area_percentage': 20.506462191358025}, {'bbox': [428.3246154785156, 739.3250122070312, 582.9351806640625, 1232.0936279296875], 'confidence': 0.366998553276062, 'class_id': 0, 'porthole_area_percentage': 20.506462191358025}, {'bbox': [118.33282470703125, 1820.039794921875, 965.906982421875, 1920.0], 'confidence': 0.30214476585388184, 'class_id': 0, 'porthole_area_percentage': 20.506462191358025}]
+[2025-12-04T17:04:27.386109] 📊 Pothole area percentage: 20.506462191358025%
+[2025-12-04T17:04:27.388732] 🚨 Pothole detected! Area: 20.506462191358025% - DB updated for 9d719c30-5409-4a40-bd9c-484cef0c44ea
+[2025-12-04T17:04:27.592488] ⬅️ API response for 512b6dcf-bf7d-4def-a622-d4a6bb2ae333: [{'bbox': [0.0, 2.9596481323242188, 1080.0, 250.60707092285156], 'confidence': 0.5978782773017883, 'class_id': 0, 'porthole_area_percentage': 21.97241512345679}, {'bbox': [432.138427734375, 738.4481811523438, 586.0618896484375, 1296.1951904296875], 'confidence': 0.3421526551246643, 'class_id': 0, 'porthole_area_percentage': 21.97241512345679}, {'bbox': [124.92654418945312, 1822.934814453125, 999.07275390625, 1920.0], 'confidence': 0.25994089245796204, 'class_id': 0, 'porthole_area_percentage': 21.97241512345679}, {'bbox': [400.2904357910156, 1810.850830078125, 1080.0, 1920.0], 'confidence': 0.25952503085136414, 'class_id': 0, 'porthole_area_percentage': 21.97241512345679}]
+[2025-12-04T17:04:27.593532] 📊 Pothole area percentage: 21.97241512345679%
+[2025-12-04T17:04:27.597086] 🚨 Pothole detected! Area: 21.97241512345679% - DB updated for 512b6dcf-bf7d-4def-a622-d4a6bb2ae333
+[2025-12-04T17:04:27.829692] ⬅️ API response for e3b3ec04-4802-4dc0-abd1-b00d023a7f0f: [{'bbox': [0.0, 4.234565734863281, 1080.0, 239.9573516845703], 'confidence': 0.5131181478500366, 'class_id': 0, 'porthole_area_percentage': 20.127314814814813}, {'bbox': [408.52093505859375, 1811.7115478515625, 1080.0, 1920.0], 'confidence': 0.2957893908023834, 'class_id': 0, 'porthole_area_percentage': 20.127314814814813}, {'bbox': [434.9268493652344, 737.855712890625, 593.4622802734375, 1305.334716796875], 'confidence': 0.2612488567829132, 'class_id': 0, 'porthole_area_percentage': 20.127314814814813}]
+[2025-12-04T17:04:27.831233] 📊 Pothole area percentage: 20.127314814814813%
+[2025-12-04T17:04:27.836661] 🚨 Pothole detected! Area: 20.127314814814813% - DB updated for e3b3ec04-4802-4dc0-abd1-b00d023a7f0f
+[2025-12-04T17:04:27.965518] ⬅️ API response for a59f28a1-a759-411b-b25e-8aee786e56a2: [{'bbox': [0.0, 4.4225921630859375, 1076.14794921875, 235.779052734375], 'confidence': 0.6148707866668701, 'class_id': 0, 'porthole_area_percentage': 15.60763888888889}, {'bbox': [264.9179992675781, 1834.0147705078125, 1032.311767578125, 1919.8348388671875], 'confidence': 0.31816720962524414, 'class_id': 0, 'porthole_area_percentage': 15.60763888888889}, {'bbox': [444.506103515625, 1826.50537109375, 1080.0, 1920.0], 'confidence': 0.27601614594459534, 'class_id': 0, 'porthole_area_percentage': 15.60763888888889}]
+[2025-12-04T17:04:27.966629] 📊 Pothole area percentage: 15.60763888888889%
+[2025-12-04T17:04:27.972180] 🚨 Pothole detected! Area: 15.60763888888889% - DB updated for a59f28a1-a759-411b-b25e-8aee786e56a2
+[2025-12-04T17:04:28.815038] ⬅️ API response for 971315a7-d990-4107-987f-39240af77946: [{'bbox': [0.0, 4.3559417724609375, 1080.0, 236.69064331054688], 'confidence': 0.634877622127533, 'class_id': 0, 'porthole_area_percentage': 15.91816165123457}, {'bbox': [409.248779296875, 1823.8267822265625, 1080.0, 1920.0], 'confidence': 0.3440740406513214, 'class_id': 0, 'porthole_area_percentage': 15.91816165123457}, {'bbox': [245.5697021484375, 1831.305908203125, 1034.6331787109375, 1919.917236328125], 'confidence': 0.3291158676147461, 'class_id': 0, 'porthole_area_percentage': 15.91816165123457}]
+[2025-12-04T17:04:28.816518] 📊 Pothole area percentage: 15.91816165123457%
+[2025-12-04T17:04:28.839055] 🚨 Pothole detected! Area: 15.91816165123457% - DB updated for 971315a7-d990-4107-987f-39240af77946
+[2025-12-04T17:05:15.040622] 📥 Frame received for processing: d1fd6b0f-6bd6-44cc-92d2-63cac7046c7f
+[2025-12-04T17:05:15.043485] ➡️ Sending to pothole API: d1fd6b0f-6bd6-44cc-92d2-63cac7046c7f
+[2025-12-04T17:05:15.144304] 📥 Frame received for processing: 691e153e-fc25-491b-8af8-54871e2842d7
+[2025-12-04T17:05:15.144734] ➡️ Sending to pothole API: 691e153e-fc25-491b-8af8-54871e2842d7
+[2025-12-04T17:05:15.279563] 📥 Frame received for processing: 4af7ecd8-9019-4821-beca-d056444ddd25
+[2025-12-04T17:05:15.280125] ➡️ Sending to pothole API: 4af7ecd8-9019-4821-beca-d056444ddd25
+[2025-12-04T17:05:15.574131] 📥 Frame received for processing: 8e2969ed-733b-4b57-a0b3-233022c7b81e
+[2025-12-04T17:05:15.574974] ➡️ Sending to pothole API: 8e2969ed-733b-4b57-a0b3-233022c7b81e
+[2025-12-04T17:05:15.840306] 📥 Frame received for processing: 0a5ad2b1-461e-4180-9d26-46265ab4c7fb
+[2025-12-04T17:05:15.840926] ➡️ Sending to pothole API: 0a5ad2b1-461e-4180-9d26-46265ab4c7fb
+[2025-12-04T17:05:16.055253] 📥 Frame received for processing: 6f741cab-004a-4893-949a-c87760ee5343
+[2025-12-04T17:05:16.055581] ➡️ Sending to pothole API: 6f741cab-004a-4893-949a-c87760ee5343
+[2025-12-04T17:05:16.229274] 📥 Frame received for processing: 620da821-1ec2-44b2-ada4-f2b40c8202bb
+[2025-12-04T17:05:16.229907] ➡️ Sending to pothole API: 620da821-1ec2-44b2-ada4-f2b40c8202bb
+[2025-12-04T17:05:16.314782] ⬅️ API response for d1fd6b0f-6bd6-44cc-92d2-63cac7046c7f: [{'bbox': [283.070556640625, 1031.779541015625, 639.1144409179688, 1271.4263916015625], 'confidence': 0.7505890727043152, 'class_id': 0, 'porthole_area_percentage': 4.12037037037037}]
+[2025-12-04T17:05:16.315835] 📊 Pothole area percentage: 4.12037037037037%
+[2025-12-04T17:05:16.323183] 🚨 Pothole detected! Area: 4.12037037037037% - DB updated for d1fd6b0f-6bd6-44cc-92d2-63cac7046c7f
+[2025-12-04T17:05:16.447557] 📥 Frame received for processing: d0376ec4-04ae-4b4f-aaa4-c607ac079b32
+[2025-12-04T17:05:16.448202] ➡️ Sending to pothole API: d0376ec4-04ae-4b4f-aaa4-c607ac079b32
+[2025-12-04T17:05:16.543720] ⬅️ API response for 691e153e-fc25-491b-8af8-54871e2842d7: [{'bbox': [209.97230529785156, 1002.6683349609375, 669.1436767578125, 1306.9456787109375], 'confidence': 0.819613516330719, 'class_id': 0, 'porthole_area_percentage': 35.62172067901235}, {'bbox': [3.12908935546875, 0.4024658203125, 1080.0, 556.1448364257812], 'confidence': 0.26983141899108887, 'class_id': 0, 'porthole_area_percentage': 35.62172067901235}]
+[2025-12-04T17:05:16.544789] 📊 Pothole area percentage: 35.62172067901235%
+[2025-12-04T17:05:16.548551] 🚨 Pothole detected! Area: 35.62172067901235% - DB updated for 691e153e-fc25-491b-8af8-54871e2842d7
+[2025-12-04T17:05:16.710661] 📥 Frame received for processing: e85109ec-1da4-4036-8cb0-c44a03940a0a
+[2025-12-04T17:05:16.711071] ➡️ Sending to pothole API: e85109ec-1da4-4036-8cb0-c44a03940a0a
+[2025-12-04T17:05:16.954751] ⬅️ API response for 4af7ecd8-9019-4821-beca-d056444ddd25: [{'bbox': [224.51083374023438, 996.6355590820312, 668.1572265625, 1297.0225830078125], 'confidence': 0.8346253037452698, 'class_id': 0, 'porthole_area_percentage': 34.335841049382715}, {'bbox': [1.89715576171875, 3.03570556640625, 1080.0, 539.1495361328125], 'confidence': 0.33321166038513184, 'class_id': 0, 'porthole_area_percentage': 34.335841049382715}]
+[2025-12-04T17:05:16.956309] 📊 Pothole area percentage: 34.335841049382715%
+[2025-12-04T17:05:16.966271] 🚨 Pothole detected! Area: 34.335841049382715% - DB updated for 4af7ecd8-9019-4821-beca-d056444ddd25
+[2025-12-04T17:05:17.074169] 📥 Frame received for processing: ad9d5916-a567-4e19-a1fe-b33f39f92ff4
+[2025-12-04T17:05:17.074796] ➡️ Sending to pothole API: ad9d5916-a567-4e19-a1fe-b33f39f92ff4
+[2025-12-04T17:05:17.171558] ⬅️ API response for 8e2969ed-733b-4b57-a0b3-233022c7b81e: [{'bbox': [273.4498596191406, 991.1339721679688, 708.4268188476562, 1281.3934326171875], 'confidence': 0.8453614711761475, 'class_id': 0, 'porthole_area_percentage': 34.10445601851852}, {'bbox': [0.359344482421875, 0.0, 1080.0, 538.3560791015625], 'confidence': 0.2802399694919586, 'class_id': 0, 'porthole_area_percentage': 34.10445601851852}]
+[2025-12-04T17:05:17.172520] 📊 Pothole area percentage: 34.10445601851852%
+[2025-12-04T17:05:17.177253] 🚨 Pothole detected! Area: 34.10445601851852% - DB updated for 8e2969ed-733b-4b57-a0b3-233022c7b81e
+[2025-12-04T17:05:17.201238] 📥 Frame received for processing: 54434ba6-8b92-4727-901b-c896f3514387
+[2025-12-04T17:05:17.201707] ➡️ Sending to pothole API: 54434ba6-8b92-4727-901b-c896f3514387
+[2025-12-04T17:05:17.500908] 📥 Frame received for processing: cca7d23e-342c-4946-a9c5-5e75fcf3d388
+[2025-12-04T17:05:17.501994] ➡️ Sending to pothole API: cca7d23e-342c-4946-a9c5-5e75fcf3d388
+[2025-12-04T17:05:17.708625] ⬅️ API response for 0a5ad2b1-461e-4180-9d26-46265ab4c7fb: [{'bbox': [333.4154357910156, 978.3968505859375, 760.2434692382812, 1263.6185302734375], 'confidence': 0.9175987839698792, 'class_id': 0, 'porthole_area_percentage': 5.868778935185185}]
+[2025-12-04T17:05:17.709994] 📊 Pothole area percentage: 5.868778935185185%
+[2025-12-04T17:05:17.714302] 🚨 Pothole detected! Area: 5.868778935185185% - DB updated for 0a5ad2b1-461e-4180-9d26-46265ab4c7fb
+[2025-12-04T17:05:17.791339] 📥 Frame received for processing: 54c9417e-558b-44c8-911f-29c6ba7aa31c
+[2025-12-04T17:05:17.792350] ➡️ Sending to pothole API: 54c9417e-558b-44c8-911f-29c6ba7aa31c
+[2025-12-04T17:05:17.975999] 📥 Frame received for processing: c362aaf0-3a1a-4303-a60f-546b7b17a991
+[2025-12-04T17:05:17.976670] ➡️ Sending to pothole API: c362aaf0-3a1a-4303-a60f-546b7b17a991
+[2025-12-04T17:05:18.279047] ⬅️ API response for 620da821-1ec2-44b2-ada4-f2b40c8202bb: [{'bbox': [402.4078674316406, 944.7214965820312, 813.2713623046875, 1228.5369873046875], 'confidence': 0.8974403142929077, 'class_id': 0, 'porthole_area_percentage': 31.781828703703702}, {'bbox': [4.715789794921875, 3.4090118408203125, 1080.0, 507.28271484375], 'confidence': 0.36723217368125916, 'class_id': 0, 'porthole_area_percentage': 31.781828703703702}]
+[2025-12-04T17:05:18.279669] 📊 Pothole area percentage: 31.781828703703702%
+[2025-12-04T17:05:18.283789] 🚨 Pothole detected! Area: 31.781828703703702% - DB updated for 620da821-1ec2-44b2-ada4-f2b40c8202bb
+[2025-12-04T17:05:18.319793] 📥 Frame received for processing: 55556ad3-8763-491d-8aed-2a6e670e0927
+[2025-12-04T17:05:18.320057] ➡️ Sending to pothole API: 55556ad3-8763-491d-8aed-2a6e670e0927
+[2025-12-04T17:05:18.394405] ⬅️ API response for d0376ec4-04ae-4b4f-aaa4-c607ac079b32: [{'bbox': [451.294921875, 932.5671997070312, 859.21728515625, 1216.7882080078125], 'confidence': 0.9287697076797485, 'class_id': 0, 'porthole_area_percentage': 30.754822530864196}, {'bbox': [4.9984130859375, 3.630889892578125, 1080.0, 488.3272705078125], 'confidence': 0.40525105595588684, 'class_id': 0, 'porthole_area_percentage': 30.754822530864196}]
+[2025-12-04T17:05:18.395107] 📊 Pothole area percentage: 30.754822530864196%
+[2025-12-04T17:05:18.397630] 🚨 Pothole detected! Area: 30.754822530864196% - DB updated for d0376ec4-04ae-4b4f-aaa4-c607ac079b32
+[2025-12-04T17:05:18.633611] 📥 Frame received for processing: 9d49eae9-53b2-4633-9f68-ad5e708ff3d7
+[2025-12-04T17:05:18.634317] ➡️ Sending to pothole API: 9d49eae9-53b2-4633-9f68-ad5e708ff3d7
+[2025-12-04T17:05:18.691240] ⬅️ API response for e85109ec-1da4-4036-8cb0-c44a03940a0a: [{'bbox': [459.84686279296875, 902.2421875, 887.578125, 1179.845458984375], 'confidence': 0.9079152941703796, 'class_id': 0, 'porthole_area_percentage': 28.372444058641978}, {'bbox': [5.7623291015625, 3.641326904296875, 1080.0, 440.4782409667969], 'confidence': 0.5977945923805237, 'class_id': 0, 'porthole_area_percentage': 28.372444058641978}]
+[2025-12-04T17:05:18.692999] 📊 Pothole area percentage: 28.372444058641978%
+[2025-12-04T17:05:18.698429] 🚨 Pothole detected! Area: 28.372444058641978% - DB updated for e85109ec-1da4-4036-8cb0-c44a03940a0a
+[2025-12-04T17:05:18.804235] 📥 Frame received for processing: adb3045a-eef1-43e7-9fcb-5186d4cf89f2
+[2025-12-04T17:05:18.805159] ➡️ Sending to pothole API: adb3045a-eef1-43e7-9fcb-5186d4cf89f2
+[2025-12-04T17:05:19.082058] ⬅️ API response for 6f741cab-004a-4893-949a-c87760ee5343: [{'bbox': [370.50311279296875, 973.7927856445312, 784.7371215820312, 1251.026123046875], 'confidence': 0.9295151829719543, 'class_id': 0, 'porthole_area_percentage': 5.715952932098765}, {'bbox': [515.1910400390625, 1403.3951416015625, 616.833251953125, 1437.3919677734375], 'confidence': 0.2542538046836853, 'class_id': 0, 'porthole_area_percentage': 5.715952932098765}]
+[2025-12-04T17:05:19.083118] 📊 Pothole area percentage: 5.715952932098765%
+[2025-12-04T17:05:19.086474] 🚨 Pothole detected! Area: 5.715952932098765% - DB updated for 6f741cab-004a-4893-949a-c87760ee5343
+[2025-12-04T17:05:19.263033] 📥 Frame received for processing: c6fd56d2-6198-4538-b40c-b913c8f1177b
+[2025-12-04T17:05:19.263703] ➡️ Sending to pothole API: c6fd56d2-6198-4538-b40c-b913c8f1177b
+[2025-12-04T17:05:19.270987] ⬅️ API response for ad9d5916-a567-4e19-a1fe-b33f39f92ff4: [{'bbox': [462.6372985839844, 872.3410034179688, 887.7916870117188, 1158.325927734375], 'confidence': 0.9352187514305115, 'class_id': 0, 'porthole_area_percentage': 27.104697145061728}, {'bbox': [3.314300537109375, 2.7297821044921875, 1080.0, 411.6695251464844], 'confidence': 0.6803711652755737, 'class_id': 0, 'porthole_area_percentage': 27.104697145061728}]
+[2025-12-04T17:05:19.271558] 📊 Pothole area percentage: 27.104697145061728%
+[2025-12-04T17:05:19.273687] 🚨 Pothole detected! Area: 27.104697145061728% - DB updated for ad9d5916-a567-4e19-a1fe-b33f39f92ff4
+[2025-12-04T17:05:19.394174] ⬅️ API response for 54434ba6-8b92-4727-901b-c896f3514387: [{'bbox': [496.0928649902344, 858.8206787109375, 917.1888427734375, 1144.4569091796875], 'confidence': 0.9016342163085938, 'class_id': 0, 'porthole_area_percentage': 25.991994598765434}, {'bbox': [4.20428466796875, 2.126220703125, 1080.0, 391.31707763671875], 'confidence': 0.7082777619361877, 'class_id': 0, 'porthole_area_percentage': 25.991994598765434}]
+[2025-12-04T17:05:19.395237] 📊 Pothole area percentage: 25.991994598765434%
+[2025-12-04T17:05:19.399913] 🚨 Pothole detected! Area: 25.991994598765434% - DB updated for 54434ba6-8b92-4727-901b-c896f3514387
+[2025-12-04T17:05:19.552265] 📥 Frame received for processing: 381ea55a-0883-43b2-8df5-c838803532b5
+[2025-12-04T17:05:19.553093] ➡️ Sending to pothole API: 381ea55a-0883-43b2-8df5-c838803532b5
+[2025-12-04T17:05:19.842357] ⬅️ API response for cca7d23e-342c-4946-a9c5-5e75fcf3d388: [{'bbox': [495.755126953125, 855.8534545898438, 916.0616455078125, 1145.3463134765625], 'confidence': 0.9096242189407349, 'class_id': 0, 'porthole_area_percentage': 26.125096450617285}, {'bbox': [4.724212646484375, 2.19744873046875, 1080.0, 392.9724426269531], 'confidence': 0.6448777914047241, 'class_id': 0, 'porthole_area_percentage': 26.125096450617285}]
+[2025-12-04T17:05:19.842785] 📊 Pothole area percentage: 26.125096450617285%
+[2025-12-04T17:05:19.846999] 🚨 Pothole detected! Area: 26.125096450617285% - DB updated for cca7d23e-342c-4946-a9c5-5e75fcf3d388
+[2025-12-04T17:05:19.942302] 📥 Frame received for processing: fc643cb8-f6d3-4185-b8b7-ab2a61565155
+[2025-12-04T17:05:19.942674] ➡️ Sending to pothole API: fc643cb8-f6d3-4185-b8b7-ab2a61565155
+[2025-12-04T17:05:19.987399] ⬅️ API response for 54c9417e-558b-44c8-911f-29c6ba7aa31c: [{'bbox': [484.77392578125, 848.5969848632812, 914.9732666015625, 1137.083251953125], 'confidence': 0.9037878513336182, 'class_id': 0, 'porthole_area_percentage': 25.9522087191358}, {'bbox': [5.368377685546875, 1.9779052734375, 1080.0, 386.38494873046875], 'confidence': 0.6604672074317932, 'class_id': 0, 'porthole_area_percentage': 25.9522087191358}]
+[2025-12-04T17:05:19.987776] 📊 Pothole area percentage: 25.9522087191358%
+[2025-12-04T17:05:19.989632] 🚨 Pothole detected! Area: 25.9522087191358% - DB updated for 54c9417e-558b-44c8-911f-29c6ba7aa31c
+[2025-12-04T17:05:20.479583] ⬅️ API response for 55556ad3-8763-491d-8aed-2a6e670e0927: [{'bbox': [453.15948486328125, 767.74609375, 913.5121459960938, 1069.74267578125], 'confidence': 0.9225164651870728, 'class_id': 0, 'porthole_area_percentage': 21.253568672839506}, {'bbox': [6.39422607421875, 0.0, 1080.0, 281.42633056640625], 'confidence': 0.7781780958175659, 'class_id': 0, 'porthole_area_percentage': 21.253568672839506}]
+[2025-12-04T17:05:20.481153] 📊 Pothole area percentage: 21.253568672839506%
+[2025-12-04T17:05:20.486554] 🚨 Pothole detected! Area: 21.253568672839506% - DB updated for 55556ad3-8763-491d-8aed-2a6e670e0927
+[2025-12-04T17:05:20.509928] 📥 Frame received for processing: b953663f-8270-42e7-9881-b64c993b85f5
+[2025-12-04T17:05:20.510401] ➡️ Sending to pothole API: b953663f-8270-42e7-9881-b64c993b85f5
+[2025-12-04T17:05:20.627551] ⬅️ API response for c362aaf0-3a1a-4303-a60f-546b7b17a991: [{'bbox': [482.2868957519531, 825.548828125, 915.8809814453125, 1122.6839599609375], 'confidence': 0.9228684306144714, 'class_id': 0, 'porthole_area_percentage': 24.3984375}, {'bbox': [5.081451416015625, 1.3103713989257812, 1080.0, 352.70745849609375], 'confidence': 0.7820018529891968, 'class_id': 0, 'porthole_area_percentage': 24.3984375}]
+[2025-12-04T17:05:20.628788] 📊 Pothole area percentage: 24.3984375%
+[2025-12-04T17:05:20.635246] 🚨 Pothole detected! Area: 24.3984375% - DB updated for c362aaf0-3a1a-4303-a60f-546b7b17a991
+[2025-12-04T17:05:20.772272] 📥 Frame received for processing: 4497a841-5731-442a-a236-c0c00f96a001
+[2025-12-04T17:05:20.773815] ➡️ Sending to pothole API: 4497a841-5731-442a-a236-c0c00f96a001
+[2025-12-04T17:05:20.793260] ⬅️ API response for 9d49eae9-53b2-4633-9f68-ad5e708ff3d7: [{'bbox': [408.8645324707031, 773.8787841796875, 859.118408203125, 1067.70263671875], 'confidence': 0.9333754181861877, 'class_id': 0, 'porthole_area_percentage': 20.701244212962962}, {'bbox': [9.92706298828125, 0.0, 1080.0, 277.5376281738281], 'confidence': 0.7866206765174866, 'class_id': 0, 'porthole_area_percentage': 20.701244212962962}]
+[2025-12-04T17:05:20.794105] 📊 Pothole area percentage: 20.701244212962962%
+[2025-12-04T17:05:20.796632] 🚨 Pothole detected! Area: 20.701244212962962% - DB updated for 9d49eae9-53b2-4633-9f68-ad5e708ff3d7
+[2025-12-04T17:05:20.930486] ⬅️ API response for adb3045a-eef1-43e7-9fcb-5186d4cf89f2: [{'bbox': [367.2886047363281, 756.375732421875, 809.3040161132812, 1054.463134765625], 'confidence': 0.8918294906616211, 'class_id': 0, 'porthole_area_percentage': 18.6904899691358}, {'bbox': [5.72900390625, 4.260108947753906, 1080.0, 242.88446044921875], 'confidence': 0.7888021469116211, 'class_id': 0, 'porthole_area_percentage': 18.6904899691358}]
+[2025-12-04T17:05:20.932029] 📊 Pothole area percentage: 18.6904899691358%
+[2025-12-04T17:05:20.939230] 🚨 Pothole detected! Area: 18.6904899691358% - DB updated for adb3045a-eef1-43e7-9fcb-5186d4cf89f2
+[2025-12-04T17:05:21.192134] 📥 Frame received for processing: e3432a68-9935-405c-86b3-afd9da4c6aaf
+[2025-12-04T17:05:21.193094] ➡️ Sending to pothole API: e3432a68-9935-405c-86b3-afd9da4c6aaf
+[2025-12-04T17:05:21.335412] ⬅️ API response for c6fd56d2-6198-4538-b40c-b913c8f1177b: [{'bbox': [316.1366882324219, 751.7565307617188, 767.7167358398438, 1056.176513671875], 'confidence': 0.9032326340675354, 'class_id': 0, 'porthole_area_percentage': 19.058497299382715}, {'bbox': [2.424957275390625, 4.276405334472656, 1080.0, 243.0651092529297], 'confidence': 0.8140320777893066, 'class_id': 0, 'porthole_area_percentage': 19.058497299382715}]
+[2025-12-04T17:05:21.337040] 📊 Pothole area percentage: 19.058497299382715%
+[2025-12-04T17:05:21.359373] 🚨 Pothole detected! Area: 19.058497299382715% - DB updated for c6fd56d2-6198-4538-b40c-b913c8f1177b
+[2025-12-04T17:05:21.452360] ⬅️ API response for 381ea55a-0883-43b2-8df5-c838803532b5: [{'bbox': [295.7881164550781, 782.76953125, 750.686279296875, 1071.7257080078125], 'confidence': 0.9261746406555176, 'class_id': 0, 'porthole_area_percentage': 21.32378472222222}, {'bbox': [5.17987060546875, 0.0, 1080.0, 289.6139831542969], 'confidence': 0.815222442150116, 'class_id': 0, 'porthole_area_percentage': 21.32378472222222}]
+[2025-12-04T17:05:21.453126] 📊 Pothole area percentage: 21.32378472222222%
+[2025-12-04T17:05:21.456457] 🚨 Pothole detected! Area: 21.32378472222222% - DB updated for 381ea55a-0883-43b2-8df5-c838803532b5
+[2025-12-04T17:05:21.975741] ⬅️ API response for fc643cb8-f6d3-4185-b8b7-ab2a61565155: [{'bbox': [305.09637451171875, 800.8341064453125, 726.8536376953125, 1093.427490234375], 'confidence': 0.8764329552650452, 'class_id': 0, 'porthole_area_percentage': 22.19044174382716}, {'bbox': [4.172698974609375, 0.0, 1080.0, 313.3426208496094], 'confidence': 0.8323166370391846, 'class_id': 0, 'porthole_area_percentage': 22.19044174382716}]
+[2025-12-04T17:05:21.985636] 📊 Pothole area percentage: 22.19044174382716%
+[2025-12-04T17:05:21.990183] 🚨 Pothole detected! Area: 22.19044174382716% - DB updated for fc643cb8-f6d3-4185-b8b7-ab2a61565155
+[2025-12-04T17:05:22.418811] 📥 Frame received for processing: 27252eab-b6cb-4dab-9465-a6636ffe5eff
+[2025-12-04T17:05:22.419151] ➡️ Sending to pothole API: 27252eab-b6cb-4dab-9465-a6636ffe5eff
+[2025-12-04T17:05:22.598244] 📥 Frame received for processing: 4881eb46-ff82-47fc-86d7-4697165a063c
+[2025-12-04T17:05:22.598511] ➡️ Sending to pothole API: 4881eb46-ff82-47fc-86d7-4697165a063c
+[2025-12-04T17:05:23.542438] 📥 Frame received for processing: f17bd040-77d2-40ac-beaa-b0597748f913
+[2025-12-04T17:05:23.543301] ➡️ Sending to pothole API: f17bd040-77d2-40ac-beaa-b0597748f913
+[2025-12-04T17:05:23.760465] ⬅️ API response for b953663f-8270-42e7-9881-b64c993b85f5: [{'bbox': [299.4685974121094, 811.8436889648438, 717.5890502929688, 1105.779541015625], 'confidence': 0.913870096206665, 'class_id': 0, 'porthole_area_percentage': 23.309799382716047}, {'bbox': [4.367156982421875, 0.8389205932617188, 1080.0, 335.91650390625], 'confidence': 0.8191865682601929, 'class_id': 0, 'porthole_area_percentage': 23.309799382716047}]
+[2025-12-04T17:05:23.761812] 📊 Pothole area percentage: 23.309799382716047%
+[2025-12-04T17:05:23.765368] 🚨 Pothole detected! Area: 23.309799382716047% - DB updated for b953663f-8270-42e7-9881-b64c993b85f5
+[2025-12-04T17:05:25.778105] 📥 Frame received for processing: af3e1442-5acf-4fae-95f9-1d2a23651c43
+[2025-12-04T17:05:25.778885] ➡️ Sending to pothole API: af3e1442-5acf-4fae-95f9-1d2a23651c43
+[2025-12-04T17:05:26.092048] 📥 Frame received for processing: d2e684d0-72cf-48fc-a396-9fee1e3ce385
+[2025-12-04T17:05:26.092684] ➡️ Sending to pothole API: d2e684d0-72cf-48fc-a396-9fee1e3ce385
+[2025-12-04T17:05:26.341519] 📥 Frame received for processing: 3286abc2-7eef-4e2e-a3e1-899c29e1803c
+[2025-12-04T17:05:26.342228] ➡️ Sending to pothole API: 3286abc2-7eef-4e2e-a3e1-899c29e1803c
+[2025-12-04T17:05:26.521794] 📥 Frame received for processing: 0bc99f54-7d47-4016-9b3c-26a694368d0f
+[2025-12-04T17:05:26.522906] ➡️ Sending to pothole API: 0bc99f54-7d47-4016-9b3c-26a694368d0f
+[2025-12-04T17:05:26.927168] ⬅️ API response for e3432a68-9935-405c-86b3-afd9da4c6aaf: [{'bbox': [309.3668518066406, 833.5043334960938, 730.0662231445312, 1125.2406005859375], 'confidence': 0.9273639917373657, 'class_id': 0, 'porthole_area_percentage': 25.439236111111114}, {'bbox': [4.951080322265625, 2.2307968139648438, 1080.0, 378.286376953125], 'confidence': 0.6994836330413818, 'class_id': 0, 'porthole_area_percentage': 25.439236111111114}]
+[2025-12-04T17:05:26.928494] 📊 Pothole area percentage: 25.439236111111114%
+[2025-12-04T17:05:26.938985] 🚨 Pothole detected! Area: 25.439236111111114% - DB updated for e3432a68-9935-405c-86b3-afd9da4c6aaf
+[2025-12-04T17:05:27.301400] 📥 Frame received for processing: 8b901855-1a4f-4eb7-95b9-bf61e5b88649
+[2025-12-04T17:05:27.303100] ➡️ Sending to pothole API: 8b901855-1a4f-4eb7-95b9-bf61e5b88649
+[2025-12-04T17:05:28.457826] ⬅️ API response for f17bd040-77d2-40ac-beaa-b0597748f913: [{'bbox': [311.9534606933594, 837.3682250976562, 728.3889770507812, 1129.42431640625], 'confidence': 0.9253730177879333, 'class_id': 0, 'porthole_area_percentage': 25.74614197530864}, {'bbox': [4.0023193359375, 2.300251007080078, 1080.0, 385.6758728027344], 'confidence': 0.6857700347900391, 'class_id': 0, 'porthole_area_percentage': 25.74614197530864}]
+[2025-12-04T17:05:28.465854] 📊 Pothole area percentage: 25.74614197530864%
+[2025-12-04T17:05:28.507564] 🚨 Pothole detected! Area: 25.74614197530864% - DB updated for f17bd040-77d2-40ac-beaa-b0597748f913
+[2025-12-04T17:05:28.607361] ⬅️ API response for 4497a841-5731-442a-a236-c0c00f96a001: [{'bbox': [304.0914001464844, 814.270751953125, 729.8773193359375, 1101.9693603515625], 'confidence': 0.9210127592086792, 'class_id': 0, 'porthole_area_percentage': 23.30126350308642}, {'bbox': [5.54461669921875, 0.765289306640625, 1080.0, 336.21728515625], 'confidence': 0.8114281296730042, 'class_id': 0, 'porthole_area_percentage': 23.30126350308642}]
+[2025-12-04T17:05:28.615312] 📊 Pothole area percentage: 23.30126350308642%
+[2025-12-04T17:05:28.632606] 🚨 Pothole detected! Area: 23.30126350308642% - DB updated for 4497a841-5731-442a-a236-c0c00f96a001
+[2025-12-04T17:05:28.799865] 📥 Frame received for processing: 220bf7b9-1026-4b78-a04d-b1ab43da9a57
+[2025-12-04T17:05:28.801424] ➡️ Sending to pothole API: 220bf7b9-1026-4b78-a04d-b1ab43da9a57
+[2025-12-04T17:05:29.120055] ⬅️ API response for af3e1442-5acf-4fae-95f9-1d2a23651c43: [{'bbox': [299.7000732421875, 839.0414428710938, 724.182373046875, 1139.422607421875], 'confidence': 0.8793022036552429, 'class_id': 0, 'porthole_area_percentage': 26.19704861111111}, {'bbox': [3.779937744140625, 2.4033050537109375, 1080.0, 388.22802734375], 'confidence': 0.68144690990448, 'class_id': 0, 'porthole_area_percentage': 26.19704861111111}]
+[2025-12-04T17:05:29.120736] 📊 Pothole area percentage: 26.19704861111111%
+[2025-12-04T17:05:29.126228] 🚨 Pothole detected! Area: 26.19704861111111% - DB updated for af3e1442-5acf-4fae-95f9-1d2a23651c43
+[2025-12-04T17:05:29.413246] ⬅️ API response for d2e684d0-72cf-48fc-a396-9fee1e3ce385: [{'bbox': [318.8583068847656, 852.8289184570312, 732.1007080078125, 1126.8438720703125], 'confidence': 0.9298965334892273, 'class_id': 0, 'porthole_area_percentage': 25.34452160493827}, {'bbox': [4.6680908203125, 2.266571044921875, 1080.0, 385.0690002441406], 'confidence': 0.6807741522789001, 'class_id': 0, 'porthole_area_percentage': 25.34452160493827}]
+[2025-12-04T17:05:29.413670] 📊 Pothole area percentage: 25.34452160493827%
+[2025-12-04T17:05:29.415582] 🚨 Pothole detected! Area: 25.34452160493827% - DB updated for d2e684d0-72cf-48fc-a396-9fee1e3ce385
+[2025-12-04T17:05:29.415943] 📥 Frame received for processing: 1fc4857c-1e6b-4e28-92ba-6bb165d6325c
+[2025-12-04T17:05:29.416161] ➡️ Sending to pothole API: 1fc4857c-1e6b-4e28-92ba-6bb165d6325c
+[2025-12-04T17:05:29.676290] ⬅️ API response for 0bc99f54-7d47-4016-9b3c-26a694368d0f: [{'bbox': [308.6872253417969, 835.8930053710938, 727.8455200195312, 1124.2679443359375], 'confidence': 0.9256663918495178, 'class_id': 0, 'porthole_area_percentage': 25.332320601851855}, {'bbox': [5.044921875, 2.2465438842773438, 1080.0, 378.2998352050781], 'confidence': 0.7030808329582214, 'class_id': 0, 'porthole_area_percentage': 25.332320601851855}]
+[2025-12-04T17:05:29.691259] 📊 Pothole area percentage: 25.332320601851855%
+[2025-12-04T17:05:29.764864] 🚨 Pothole detected! Area: 25.332320601851855% - DB updated for 0bc99f54-7d47-4016-9b3c-26a694368d0f
+[2025-12-04T17:05:29.772163] ⬅️ API response for 8b901855-1a4f-4eb7-95b9-bf61e5b88649: [{'bbox': [301.1609802246094, 837.7578735351562, 728.8942260742188, 1127.4434814453125], 'confidence': 0.9271647930145264, 'class_id': 0, 'porthole_area_percentage': 25.690104166666668}, {'bbox': [4.08892822265625, 2.2296524047851562, 1080.0, 382.6361389160156], 'confidence': 0.7583109736442566, 'class_id': 0, 'porthole_area_percentage': 25.690104166666668}]
+[2025-12-04T17:05:29.774730] 📊 Pothole area percentage: 25.690104166666668%
+[2025-12-04T17:05:29.783715] 🚨 Pothole detected! Area: 25.690104166666668% - DB updated for 8b901855-1a4f-4eb7-95b9-bf61e5b88649
+[2025-12-04T17:05:29.806565] 📥 Frame received for processing: 07b8fc2d-fe6d-4575-a9d3-0d94f63d9e41
+[2025-12-04T17:05:29.806997] ➡️ Sending to pothole API: 07b8fc2d-fe6d-4575-a9d3-0d94f63d9e41
+[2025-12-04T17:05:29.910180] ⬅️ API response for 3286abc2-7eef-4e2e-a3e1-899c29e1803c: [{'bbox': [317.5531005859375, 844.9537353515625, 727.2744750976562, 1125.140625], 'confidence': 0.9313716292381287, 'class_id': 0, 'porthole_area_percentage': 25.152391975308642}, {'bbox': [5.22271728515625, 2.2347335815429688, 1080.0, 380.23370361328125], 'confidence': 0.7012579441070557, 'class_id': 0, 'porthole_area_percentage': 25.152391975308642}]
+[2025-12-04T17:05:29.912760] 📊 Pothole area percentage: 25.152391975308642%
+[2025-12-04T17:05:29.916586] 🚨 Pothole detected! Area: 25.152391975308642% - DB updated for 3286abc2-7eef-4e2e-a3e1-899c29e1803c
+[2025-12-04T17:05:30.441145] 📥 Frame received for processing: 981a2509-d1a1-4d85-81e2-b8908fe2b257
+[2025-12-04T17:05:30.441840] ➡️ Sending to pothole API: 981a2509-d1a1-4d85-81e2-b8908fe2b257
+[2025-12-04T17:05:30.652920] 📥 Frame received for processing: 27b9c7fb-fe42-4200-b966-dc294357745e
+[2025-12-04T17:05:30.653453] ➡️ Sending to pothole API: 27b9c7fb-fe42-4200-b966-dc294357745e
+[2025-12-04T17:05:30.953666] ⬅️ API response for 220bf7b9-1026-4b78-a04d-b1ab43da9a57: [{'bbox': [177.51947021484375, 775.9905395507812, 1079.068359375, 1298.286376953125], 'confidence': 0.9009149074554443, 'class_id': 0, 'porthole_area_percentage': 42.727912808641975}, {'bbox': [4.6373291015625, 2.4736175537109375, 1080.0, 387.04449462890625], 'confidence': 0.7198059558868408, 'class_id': 0, 'porthole_area_percentage': 42.727912808641975}]
+[2025-12-04T17:05:30.954286] 📊 Pothole area percentage: 42.727912808641975%
+[2025-12-04T17:05:30.957691] 🚨 Pothole detected! Area: 42.727912808641975% - DB updated for 220bf7b9-1026-4b78-a04d-b1ab43da9a57
+[2025-12-04T17:05:30.986758] 📥 Frame received for processing: 376aacfa-2898-406e-83a9-0d3a2d4f6061
+[2025-12-04T17:05:30.987033] ➡️ Sending to pothole API: 376aacfa-2898-406e-83a9-0d3a2d4f6061
+[2025-12-04T17:05:31.226210] 📥 Frame received for processing: 6c516d9a-ab88-4bf0-94e8-6e47ef7bdd31
+[2025-12-04T17:05:31.226670] ➡️ Sending to pothole API: 6c516d9a-ab88-4bf0-94e8-6e47ef7bdd31
+[2025-12-04T17:05:31.788307] ⬅️ API response for 1fc4857c-1e6b-4e28-92ba-6bb165d6325c: [{'bbox': [177.66732788085938, 781.6327514648438, 1062.5277099609375, 1298.47607421875], 'confidence': 0.9021912813186646, 'class_id': 0, 'porthole_area_percentage': 42.094955632716044}, {'bbox': [4.85540771484375, 2.5666351318359375, 1080.0, 388.5094299316406], 'confidence': 0.7018991112709045, 'class_id': 0, 'porthole_area_percentage': 42.094955632716044}]
+[2025-12-04T17:05:31.789699] 📊 Pothole area percentage: 42.094955632716044%
+[2025-12-04T17:05:31.797620] 🚨 Pothole detected! Area: 42.094955632716044% - DB updated for 1fc4857c-1e6b-4e28-92ba-6bb165d6325c
+[2025-12-04T17:05:31.914441] ⬅️ API response for 4881eb46-ff82-47fc-86d7-4697165a063c: [{'bbox': [316.42767333984375, 842.4113159179688, 729.3611450195312, 1126.4737548828125], 'confidence': 0.9301320314407349, 'class_id': 0, 'porthole_area_percentage': 25.478587962962962}, {'bbox': [4.616455078125, 2.2717437744140625, 1080.0, 384.895751953125], 'confidence': 0.6873428821563721, 'class_id': 0, 'porthole_area_percentage': 25.478587962962962}]
+[2025-12-04T17:05:31.915857] 📊 Pothole area percentage: 25.478587962962962%
+[2025-12-04T17:05:31.919256] 🚨 Pothole detected! Area: 25.478587962962962% - DB updated for 4881eb46-ff82-47fc-86d7-4697165a063c
+[2025-12-04T17:05:32.020136] ⬅️ API response for 07b8fc2d-fe6d-4575-a9d3-0d94f63d9e41: [{'bbox': [185.10113525390625, 775.7890014648438, 1065.3336181640625, 1302.5264892578125], 'confidence': 0.8878383040428162, 'class_id': 0, 'porthole_area_percentage': 42.44656635802469}, {'bbox': [4.8603515625, 2.5406341552734375, 1080.0, 389.2085266113281], 'confidence': 0.7047009468078613, 'class_id': 0, 'porthole_area_percentage': 42.44656635802469}]
+[2025-12-04T17:05:32.021636] 📊 Pothole area percentage: 42.44656635802469%
+[2025-12-04T17:05:32.025199] 🚨 Pothole detected! Area: 42.44656635802469% - DB updated for 07b8fc2d-fe6d-4575-a9d3-0d94f63d9e41
+[2025-12-04T17:05:32.462213] ⬅️ API response for 27252eab-b6cb-4dab-9465-a6636ffe5eff: [{'bbox': [304.6529846191406, 831.5958251953125, 717.3395385742188, 1129.0533447265625], 'confidence': 0.9052045345306396, 'class_id': 0, 'porthole_area_percentage': 25.53163580246914}, {'bbox': [5.379547119140625, 2.2226028442382812, 1080.0, 380.6065979003906], 'confidence': 0.7058961987495422, 'class_id': 0, 'porthole_area_percentage': 25.53163580246914}]
+[2025-12-04T17:05:32.463134] 📊 Pothole area percentage: 25.53163580246914%
+[2025-12-04T17:05:32.466395] 🚨 Pothole detected! Area: 25.53163580246914% - DB updated for 27252eab-b6cb-4dab-9465-a6636ffe5eff
+[2025-12-04T17:05:32.580475] ⬅️ API response for 981a2509-d1a1-4d85-81e2-b8908fe2b257: [{'bbox': [280.9215087890625, 780.0252685546875, 1080.0, 1295.6544189453125], 'confidence': 0.9089328646659851, 'class_id': 0, 'porthole_area_percentage': 40.087287808641975}, {'bbox': [5.490234375, 2.4095306396484375, 1080.0, 392.2628479003906], 'confidence': 0.7249722480773926, 'class_id': 0, 'porthole_area_percentage': 40.087287808641975}]
+[2025-12-04T17:05:32.581318] 📊 Pothole area percentage: 40.087287808641975%
+[2025-12-04T17:05:32.584337] 🚨 Pothole detected! Area: 40.087287808641975% - DB updated for 981a2509-d1a1-4d85-81e2-b8908fe2b257
+[2025-12-04T17:05:32.710208] ⬅️ API response for 27b9c7fb-fe42-4200-b966-dc294357745e: [{'bbox': [386.0753173828125, 769.2149047851562, 1080.0, 1261.0833740234375], 'confidence': 0.9344085454940796, 'class_id': 0, 'porthole_area_percentage': 36.61863425925926}, {'bbox': [3.059051513671875, 2.0714263916015625, 1080.0, 390.7508239746094], 'confidence': 0.7058446407318115, 'class_id': 0, 'porthole_area_percentage': 36.61863425925926}]
+[2025-12-04T17:05:32.710575] 📊 Pothole area percentage: 36.61863425925926%
+[2025-12-04T17:05:32.711880] 🚨 Pothole detected! Area: 36.61863425925926% - DB updated for 27b9c7fb-fe42-4200-b966-dc294357745e
+[2025-12-04T17:05:32.894750] ⬅️ API response for 376aacfa-2898-406e-83a9-0d3a2d4f6061: [{'bbox': [374.2385559082031, 735.4462280273438, 1078.1666259765625, 1194.8046875], 'confidence': 0.9076880812644958, 'class_id': 0, 'porthole_area_percentage': 35.0625}, {'bbox': [0.0, 2.4895477294921875, 1080.0, 376.4404602050781], 'confidence': 0.5952547788619995, 'class_id': 0, 'porthole_area_percentage': 35.0625}]
+[2025-12-04T17:05:32.896012] 📊 Pothole area percentage: 35.0625%
+[2025-12-04T17:05:32.900097] 🚨 Pothole detected! Area: 35.0625% - DB updated for 376aacfa-2898-406e-83a9-0d3a2d4f6061
+[2025-12-04T17:05:33.232844] ⬅️ API response for 6c516d9a-ab88-4bf0-94e8-6e47ef7bdd31: [{'bbox': [340.61407470703125, 617.31005859375, 1065.9180908203125, 1068.16845703125], 'confidence': 0.9323769807815552, 'class_id': 0, 'porthole_area_percentage': 27.18947723765432}, {'bbox': [18.2841796875, 3.8253250122070312, 1080.0, 226.96426391601562], 'confidence': 0.5076352953910828, 'class_id': 0, 'porthole_area_percentage': 27.18947723765432}]
+[2025-12-04T17:05:33.233395] 📊 Pothole area percentage: 27.18947723765432%
+[2025-12-04T17:05:33.235476] 🚨 Pothole detected! Area: 27.18947723765432% - DB updated for 6c516d9a-ab88-4bf0-94e8-6e47ef7bdd31

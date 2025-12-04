@@ -84,13 +84,14 @@ async function getSuburbName(lat, lon) {
     }
 }
 
-function getSeverityLevel(isPothole) {
+function getSeverityLevel(isPothole, portholeAreaPercentage = 0) {
     if (!isPothole) return null;
-    // In future, you can add actual severity scoring
-    const rand = Math.random();
-    if (rand < 0.23) return 'critical';
-    if (rand < 0.57) return 'high';
-    if (rand < 0.85) return 'medium';
+
+    // Calculate severity based on porthole_area_percentage
+    // 0-5%: low, 5-10%: medium, 10-15%: high, >15%: critical
+    if (portholeAreaPercentage > 15) return 'critical';
+    if (portholeAreaPercentage > 10) return 'high';
+    if (portholeAreaPercentage > 5) return 'medium';
     return 'low';
 }
 
@@ -138,7 +139,7 @@ async function loadRoute() {
         const json = await res.json();
         allPoints = json.points.map(p => ({
             ...p,
-            severity: getSeverityLevel(p.is_pothole),
+            severity: getSeverityLevel(p.is_pothole, p.porthole_area_percentage),
             timestamp: p.timestamp || Date.now()
         }));
 
@@ -244,7 +245,8 @@ function renderMap(points) {
             fillColor: color,
             fillOpacity: 0.8,
             weight: 2,
-            pane: 'potholePane' // Use dedicated pane for better z-index management
+            pane: 'potholePane', // Use dedicated pane for better z-index management
+            severity: p.severity // Store severity for filtering
         });
 
         marker.on("click", () => {
@@ -880,35 +882,79 @@ async function exportSelectedPotholes() {
 
 // ==================== MAP CONTROLS ====================
 function setupControls() {
-    // const togglePolyline = document.getElementById("togglePolyline");
-    const togglePotholes = document.getElementById("togglePotholes");
-    const toggleOnlyPotholes = document.getElementById("toggleOnlyPotholes");
+    // Get all radio buttons for map filter
+    const mapFilterRadios = document.querySelectorAll('input[name="mapFilter"]');
 
-    // togglePolyline.onchange = () => {
-    //     if (togglePolyline.checked) {
-    //         map.addLayer(polylineLayer);
-    //     } else {
-    //         map.removeLayer(polylineLayer);
-    //     }
-    // };
+    mapFilterRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            const filterValue = e.target.value;
+            applyMapFilter(filterValue);
+        });
+    });
+}
 
-    togglePotholes.onchange = () => {
-        potholeMarkers.forEach(m => {
-            if (togglePotholes.checked) {
-                map.addLayer(m);
-            } else {
-                map.removeLayer(m);
+function applyMapFilter(filterValue) {
+    // Remove all markers and dots from map
+    potholeMarkers.forEach(m => map.removeLayer(m));
+    gpsDots.forEach(d => map.removeLayer(d));
+
+    if (filterValue === 'all') {
+        // Show everything
+        potholeMarkers.forEach(m => map.addLayer(m));
+        gpsDots.forEach(d => map.addLayer(d));
+    } else {
+        // Show only specific severity
+        potholeMarkers.forEach(marker => {
+            if (marker.options.severity === filterValue) {
+                map.addLayer(marker);
             }
         });
-    };
+    }
+}
 
-    toggleOnlyPotholes.onchange = () => {
-        if (toggleOnlyPotholes.checked) {
-            gpsDots.forEach(d => map.removeLayer(d));
-        } else {
-            gpsDots.forEach(d => map.addLayer(d));
-        }
-    };
+// ==================== TIME FILTERING ====================
+function applyTimeFilter(timeRange) {
+    const now = new Date();
+    let startDate;
+
+    // Calculate start date based on time range
+    switch(timeRange) {
+        case 'today':
+            startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
+            break;
+        case 'week':
+            startDate = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+            break;
+        case 'month':
+            startDate = new Date(now.getFullYear(), now.getMonth(), 1, 0, 0, 0);
+            break;
+        case 'year':
+            startDate = new Date(now.getFullYear(), 0, 1, 0, 0, 0);
+            break;
+        default:
+            startDate = new Date(0); // Show all if unknown
+    }
+
+    // Filter points by time range
+    const filteredPoints = allPoints.filter(p => {
+        const pointDate = new Date(p.timestamp);
+        return pointDate >= startDate && pointDate <= now;
+    });
+
+    // Update all UI components with filtered data
+    updateMetrics(filteredPoints);
+    renderMap(filteredPoints);
+    renderSeverityChart(filteredPoints);
+    renderActivityList(filteredPoints);
+    renderDetectionsTable(filteredPoints);
+
+    // Update analytics if on analytics view
+    const analyticsView = document.getElementById('analyticsView');
+    if (analyticsView && analyticsView.style.display !== 'none') {
+        renderAnalytics(filteredPoints);
+    }
+
+    console.log(`Filtered ${filteredPoints.length} points from ${allPoints.length} total points for time range: ${timeRange}`);
 }
 
 // ==================== UI HANDLERS ====================
@@ -991,15 +1037,13 @@ function setupUIHandlers() {
         exportReport();
     };
 
-    // Search functionality - debounced location search
-    let searchTimeout;
+    // Search functionality - button click and Enter key
     const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
 
-    searchInput.addEventListener("input", (e) => {
-        const query = e.target.value.trim();
-
-        // Clear previous timeout
-        clearTimeout(searchTimeout);
+    // Function to perform search
+    const performSearch = () => {
+        const query = searchInput.value.trim();
 
         // If search is cleared, reset map to default state
         if (query.length === 0) {
@@ -1008,31 +1052,37 @@ function setupUIHandlers() {
         }
 
         if (query.length < 3) {
-            return; // Wait for at least 3 characters
+            alert('Please enter at least 3 characters to search');
+            return;
         }
 
-        // Debounce search - wait 500ms after user stops typing
-        searchTimeout = setTimeout(() => {
-            searchLocation(query);
-        }, 500);
-    });
+        searchLocation(query);
+    };
 
-    // Handle Enter key for immediate search
+    // Handle search button click
+    searchBtn.addEventListener("click", performSearch);
+
+    // Handle Enter key
     searchInput.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             e.preventDefault();
-            clearTimeout(searchTimeout);
-            const query = e.target.value.trim();
-            if (query.length > 0) {
-                searchLocation(query);
-            }
+            performSearch();
+        }
+    });
+
+    // Clear map when input is cleared
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.trim();
+        if (query.length === 0) {
+            resetMapToDefault();
         }
     });
 
     // Time range selector
     document.getElementById("timeRange").addEventListener("change", (e) => {
-        console.log("Time range changed:", e.target.value);
-        // Implement time range filtering
+        const timeRange = e.target.value;
+        console.log("Time range changed:", timeRange);
+        applyTimeFilter(timeRange);
     });
 
     // Extract and display user email from JWT if possible

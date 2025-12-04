@@ -113,6 +113,18 @@
                     <path d="m21 21-4.35-4.35"></path>
                 </svg>
                 <input type="text" placeholder="Search locations, sectors..." id="searchInput">
+                <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" style="display: none;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <button id="searchBtn" class="search-btn" title="Search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -152,13 +164,25 @@
                 <div class="panel-header">
                     <h3>Live Route Map</h3>
                     <div class="map-controls">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="togglePotholes" checked>
-                            <span>all</span>
+                        <label class="radio-label">
+                            <input type="radio" name="mapFilter" value="all" checked>
+                            <span>All</span>
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="toggleOnlyPotholes">
-                            <span>Only Potholes</span>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="critical">
+                            <span class="severity-badge critical">Critical</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="high">
+                            <span class="severity-badge high">High</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="medium">
+                            <span class="severity-badge medium">Medium</span>
+                        </label>
+                        <label class="radio-label severity-filter">
+                            <input type="radio" name="mapFilter" value="low">
+                            <span class="severity-badge low">Low</span>
                         </label>
                     </div>
                 </div>
